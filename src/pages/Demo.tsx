@@ -77,7 +77,7 @@ const featureSlides: FeatureSlide[] = [
       'Visual progress tracking',
       'Completion celebration'
     ],
-    image: mockupTasbih
+    image: demoTasbih
   },
   {
     id: 'sleep-tracker',
