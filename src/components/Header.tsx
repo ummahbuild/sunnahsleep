@@ -24,9 +24,9 @@ export function Header({
   onRequestNotifications = async () => false,
 }: HeaderProps) {
   return (
-    <header className="relative py-8 px-6">
+    <header className="relative py-8 px-6" role="banner">
       {/* Decorative glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gold/5 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gold/5 to-transparent pointer-events-none" aria-hidden="true" />
       
       <div className="relative flex items-center justify-between">
         <div className="flex items-center gap-3">

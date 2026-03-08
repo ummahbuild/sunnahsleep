@@ -312,6 +312,7 @@ export default function Demo() {
           </div>
 
           {/* Current Feature Card */}
+          <div aria-live="polite" aria-atomic="true">
           <Card className={cn(
             'overflow-hidden border-gold/20 transition-all duration-500',
             `bg-gradient-to-br ${currentFeature.color}`
@@ -325,6 +326,9 @@ export default function Demo() {
                       src={currentFeature.image} 
                       alt={`${currentFeature.title} screenshot`}
                       className="w-full h-auto drop-shadow-2xl"
+                      loading="lazy"
+                      width="288"
+                      height="512"
                     />
                   </div>
                 </div>
@@ -362,6 +366,7 @@ export default function Demo() {
               </div>
             </CardContent>
           </Card>
+          </div>
 
           {/* Navigation Buttons */}
           <div className="flex justify-center gap-4 mt-6">

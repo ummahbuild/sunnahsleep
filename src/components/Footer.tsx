@@ -3,7 +3,7 @@ import { Moon, Droplets, Download, ExternalLink, BookOpen, FileText, Shield, Sca
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-border bg-[hsl(var(--midnight))]">
+    <footer className="relative border-t border-border bg-[hsl(var(--midnight))]" role="contentinfo">
       {/* Decorative top glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
       
@@ -27,7 +27,7 @@ export function Footer() {
         </div>
 
         {/* Footer grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <nav className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10" aria-label="Footer navigation">
           {/* App */}
           <div>
             <h4 className="text-gold text-sm font-semibold mb-3 flex items-center gap-2">
@@ -80,7 +80,7 @@ export function Footer() {
               Ummah.Build <ExternalLink className="h-3 w-3" />
             </a>
           </div>
-        </div>
+        </nav>
 
         {/* Bottom bar */}
         <div className="border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">

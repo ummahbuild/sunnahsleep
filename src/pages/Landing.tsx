@@ -85,23 +85,23 @@ const Landing = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-night">
+    <div className="min-h-screen bg-gradient-night" role="main">
       {/* ═══════════════ HERO ═══════════════ */}
-      <section className="relative overflow-hidden islamic-pattern">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      <section className="relative overflow-hidden islamic-pattern" aria-labelledby="hero-heading">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
 
         <div className="relative max-w-5xl mx-auto px-6 pt-16 pb-20 sm:pt-24 sm:pb-28 text-center">
           {/* Logo */}
-          <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6" role="img" aria-label="SunnahSleep logo">
             <div className="relative">
-              <Moon className="h-12 w-12 text-primary animate-pulse-slow" />
-              <div className="absolute inset-0 blur-lg bg-primary/30 animate-glow" />
+              <Moon className="h-12 w-12 text-primary animate-pulse-slow" aria-hidden="true" />
+              <div className="absolute inset-0 blur-lg bg-primary/30 animate-glow" aria-hidden="true" />
             </div>
             <span className="font-arabic text-3xl sm:text-4xl text-gradient-gold">SunnahSleep</span>
           </div>
 
           {/* Headline */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-arabic text-foreground leading-tight mb-4">
+          <h1 id="hero-heading" className="text-3xl sm:text-5xl lg:text-6xl font-arabic text-foreground leading-tight mb-4">
             Sleep the Way the
             <span className="text-gradient-gold block sm:inline"> Prophet ﷺ Taught</span>
           </h1>
@@ -137,11 +137,11 @@ const Landing = () => {
       </section>
 
       {/* ═══════════════ STATS ═══════════════ */}
-      <section className="border-y border-border bg-[hsl(var(--midnight-light))]">
+      <section className="border-y border-border bg-[hsl(var(--midnight-light))]" aria-label="App statistics">
         <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {STATS.map((stat) => (
-            <div key={stat.label}>
-              <p className="text-3xl sm:text-4xl font-arabic text-primary mb-1">{stat.value}</p>
+            <div key={stat.label} role="group" aria-label={`${stat.value} ${stat.label}`}>
+              <p className="text-3xl sm:text-4xl font-arabic text-primary mb-1" aria-hidden="true">{stat.value}</p>
               <p className="text-sm font-medium text-foreground">{stat.label}</p>
               <p className="text-xs text-muted-foreground mt-0.5">{stat.detail}</p>
             </div>
@@ -153,10 +153,10 @@ const Landing = () => {
       <FeatureSteps />
 
       {/* ═══════════════ QURAN & HADITH CAROUSEL ═══════════════ */}
-      <section className="bg-[hsl(var(--midnight-light))] border-y border-border py-16 sm:py-24">
+      <section className="bg-[hsl(var(--midnight-light))] border-y border-border py-16 sm:py-24" aria-labelledby="references-heading">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-arabic text-foreground mb-3">
+            <h2 id="references-heading" className="text-2xl sm:text-3xl font-arabic text-foreground mb-3">
               What the <span className="text-gradient-gold">Quran & Sunnah</span> Say About Sleep
             </h2>
             <p className="text-cream-dim max-w-lg mx-auto text-sm">
@@ -169,8 +169,8 @@ const Landing = () => {
       </section>
 
       {/* ═══════════════ DEVICE-AWARE INSTALL ═══════════════ */}
-      <section className="max-w-5xl mx-auto px-6 py-16 sm:py-24 text-center">
-        <h2 className="text-2xl sm:text-3xl font-arabic text-foreground mb-3">
+      <section className="max-w-5xl mx-auto px-6 py-16 sm:py-24 text-center" aria-labelledby="install-heading">
+        <h2 id="install-heading" className="text-2xl sm:text-3xl font-arabic text-foreground mb-3">
           Get <span className="text-gradient-gold">SunnahSleep</span> on Your Device
         </h2>
         <p className="text-cream-dim max-w-lg mx-auto mb-8 text-sm">
