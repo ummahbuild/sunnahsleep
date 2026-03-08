@@ -1,3 +1,5 @@
+import { extraBlogArticles } from './blogDataExtra';
+
 export interface BlogArticle {
   slug: string;
   title: string;
