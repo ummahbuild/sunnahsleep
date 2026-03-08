@@ -18,7 +18,7 @@ export interface AppStoreLinks {
 }
 
 export const APP_STORE_LINKS: AppStoreLinks = {
-  apk: { url: 'https://sunnahsleep.app/download/sunnahsleep.apk', available: true },
+  apk: { url: '/download', available: true },
   appStore: { url: '#', available: false },
   playStore: { url: '#', available: false },
 };
