@@ -45,7 +45,7 @@ const featureSlides: FeatureSlide[] = [
       'Dhikr and bedtime duas',
       'Wake up routine before Fajr'
     ],
-    image: mockupChecklist
+    image: demoChecklist
   },
   {
     id: 'recitations',
