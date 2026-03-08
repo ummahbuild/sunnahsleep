@@ -41,8 +41,20 @@ export default function Blog() {
     ],
   });
 
+  const [activeCategory, setActiveCategory] = useState<BlogArticle['category'] | 'all'>('all');
+
   const featuredArticles = getFeaturedArticles();
-  const regularArticles = blogArticles.filter(a => !a.featured);
+  const filteredArticles = activeCategory === 'all'
+    ? blogArticles.filter(a => !a.featured)
+    : blogArticles.filter(a => !a.featured && a.category === activeCategory);
+
+  const categories: { key: BlogArticle['category'] | 'all'; label: string }[] = [
+    { key: 'all', label: 'All' },
+    { key: 'sunnah', label: 'Sunnah' },
+    { key: 'health', label: 'Health' },
+    { key: 'worship', label: 'Worship' },
+    { key: 'guidance', label: 'Guidance' },
+  ];
 
   const categoryIcons: Record<BlogArticle['category'], React.ReactNode> = {
     sunnah: <Moon className="h-4 w-4" />,
