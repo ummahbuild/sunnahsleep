@@ -101,7 +101,7 @@ const Landing = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-arabic text-foreground leading-tight mb-4">
+          <h1 id="hero-heading" className="text-3xl sm:text-5xl lg:text-6xl font-arabic text-foreground leading-tight mb-4">
             Sleep the Way the
             <span className="text-gradient-gold block sm:inline"> Prophet ﷺ Taught</span>
           </h1>
