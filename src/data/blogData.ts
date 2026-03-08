@@ -1296,7 +1296,7 @@ Teach Tasbih Fatimah to your children. Young children can start with lower count
 Follow Ali رضي الله عنه's example: make it non-negotiable. Whether traveling, sick, exhausted, or in difficulty—this dhikr takes under 3 minutes and its reward is immense.
 
 Tasbih Fatimah transforms the last moments before sleep into an act of worship. A simple practice that takes minutes but carries the weight of the Prophet ﷺ's personal recommendation to his beloved daughter.
-    \`,
+    `,
   },
   {
     slug: 'islamic-sleep-etiquette-adab',
