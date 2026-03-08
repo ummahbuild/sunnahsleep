@@ -58,10 +58,12 @@ export default function BlogArticlePage() {
     guidance: 'Islamic Guidance',
   };
 
-  // Get related articles
-  const relatedArticles = blogArticles
-    .filter(a => a.slug !== article.slug && a.category === article.category)
-    .slice(0, 3);
+  // Get related articles - same category first, then other categories for cross-linking
+  const sameCategoryArticles = blogArticles
+    .filter(a => a.slug !== article.slug && a.category === article.category);
+  const otherArticles = blogArticles
+    .filter(a => a.slug !== article.slug && a.category !== article.category);
+  const relatedArticles = [...sameCategoryArticles, ...otherArticles].slice(0, 4);
 
   return (
     <div className="min-h-screen bg-gradient-night islamic-pattern">
