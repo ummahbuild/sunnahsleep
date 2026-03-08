@@ -1124,7 +1124,7 @@ When sleep escapes you, don't reach for your phone—reach for your prayer mat. 
       { id: 'surah-nas', title: 'Surah An-Nas (114)' },
       { id: 'benefits', title: 'Benefits & Spiritual Protection' },
     ],
-    content: \`
+    content: `
 ## What Are the Three Quls? {#what-are-three-quls}
 
 The Three Quls (الأقوال الثلاثة), also known as Al-Mu'awwidhaat (المعوّذات — "the protectors"), are the last three surahs of the Quran:
