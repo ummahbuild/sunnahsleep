@@ -529,6 +529,7 @@ Make Qailulah a regular habit. Even on busy days, a 20-minute rest after Dhuhr c
     category: 'guidance',
     readingTime: 6,
     featured: false,
+    publishedDate: '2025-01-20',
     tableOfContents: [
       { id: 'importance', title: 'Importance of Bedtime Duas' },
       { id: 'primary-dua', title: 'Primary Bedtime Dua' },
