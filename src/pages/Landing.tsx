@@ -87,8 +87,8 @@ const Landing = () => {
   return (
     <div className="min-h-screen bg-gradient-night">
       {/* ═══════════════ HERO ═══════════════ */}
-      <section className="relative overflow-hidden islamic-pattern">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      <section className="relative overflow-hidden islamic-pattern" aria-labelledby="hero-heading">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
 
         <div className="relative max-w-5xl mx-auto px-6 pt-16 pb-20 sm:pt-24 sm:pb-28 text-center">
           {/* Logo */}
