@@ -3,7 +3,7 @@ import { Moon, Droplets, Download, ExternalLink, BookOpen, FileText, Shield, Sca
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-border bg-[hsl(var(--midnight))]">
+    <footer className="relative border-t border-border bg-[hsl(var(--midnight))]" role="contentinfo">
       {/* Decorative top glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
       
