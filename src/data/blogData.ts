@@ -1105,6 +1105,335 @@ Perhaps your sleeplessness is not a problem to solve, but a door that Allah has 
 When sleep escapes you, don't reach for your phone—reach for your prayer mat. The Sunnah offers a complete toolkit for insomnia: physical remedies (wudu, sleep position), spiritual protection (Ayat al-Kursi, Three Quls), mental calm (dhikr, dua), and lifestyle wisdom (eating light, sleeping early). Start with one remedy tonight and build from there.
     `,
   },
+  {
+    slug: 'three-quls-before-sleep-protection',
+    title: 'The Three Quls Before Sleep: Complete Protection Routine',
+    metaTitle: 'Three Quls Before Sleep: Surah Ikhlas, Falaq & Nas Protection | SunnahSleep',
+    metaDescription: 'Learn the Sunnah of reciting Surah Al-Ikhlas, Al-Falaq, and An-Nas before sleep. Complete Arabic text, transliteration, translation, and how the Prophet ﷺ practiced it nightly.',
+    keywords: ['three quls before sleep', 'surah ikhlas falaq nas', 'muawwidhaat', 'islamic bedtime protection', 'quran before sleeping'],
+    excerpt: 'The Prophet ﷺ never slept without reciting the Three Quls and blowing them over his body. Learn this essential nightly protection with full text and translation.',
+    category: 'worship',
+    readingTime: 6,
+    featured: false,
+    publishedDate: '2025-03-20',
+    tableOfContents: [
+      { id: 'what-are-three-quls', title: 'What Are the Three Quls?' },
+      { id: 'prophetic-method', title: 'The Prophetic Method' },
+      { id: 'surah-ikhlas', title: 'Surah Al-Ikhlas (112)' },
+      { id: 'surah-falaq', title: 'Surah Al-Falaq (113)' },
+      { id: 'surah-nas', title: 'Surah An-Nas (114)' },
+      { id: 'benefits', title: 'Benefits & Spiritual Protection' },
+    ],
+    content: \`
+## What Are the Three Quls? {#what-are-three-quls}
+
+The Three Quls (الأقوال الثلاثة), also known as Al-Mu'awwidhaat (المعوّذات — "the protectors"), are the last three surahs of the Quran:
+
+1. **Surah Al-Ikhlas** (Chapter 112) — Declaration of Allah's Oneness
+2. **Surah Al-Falaq** (Chapter 113) — Seeking refuge from external evil
+3. **Surah An-Nas** (Chapter 114) — Seeking refuge from internal whispering
+
+Together, they form a comprehensive shield: affirming tawheed (monotheism), seeking protection from seen dangers, and guarding against unseen whispers.
+
+## The Prophetic Method {#prophetic-method}
+
+Aisha رضي الله عنها narrated: **"Every night when the Prophet ﷺ went to bed, he would cup his hands together, blow into them, and recite Surah Al-Ikhlas, Surah Al-Falaq, and Surah An-Nas. Then he would wipe his hands over his body, starting with his head and face, and then the front of his body. He would do this three times."** *(Sahih al-Bukhari 5017)*
+
+**Step-by-step:**
+1. Cup your palms together
+2. Blow lightly into them (not spitting — a gentle breath)
+3. Recite all three surahs
+4. Wipe your hands over as much of your body as you can reach
+5. Start with the head, face, then front of the body
+6. Repeat the entire process **three times**
+
+During the Prophet ﷺ's final illness, Aisha رضي الله عنها would recite the Three Quls, blow into his hands, and wipe them over his blessed body. *(Sahih al-Bukhari 5016)*
+
+## Surah Al-Ikhlas (112) {#surah-ikhlas}
+
+**Arabic:**
+
+قُلۡ هُوَ ٱللَّهُ أَحَدٌ ‎﴿١﴾ ٱللَّهُ ٱلصَّمَدُ ‎﴿٢﴾ لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ ‎﴿٣﴾ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ ‎﴿٤﴾
+
+**Transliteration:** Qul Huwa Allahu Ahad. Allahus-Samad. Lam yalid wa lam yulad. Wa lam yakun lahu kufuwan ahad.
+
+**Translation:** Say, "He is Allah, [Who is] One. Allah, the Eternal Refuge. He neither begets nor is born. Nor is there to Him any equivalent."
+
+**Virtue:** The Prophet ﷺ said this surah is equal to one-third of the Quran. *(Sahih al-Bukhari 5015)*
+
+## Surah Al-Falaq (113) {#surah-falaq}
+
+**Arabic:**
+
+قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ ‎﴿١﴾ مِن شَرِّ مَا خَلَقَ ‎﴿٢﴾ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ‎﴿٣﴾ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلۡعُقَدِ ‎﴿٤﴾ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ‎﴿٥﴾
+
+**Transliteration:** Qul a'udhu bi Rabbil-Falaq. Min sharri ma khalaq. Wa min sharri ghasiqin idha waqab. Wa min sharrin-naffathati fil-'uqad. Wa min sharri hasidin idha hasad.
+
+**Translation:** Say, "I seek refuge in the Lord of daybreak. From the evil of that which He created. And from the evil of darkness when it settles. And from the evil of the blowers in knots. And from the evil of an envier when he envies."
+
+**Relevance to sleep:** "From the evil of darkness when it settles" directly addresses nighttime, making this surah especially important before sleep.
+
+## Surah An-Nas (114) {#surah-nas}
+
+**Arabic:**
+
+قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ ‎﴿١﴾ مَلِكِ ٱلنَّاسِ ‎﴿٢﴾ إِلَـٰهِ ٱلنَّاسِ ‎﴿٣﴾ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ ‎﴿٤﴾ ٱلَّذِى يُوَسۡوِسُ فِى صُدُورِ ٱلنَّاسِ ‎﴿٥﴾ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ ‎﴿٦﴾
+
+**Transliteration:** Qul a'udhu bi Rabbin-Nas. Malikin-Nas. Ilahin-Nas. Min sharril-waswasil-khannas. Alladhi yuwaswisu fi sudurin-nas. Minal-jinnati wan-nas.
+
+**Translation:** Say, "I seek refuge in the Lord of mankind. The Sovereign of mankind. The God of mankind. From the evil of the retreating whisperer. Who whispers [evil] into the breasts of mankind. From among the jinn and mankind."
+
+**Relevance to sleep:** Protects against the whispering of Shaytan that can cause anxiety, nightmares, and restlessness during sleep.
+
+## Benefits & Spiritual Protection {#benefits}
+
+**Combined Protection:**
+- **External evil** — Al-Falaq guards against physical harm, darkness, envy, and sorcery
+- **Internal evil** — An-Nas guards against whispering, anxiety, and spiritual corruption
+- **Foundational belief** — Al-Ikhlas affirms tawheed, the foundation of all protection
+
+**Hadith on Their Importance:**
+
+The Prophet ﷺ said to Uqbah ibn Amir: **"Do you not know the verses that were revealed tonight the like of which has never been seen? They are: 'Qul a'udhu bi Rabbil-Falaq' and 'Qul a'udhu bi Rabbin-Nas.'"** *(Sahih Muslim 814)*
+
+**Practical Tips:**
+- Memorize all three surahs if you haven't — they are among the shortest in the Quran
+- Teach them to your children as part of the bedtime routine
+- Use SunnahSleep's Quran recitation player to listen and follow along
+- Combine with Ayat al-Kursi for comprehensive nighttime protection
+
+The Three Quls are the Prophet ﷺ's personal bedtime protection. He never skipped them, even during illness. Making them part of your nightly routine connects you to a practice the Messenger of Allah ﷺ maintained his entire life.
+    \`,
+  },
+  {
+    slug: 'tasbih-fatimah-bedtime-dhikr',
+    title: 'Tasbih Fatimah: The Bedtime Dhikr Better Than a Servant',
+    metaTitle: 'Tasbih Fatimah Before Sleep: 33-33-34 Dhikr Guide | SunnahSleep',
+    metaDescription: 'Learn Tasbih Fatimah — the bedtime dhikr of SubhanAllah 33, Alhamdulillah 33, Allahu Akbar 34. Its origin, virtues, and how it strengthens the body for worship.',
+    keywords: ['tasbih fatimah', 'bedtime dhikr', 'subhanallah alhamdulillah allahu akbar', '33 33 34', 'islamic dhikr before sleep'],
+    excerpt: 'When Fatimah رضي الله عنها asked for a servant, the Prophet ﷺ taught her something better: SubhanAllah 33, Alhamdulillah 33, Allahu Akbar 34 before sleep.',
+    category: 'sunnah',
+    readingTime: 5,
+    featured: false,
+    publishedDate: '2025-04-01',
+    tableOfContents: [
+      { id: 'origin-story', title: 'The Beautiful Origin' },
+      { id: 'how-to-count', title: 'How to Count' },
+      { id: 'virtues', title: 'Virtues & Rewards' },
+      { id: 'daily-practice', title: 'Making It a Daily Practice' },
+    ],
+    content: \`
+## The Beautiful Origin {#origin-story}
+
+The story of Tasbih Fatimah begins with a daughter's request and a father's wisdom:
+
+Ali ibn Abi Talib رضي الله عنه narrated: **"Fatimah رضي الله عنها complained about the blisters on her hands from grinding grain. She went to the Prophet ﷺ to ask for a servant, but she did not find him. She mentioned it to Aisha. When the Prophet ﷺ came, Aisha told him. He came to us when we had gone to bed. We wanted to get up, but the Prophet ﷺ said: 'Stay where you are.' He sat between us until I felt the coolness of his feet on my chest. Then he said: 'Shall I not teach you something better than what you asked? When you go to bed, say SubhanAllah 33 times, Alhamdulillah 33 times, and Allahu Akbar 34 times. That is better for you than a servant.'"** *(Sahih al-Bukhari 6318)*
+
+This hadith reveals several beautiful lessons:
+- The Prophet ﷺ visited his daughter and son-in-law personally
+- He offered spiritual sustenance over material comfort
+- The dhikr's benefit is described as **greater than having a servant**
+
+## How to Count {#how-to-count}
+
+**The 33-33-34 Formula:**
+
+1. **SubhanAllah** (سُبْحَانَ اللَّهِ — "Glory be to Allah") — 33 times
+2. **Alhamdulillah** (الْحَمْدُ لِلَّهِ — "All praise is due to Allah") — 33 times
+3. **Allahu Akbar** (اللَّهُ أَكْبَرُ — "Allah is the Greatest") — 34 times
+
+**Total: 100 remembrances of Allah before sleep.**
+
+**Methods of Counting:**
+- **Finger joints** — The traditional method using the 15 joints on each hand (3 per finger × 5 fingers)
+- **Digital tasbih counter** — SunnahSleep includes a built-in counter with haptic feedback
+- **Tasbih beads** — Physical beads (commonly 33 or 99)
+
+**Scholarly Note:** Some narrations report 33-33-33 with the addition of "La ilaha illallah" once to complete 100. Both methods are authentic. The 33-33-34 version from Bukhari 6318 is the most widely followed.
+
+## Virtues & Rewards {#virtues}
+
+**Better Than a Servant**
+
+The Prophet ﷺ explicitly said this dhikr is **better than having a servant**. Scholars explain this means:
+- Allah grants physical strength and barakah (blessing) to compensate
+- The spiritual energy gained surpasses the physical help of a servant
+- It builds reliance on Allah (tawakkul) rather than on creation
+
+**Ali رضي الله عنه's Testimony**
+
+Ali said: **"I never left it since the Prophet ﷺ taught it to me."** Someone asked: "Not even on the night of Siffin?" He replied: **"Not even on the night of Siffin."** *(Sahih al-Bukhari 5362)*
+
+This shows that even during the most turbulent period of his life—the Battle of Siffin—Ali رضي الله عنه never missed this bedtime dhikr.
+
+**100 Remembrances**
+
+The combined 100 glorifications mean:
+- Starting the night with comprehensive praise of Allah
+- Acknowledging His perfection (SubhanAllah), blessings (Alhamdulillah), and greatness (Allahu Akbar)
+- Closing the day with the tongue moist with dhikr
+
+## Making It a Daily Practice {#daily-practice}
+
+**Before Sleep, Not During:**
+
+Tasbih Fatimah is recited after lying down in bed, right before sleep. It is part of the bedtime sequence alongside Ayat al-Kursi, Three Quls, and bedtime duas.
+
+**Suggested Routine Order:**
+1. Perform wudu
+2. Dust the bed
+3. Lie on your right side
+4. Recite Ayat al-Kursi
+5. Recite the Three Quls (3 times)
+6. Recite last 2 verses of Al-Baqarah
+7. **Complete Tasbih Fatimah (33-33-34)**
+8. Say the bedtime dua
+
+**For Families:**
+Teach Tasbih Fatimah to your children. Young children can start with lower counts and work up. The SunnahSleep Tasbih counter makes it tactile and engaging—each tap counts and the app tracks completion.
+
+**Never Miss It:**
+Follow Ali رضي الله عنه's example: make it non-negotiable. Whether traveling, sick, exhausted, or in difficulty—this dhikr takes under 3 minutes and its reward is immense.
+
+Tasbih Fatimah transforms the last moments before sleep into an act of worship. A simple practice that takes minutes but carries the weight of the Prophet ﷺ's personal recommendation to his beloved daughter.
+    \`,
+  },
+  {
+    slug: 'islamic-sleep-etiquette-adab',
+    title: 'Islamic Sleep Etiquette: 10 Adab of Sleeping in Islam',
+    metaTitle: 'Islamic Sleep Etiquette: 10 Rules & Manners of Sleeping | Sunnah Adab',
+    metaDescription: 'Complete guide to Islamic sleep etiquette (adab). Learn 10 manners of sleeping from the Sunnah including lying position, darkness, what to avoid, and waking up practices.',
+    keywords: ['islamic sleep etiquette', 'adab of sleeping islam', 'sleep manners sunnah', 'how to sleep in islam', 'islamic bedtime rules'],
+    excerpt: 'Islam provides detailed etiquette for every aspect of life — including sleep. Discover 10 adab (manners) of sleeping taught by the Prophet ﷺ.',
+    category: 'guidance',
+    readingTime: 7,
+    featured: false,
+    publishedDate: '2025-04-15',
+    tableOfContents: [
+      { id: 'introduction', title: 'Sleep as Worship' },
+      { id: 'ten-adab', title: 'The 10 Adab' },
+      { id: 'what-to-avoid', title: 'What to Avoid' },
+      { id: 'waking-up', title: 'Etiquette of Waking Up' },
+    ],
+    content: \`
+## Sleep as Worship {#introduction}
+
+In Islam, sleep is not merely a biological necessity — it is an act of worship when done with the right intention and manners. The Prophet Muhammad ﷺ taught comprehensive adab (etiquette) for sleeping that transforms rest into reward.
+
+**"Bismika Allahumma amutu wa ahya"** — "In Your name, O Allah, I die and I live." *(Sahih al-Bukhari 6324)*
+
+This bedtime dua frames sleep as a minor death — the soul departs temporarily and is returned by Allah's mercy upon waking. Understanding this elevates sleep from routine to spiritual practice.
+
+## The 10 Adab {#ten-adab}
+
+### 1. Perform Wudu Before Bed
+
+**"When you go to your bed, perform ablution like that for the prayer."** *(Sahih al-Bukhari 247)*
+
+Even if you are not in a state of major impurity, performing wudu before bed is strongly recommended. Your soul ascends to Allah during sleep — do so in a state of purity.
+
+### 2. Dust the Bed Three Times
+
+**"When any one of you goes to bed, let him dust off his bed with the inside edge of his lower garment, for he does not know what has come onto it."** *(Sahih al-Bukhari 6320)*
+
+A practical Sunnah that removes dust, insects, or anything harmful.
+
+### 3. Sleep on Your Right Side
+
+**"Then lie down on your right side."** *(Sahih al-Bukhari 247)*
+
+Place your right hand under your right cheek. This position is medically beneficial (aids digestion, reduces acid reflux) and spiritually recommended.
+
+### 4. Face the Qiblah
+
+Many scholars recommend sleeping facing the Qiblah, as this is how the deceased is placed in the grave. While not obligatory, it maintains awareness of Allah's direction.
+
+### 5. Extinguish Fires and Lights
+
+The Prophet ﷺ said: **"Do not leave fire burning in your houses when you go to sleep."** *(Sahih al-Bukhari 6293)*
+
+In the modern context, this includes turning off unnecessary electronics and reducing screen light — both for safety and for melatonin production.
+
+### 6. Close Doors and Cover Vessels
+
+**"Close the doors, tie the water-skins, cover the vessels, and extinguish the lamps."** *(Sahih al-Bukhari 5624)*
+
+These practical instructions ensure safety and cleanliness during the night.
+
+### 7. Recite the Prescribed Adhkar
+
+The bedtime adhkar include:
+- Ayat al-Kursi *(Bukhari 5010)*
+- Three Quls — 3 times *(Bukhari 5017)*
+- Last 2 verses of Al-Baqarah *(Bukhari 5009)*
+- Tasbih Fatimah 33-33-34 *(Bukhari 6318)*
+- Bedtime duas *(Bukhari 6324)*
+
+### 8. Sleep Early After Isha
+
+**"The Prophet ﷺ used to dislike sleeping before Isha and talking after it."** *(Sahih al-Bukhari 568)*
+
+Sleeping early supports waking for Tahajjud and Fajr, and aligns with the natural circadian rhythm.
+
+### 9. Make Intention for Tahajjud
+
+Before sleeping, intend to wake for the night prayer. Even if you don't wake, the intention is recorded as a good deed. *(Sunan Ibn Majah)*
+
+### 10. Say the Bedtime Dua
+
+End with: **"Bismika Allahumma amutu wa ahya"** (In Your name, O Allah, I die and I live) *(Sahih al-Bukhari 6324)*
+
+And: **"Allahumma aslamtu nafsi ilayka, wa wajjahtu wajhi ilayka, wa fawwadtu amri ilayka"** — surrendering completely to Allah before the soul's journey. *(Sahih al-Bukhari 6311)*
+
+## What to Avoid {#what-to-avoid}
+
+### Sleeping on the Stomach
+
+The Prophet ﷺ said: **"This is a way of lying that Allah dislikes."** *(Sunan Abu Dawud 5040)*
+
+Ya'ish ibn Tikhfah reported that his father said: While I was lying on my stomach in the mosque, a man nudged me with his foot and said, "This is a position that Allah dislikes." He looked up and it was the Messenger of Allah ﷺ.
+
+### Sleeping Alone on a Rooftop Without a Barrier
+
+**"Whoever sleeps on the roof of a house that has no wall (barrier), Allah's covenant of protection is lifted from him."** *(Sunan Abu Dawud 5041)*
+
+This is a safety ruling — an unfenced rooftop poses a fall risk during sleep.
+
+### Excessive Sleep
+
+While rest is necessary, the Prophet ﷺ and his companions balanced sleep with worship. Oversleeping leads to laziness and missed prayers.
+
+### Sleeping Before Isha
+
+The Prophet ﷺ disliked sleeping before Isha prayer. *(Sahih al-Bukhari 568)* — Ensure all obligatory prayers are complete before sleeping.
+
+## Etiquette of Waking Up {#waking-up}
+
+### Upon Waking — Dua
+
+**"Alhamdulillahil-ladhi ahyana ba'da ma amatana wa ilayhin-nushur"** — "All praise is to Allah Who gave us life after He caused us to die, and to Him is the resurrection." *(Sahih al-Bukhari 6324)*
+
+### Wipe the Face
+
+The Prophet ﷺ would wipe sleep from his face with his hands upon waking. *(Sahih Muslim)*
+
+### Wash Hands Before Using
+
+**"When any one of you wakes from sleep, let him not put his hand in the vessel until he washes it three times, for he does not know where his hand was during the night."** *(Sahih al-Bukhari 162)*
+
+### Use the Miswak
+
+The Prophet ﷺ would use the miswak (tooth-stick) upon waking. *(Sahih al-Bukhari 245)*
+
+### Blow the Nose
+
+**"When any one of you wakes from sleep, let him blow his nose three times, for the Shaytan spends the night in the upper part of the nose."** *(Sahih al-Bukhari 3295)*
+
+---
+
+Islamic sleep etiquette transforms every night into an act of worship and every morning into a renewal of gratitude. By following these adab, you don't just sleep better — you sleep as a Muslim, earning reward for every moment of rest.
+    \`,
+  },
 ];
 
 export const getBlogArticleBySlug = (slug: string): BlogArticle | undefined => {

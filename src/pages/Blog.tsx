@@ -150,13 +150,36 @@ export default function Blog() {
           </div>
         </section>
 
-        {/* All Articles */}
+        {/* Category Filters + All Articles */}
         <section className="px-4 sm:px-6">
-          <h2 className="text-sm font-semibold text-gold uppercase tracking-wider mb-4">
-            All Articles
-          </h2>
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-sm font-semibold text-gold uppercase tracking-wider">
+              All Articles
+            </h2>
+          </div>
+          <div className="flex gap-2 mb-5 overflow-x-auto pb-1" role="tablist" aria-label="Filter articles by category">
+            {categories.map(cat => (
+              <button
+                key={cat.key}
+                role="tab"
+                aria-selected={activeCategory === cat.key}
+                onClick={() => setActiveCategory(cat.key)}
+                className={cn(
+                  'px-3 py-1.5 rounded-full text-xs font-medium border whitespace-nowrap transition-colors',
+                  activeCategory === cat.key
+                    ? 'bg-gold/20 text-gold border-gold/40'
+                    : 'bg-secondary/30 text-cream-dim border-border hover:border-gold/20'
+                )}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
           <div className="space-y-3">
-            {regularArticles.map((article) => (
+            {filteredArticles.length === 0 && (
+              <p className="text-sm text-muted-foreground py-8 text-center">No articles in this category yet.</p>
+            )}
+            {filteredArticles.map((article) => (
               <Link
                 key={article.slug}
                 to={`/blog/${article.slug}`}
