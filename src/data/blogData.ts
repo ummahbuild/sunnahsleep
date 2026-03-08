@@ -136,6 +136,7 @@ The prophetic sleep routine represents the perfect balance of spiritual devotion
     category: 'worship',
     readingTime: 6,
     featured: true,
+    publishedDate: '2025-01-16',
     tableOfContents: [
       { id: 'what-is-ayat-al-kursi', title: 'What is Ayat al-Kursi?' },
       { id: 'virtues', title: 'Virtues and Status' },
