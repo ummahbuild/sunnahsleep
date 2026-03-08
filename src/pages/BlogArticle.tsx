@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Clock, BookOpen, ChevronRight, Share2, Twitter, Facebook } from 'lucide-react';
-import { getBlogArticleBySlug, blogArticles, BlogArticle } from '@/data/blogData';
+import { getBlogArticleBySlug, getAllBlogArticles, BlogArticle } from '@/data/blogData';
 import { cn } from '@/lib/utils';
 import { usePageMeta } from '@/hooks/usePageMeta';
 
