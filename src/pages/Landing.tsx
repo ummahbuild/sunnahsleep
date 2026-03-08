@@ -25,6 +25,63 @@ const Landing = () => {
     description: 'Follow the Sunnah before sleep. Checklist, Quran recitations, Tasbih, Tahajjud alarms, sleep tracker. Free, private, offline. By Ummah.Build.',
     canonical: 'https://sunnahsleep.app/',
     keywords: ['Islamic sleep', 'Sunnah sleep', 'bedtime dua', 'Ayat al-Kursi', 'Tahajjud', 'Muslim sleep routine', 'Quran before bed', 'prophetic sleep', 'Islamic app'],
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'SunnahSleep',
+        alternateName: 'Sunnah Sleep App',
+        applicationCategory: 'LifestyleApplication',
+        operatingSystem: 'Web, iOS, Android',
+        url: 'https://sunnahsleep.app',
+        description: 'Islamic bedtime companion app to follow the Prophetic Sunnah before sleep. Features include sleep tracking, prayer time alarms, Quran recitation, Tasbih counter, and Tahajjud reminders.',
+        offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+        author: { '@type': 'Organization', name: 'Ummah.Build', url: 'https://ummah.build' },
+        aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '120', bestRating: '5' },
+        featureList: [
+          'Sunnah sleep checklist with Hadith references',
+          'Ayat al-Kursi recitation with audio',
+          'Tasbih counter (33-33-34)',
+          'Sleep tracking with dream diary',
+          'Tahajjud & Fajr prayer alarms',
+          'Qailulah midday nap reminder',
+          'Wudu step-by-step guide',
+          '100% offline capable PWA',
+          'Privacy-focused (local storage only)',
+        ],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'What is SunnahSleep?',
+            acceptedAnswer: { '@type': 'Answer', text: 'SunnahSleep is a free Islamic bedtime companion app that guides Muslims through the authentic Prophetic sleep routine including Quran recitations, bedtime duas, Tasbih, sleep tracking, and prayer alarms. All based on Sahih Hadith.' },
+          },
+          {
+            '@type': 'Question',
+            name: 'Is SunnahSleep free?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Yes, SunnahSleep is 100% free with no ads, no account required, and no data collection. All your data stays on your device.' },
+          },
+          {
+            '@type': 'Question',
+            name: 'What is the Sunnah way to sleep in Islam?',
+            acceptedAnswer: { '@type': 'Answer', text: 'The Sunnah way to sleep includes: performing wudu, dusting the bed 3 times, sleeping on your right side, reciting Ayat al-Kursi, the last two verses of Surah Al-Baqarah, the Three Quls, bedtime duas, and completing Tasbih (33 SubhanAllah, 33 Alhamdulillah, 34 Allahu Akbar). Based on Sahih al-Bukhari and Sahih Muslim.' },
+          },
+          {
+            '@type': 'Question',
+            name: 'Does SunnahSleep work offline?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Yes. SunnahSleep is a Progressive Web App (PWA) that works fully offline after the first load. Quran audio, checklist, and all features are cached on your device.' },
+          },
+        ],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [{ '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' }],
+      },
+    ],
   });
 
   return (

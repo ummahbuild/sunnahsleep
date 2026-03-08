@@ -11,6 +11,14 @@ export default function Blog() {
     canonical: 'https://sunnahsleep.app/blog',
     ogTitle: 'Islamic Sleep Guide: Sunnah Sleep Articles & Prophetic Practices',
     keywords: ['Islamic sleep articles', 'Sunnah sleep guide', 'Prophetic sleep', 'Tahajjud', 'Ayat al-Kursi', 'bedtime duas', 'Qailulah'],
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sunnahsleep.app/blog' },
+      ],
+    },
   });
 
   const featuredArticles = getFeaturedArticles();

@@ -211,6 +211,14 @@ export default function Guides() {
     description: 'Learn how to use SunnahSleep: Sunnah checklist, Quran recitations, Tasbih counter, sleep tracker, and prayer alarms. Step-by-step guides for the Prophetic bedtime routine.',
     canonical: 'https://sunnahsleep.app/guides',
     keywords: ['SunnahSleep guide', 'how to use SunnahSleep', 'Islamic sleep app', 'Prophetic bedtime routine'],
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
+        { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://sunnahsleep.app/guides' },
+      ],
+    },
   });
 
   return (

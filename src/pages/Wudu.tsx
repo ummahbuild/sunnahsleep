@@ -249,6 +249,24 @@ export default function Wudu() {
     description: 'Learn the complete wudu (ablution) steps with hadith references. Step-by-step guide with Arabic, transliteration, and translations. Sunnah of the Prophet ﷺ before prayer and sleep.',
     canonical: 'https://sunnahsleep.app/wudu',
     keywords: ['wudu', 'ablution', 'islamic ablution', 'how to do wudu', 'wudu steps', 'sunnah wudu'],
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
+          { '@type': 'ListItem', position: 2, name: 'Wudu Guide', item: 'https://sunnahsleep.app/wudu' },
+        ],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: 'How to Perform Wudu (Ablution) Before Sleep',
+        description: 'Step-by-step guide to performing wudu as taught by Prophet Muhammad ﷺ, with Arabic text and Hadith references.',
+        totalTime: 'PT5M',
+        step: wuduSteps.map(s => ({ '@type': 'HowToStep', name: s.name, text: s.description })),
+      },
+    ],
   });
   const [completedSteps, setCompletedSteps] = useState<number[]>([]);
   const [activeStep, setActiveStep] = useState(1);

@@ -117,6 +117,14 @@ export default function Demo() {
     description: 'Watch the SunnahSleep app demo. See the Sunnah checklist, Quran recitations, Tasbih counter, sleep tracker, and prayer alarms in action.',
     canonical: 'https://sunnahsleep.app/demo',
     keywords: ['SunnahSleep demo', 'Islamic sleep app demo', 'Prophetic bedtime app'],
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
+        { '@type': 'ListItem', position: 2, name: 'Demo', item: 'https://sunnahsleep.app/demo' },
+      ],
+    },
   });
 
   const [currentSlide, setCurrentSlide] = useState(0);

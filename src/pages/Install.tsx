@@ -43,6 +43,14 @@ export default function Install() {
     description: 'Install SunnahSleep PWA on iPhone, Android, or desktop. Add to home screen for quick access to the Prophetic bedtime routine. Works offline.',
     canonical: 'https://sunnahsleep.app/install',
     keywords: ['install SunnahSleep', 'add to home screen', 'PWA Islamic app', 'SunnahSleep app'],
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
+        { '@type': 'ListItem', position: 2, name: 'Install', item: 'https://sunnahsleep.app/install' },
+      ],
+    },
   });
 
   const [platform, setPlatform] = useState<'ios' | 'android' | 'desktop'>('desktop');
