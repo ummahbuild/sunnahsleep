@@ -329,7 +329,6 @@ export default function Demo() {
                       width="288"
                       height="512"
                     />
-                    />
                   </div>
                 </div>
 
