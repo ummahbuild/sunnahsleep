@@ -1432,7 +1432,7 @@ The Prophet ﷺ would use the miswak (tooth-stick) upon waking. *(Sahih al-Bukha
 ---
 
 Islamic sleep etiquette transforms every night into an act of worship and every morning into a renewal of gratitude. By following these adab, you don't just sleep better — you sleep as a Muslim, earning reward for every moment of rest.
-    \`,
+    `,
   },
 ];
 
