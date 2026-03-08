@@ -92,10 +92,10 @@ const Landing = () => {
 
         <div className="relative max-w-5xl mx-auto px-6 pt-16 pb-20 sm:pt-24 sm:pb-28 text-center">
           {/* Logo */}
-          <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6" role="img" aria-label="SunnahSleep logo">
             <div className="relative">
-              <Moon className="h-12 w-12 text-primary animate-pulse-slow" />
-              <div className="absolute inset-0 blur-lg bg-primary/30 animate-glow" />
+              <Moon className="h-12 w-12 text-primary animate-pulse-slow" aria-hidden="true" />
+              <div className="absolute inset-0 blur-lg bg-primary/30 animate-glow" aria-hidden="true" />
             </div>
             <span className="font-arabic text-3xl sm:text-4xl text-gradient-gold">SunnahSleep</span>
           </div>
