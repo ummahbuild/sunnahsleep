@@ -1,6 +1,7 @@
 import { extraBlogArticles } from './blogDataExtra';
 import { extraBlogArticles2 } from './blogDataExtra2';
 import { extraBlogArticles3 } from './blogDataExtra3';
+import { extraBlogArticles4 } from './blogDataExtra4';
 
 export interface BlogArticle {
   slug: string;
