@@ -99,6 +99,11 @@ export default function BlogArticlePage() {
               <Clock className="h-4 w-4" />
               {article.readingTime} min read
             </span>
+            {article.publishedDate && (
+              <time dateTime={article.publishedDate} itemProp="datePublished">
+                {new Date(article.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </time>
+            )}
           </div>
 
           {/* Hidden SEO data */}
