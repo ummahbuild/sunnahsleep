@@ -207,6 +207,7 @@ Make Ayat al-Kursi a non-negotiable part of your nightly routine. This single ve
     category: 'worship',
     readingTime: 7,
     featured: true,
+    publishedDate: '2025-01-17',
     tableOfContents: [
       { id: 'what-is-tahajjud', title: 'What is Tahajjud?' },
       { id: 'timing', title: 'The Best Time for Tahajjud' },
