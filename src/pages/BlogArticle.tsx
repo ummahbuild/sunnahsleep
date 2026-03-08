@@ -217,18 +217,24 @@ export default function BlogArticlePage() {
 }
 
 function ArticleSchema({ article }: { article: BlogArticle }) {
+  const wordCount = article.content.split(/\s+/).length;
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: article.title,
     description: article.metaDescription,
+    keywords: article.keywords.join(', '),
+    wordCount,
     datePublished: article.publishedDate ?? '2025-01-15',
     dateModified: article.publishedDate ?? '2025-01-15',
     author: { '@type': 'Organization', name: 'Ummah.Build', url: 'https://ummah.build' },
-    publisher: { '@type': 'Organization', name: 'Ummah.Build', url: 'https://ummah.build' },
+    publisher: { '@type': 'Organization', name: 'Ummah.Build', url: 'https://ummah.build', logo: { '@type': 'ImageObject', url: `${BASE_URL}/og-image.png` } },
     mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/blog/${article.slug}` },
     url: `${BASE_URL}/blog/${article.slug}`,
     image: `${BASE_URL}/og-image.png`,
+    inLanguage: 'en',
+    isAccessibleForFree: true,
+    articleSection: article.category,
   };
   return (
     <script

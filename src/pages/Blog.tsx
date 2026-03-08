@@ -7,18 +7,37 @@ import { usePageMeta } from '@/hooks/usePageMeta';
 export default function Blog() {
   usePageMeta({
     title: 'Islamic Sleep Guide: Sunnah Sleep Articles & Prophetic Practices | SunnahSleep',
-    description: 'Learn about Islamic sleep practices, Sunnah bedtime routines, and prophetic guidance for blessed rest. Articles on Tahajjud, Ayat al-Kursi, bedtime duas, Qailulah, and more.',
+    description: 'Learn about Islamic sleep practices, Sunnah bedtime routines, and prophetic guidance for blessed rest. Articles on Tahajjud, Ayat al-Kursi, bedtime duas, Qailulah, Surah Mulk, dreams in Islam, and more.',
     canonical: 'https://sunnahsleep.app/blog',
     ogTitle: 'Islamic Sleep Guide: Sunnah Sleep Articles & Prophetic Practices',
-    keywords: ['Islamic sleep articles', 'Sunnah sleep guide', 'Prophetic sleep', 'Tahajjud', 'Ayat al-Kursi', 'bedtime duas', 'Qailulah'],
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
-        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sunnahsleep.app/blog' },
-      ],
-    },
+    keywords: ['Islamic sleep articles', 'Sunnah sleep guide', 'Prophetic sleep', 'Tahajjud', 'Ayat al-Kursi', 'bedtime duas', 'Qailulah', 'Surah Mulk before sleep', 'dreams in Islam', 'Islamic insomnia remedies'],
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'Islamic Sleep Guide',
+        description: 'Comprehensive articles on Sunnah sleep practices, Quran recitations before bed, Tahajjud, dreams in Islam, and prophetic guidance for blessed rest.',
+        url: 'https://sunnahsleep.app/blog',
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: blogArticles.map((a, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `https://sunnahsleep.app/blog/${a.slug}`,
+            name: a.title,
+          })),
+        },
+        publisher: { '@type': 'Organization', name: 'Ummah.Build', url: 'https://ummah.build' },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sunnahsleep.app/blog' },
+        ],
+      },
+    ],
   });
 
   const featuredArticles = getFeaturedArticles();
