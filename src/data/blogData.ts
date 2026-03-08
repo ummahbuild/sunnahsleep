@@ -320,6 +320,7 @@ Tahajjud is not just prayer—it is an intimate conversation with Allah at the t
     category: 'health',
     readingTime: 6,
     featured: false,
+    publishedDate: '2025-01-18',
     tableOfContents: [
       { id: 'introduction', title: 'Introduction' },
       { id: 'wudu-benefits', title: 'Benefits of Pre-Sleep Washing' },
