@@ -626,7 +626,6 @@ These bedtime duas transform the simple act of sleeping into an act of worship. 
 
 Memorize these duas and make them a non-negotiable part of your nightly routine. The few minutes spent in supplication provide protection until morning and barakah in your rest.
     `,
-    publishedDate: '2025-01-20',
   },
   {
     slug: 'surah-mulk-before-sleep-benefits',
