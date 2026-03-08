@@ -21,7 +21,7 @@ export default function Blog() {
         url: 'https://sunnahsleep.app/blog',
         mainEntity: {
           '@type': 'ItemList',
-          itemListElement: blogArticles.map((a, i) => ({
+          itemListElement: getAllBlogArticles().map((a, i) => ({
             '@type': 'ListItem',
             position: i + 1,
             url: `https://sunnahsleep.app/blog/${a.slug}`,
