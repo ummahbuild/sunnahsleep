@@ -1,3 +1,5 @@
+import { extraBlogArticles } from './blogDataExtra';
+
 export interface BlogArticle {
   slug: string;
   title: string;
@@ -1957,13 +1959,17 @@ Wudu before sleep is the gateway practice of the entire prophetic sleep routine.
 ];
 
 export const getBlogArticleBySlug = (slug: string): BlogArticle | undefined => {
-  return blogArticles.find(article => article.slug === slug);
+  return [...blogArticles, ...extraBlogArticles].find(article => article.slug === slug);
+};
+
+export const getAllBlogArticles = (): BlogArticle[] => {
+  return [...blogArticles, ...extraBlogArticles];
 };
 
 export const getFeaturedArticles = (): BlogArticle[] => {
-  return blogArticles.filter(article => article.featured);
+  return [...blogArticles, ...extraBlogArticles].filter(article => article.featured);
 };
 
 export const getArticlesByCategory = (category: BlogArticle['category']): BlogArticle[] => {
-  return blogArticles.filter(article => article.category === category);
+  return [...blogArticles, ...extraBlogArticles].filter(article => article.category === category);
 };

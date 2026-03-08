@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Clock, BookOpen, Moon, Heart, Sparkles, ChevronRight, Filter } from 'lucide-react';
-import { blogArticles, getFeaturedArticles, getArticlesByCategory, BlogArticle } from '@/data/blogData';
+import { getAllBlogArticles, getFeaturedArticles, getArticlesByCategory, BlogArticle } from '@/data/blogData';
 import { cn } from '@/lib/utils';
 import { usePageMeta } from '@/hooks/usePageMeta';
 
@@ -21,7 +21,7 @@ export default function Blog() {
         url: 'https://sunnahsleep.app/blog',
         mainEntity: {
           '@type': 'ItemList',
-          itemListElement: blogArticles.map((a, i) => ({
+          itemListElement: getAllBlogArticles().map((a, i) => ({
             '@type': 'ListItem',
             position: i + 1,
             url: `https://sunnahsleep.app/blog/${a.slug}`,
@@ -44,9 +44,10 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState<BlogArticle['category'] | 'all'>('all');
 
   const featuredArticles = getFeaturedArticles();
+  const allArticles = getAllBlogArticles();
   const filteredArticles = activeCategory === 'all'
-    ? blogArticles.filter(a => !a.featured)
-    : blogArticles.filter(a => !a.featured && a.category === activeCategory);
+    ? allArticles.filter(a => !a.featured)
+    : allArticles.filter(a => !a.featured && a.category === activeCategory);
 
   const categories: { key: BlogArticle['category'] | 'all'; label: string }[] = [
     { key: 'all', label: 'All' },

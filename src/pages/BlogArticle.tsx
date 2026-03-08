@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Clock, BookOpen, ChevronRight, Share2, Twitter, Facebook } from 'lucide-react';
-import { getBlogArticleBySlug, blogArticles, BlogArticle } from '@/data/blogData';
+import { getBlogArticleBySlug, getAllBlogArticles, BlogArticle } from '@/data/blogData';
 import { cn } from '@/lib/utils';
 import { usePageMeta } from '@/hooks/usePageMeta';
 
@@ -80,10 +80,10 @@ export default function BlogArticlePage() {
   const shareUrl = `${BASE_URL}/blog/${article.slug}`;
   const shareText = `${article.title} — ${article.excerpt}`;
 
-  // Get related articles - same category first, then other categories for cross-linking
-  const sameCategoryArticles = blogArticles
+  const allArticles = getAllBlogArticles();
+  const sameCategoryArticles = allArticles
     .filter(a => a.slug !== article.slug && a.category === article.category);
-  const otherArticles = blogArticles
+  const otherArticles = allArticles
     .filter(a => a.slug !== article.slug && a.category !== article.category);
   const relatedArticles = [...sameCategoryArticles, ...otherArticles].slice(0, 4);
 
