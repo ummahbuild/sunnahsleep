@@ -44,9 +44,10 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState<BlogArticle['category'] | 'all'>('all');
 
   const featuredArticles = getFeaturedArticles();
+  const allArticles = getAllBlogArticles();
   const filteredArticles = activeCategory === 'all'
-    ? blogArticles.filter(a => !a.featured)
-    : blogArticles.filter(a => !a.featured && a.category === activeCategory);
+    ? allArticles.filter(a => !a.featured)
+    : allArticles.filter(a => !a.featured && a.category === activeCategory);
 
   const categories: { key: BlogArticle['category'] | 'all'; label: string }[] = [
     { key: 'all', label: 'All' },
