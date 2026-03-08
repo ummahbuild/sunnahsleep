@@ -156,7 +156,7 @@ const Landing = () => {
       <section className="bg-[hsl(var(--midnight-light))] border-y border-border py-16 sm:py-24" aria-labelledby="references-heading">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-arabic text-foreground mb-3">
+            <h2 id="references-heading" className="text-2xl sm:text-3xl font-arabic text-foreground mb-3">
               What the <span className="text-gradient-gold">Quran & Sunnah</span> Say About Sleep
             </h2>
             <p className="text-cream-dim max-w-lg mx-auto text-sm">
