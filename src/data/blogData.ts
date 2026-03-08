@@ -1315,7 +1315,7 @@ Tasbih Fatimah transforms the last moments before sleep into an act of worship. 
       { id: 'what-to-avoid', title: 'What to Avoid' },
       { id: 'waking-up', title: 'Etiquette of Waking Up' },
     ],
-    content: \`
+    content: `
 ## Sleep as Worship {#introduction}
 
 In Islam, sleep is not merely a biological necessity — it is an act of worship when done with the right intention and manners. The Prophet Muhammad ﷺ taught comprehensive adab (etiquette) for sleeping that transforms rest into reward.
