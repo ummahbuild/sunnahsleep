@@ -137,11 +137,11 @@ const Landing = () => {
       </section>
 
       {/* ═══════════════ STATS ═══════════════ */}
-      <section className="border-y border-border bg-[hsl(var(--midnight-light))]">
+      <section className="border-y border-border bg-[hsl(var(--midnight-light))]" aria-label="App statistics">
         <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {STATS.map((stat) => (
-            <div key={stat.label}>
-              <p className="text-3xl sm:text-4xl font-arabic text-primary mb-1">{stat.value}</p>
+            <div key={stat.label} role="group" aria-label={`${stat.value} ${stat.label}`}>
+              <p className="text-3xl sm:text-4xl font-arabic text-primary mb-1" aria-hidden="true">{stat.value}</p>
               <p className="text-sm font-medium text-foreground">{stat.label}</p>
               <p className="text-xs text-muted-foreground mt-0.5">{stat.detail}</p>
             </div>
