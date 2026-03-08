@@ -226,6 +226,9 @@ export default function Demo() {
               Copy Link
             </Button>
           </div>
+
+          {/* Store badges */}
+          <StoreBadges device={device} />
         </section>
 
         {/* Video Section */}
