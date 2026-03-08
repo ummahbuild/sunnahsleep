@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Clock, BookOpen, Moon, Heart, Sparkles, ChevronRight } from 'lucide-react';
-import { blogArticles, getFeaturedArticles, BlogArticle } from '@/data/blogData';
+import { ArrowLeft, Clock, BookOpen, Moon, Heart, Sparkles, ChevronRight, Filter } from 'lucide-react';
+import { blogArticles, getFeaturedArticles, getArticlesByCategory, BlogArticle } from '@/data/blogData';
 import { cn } from '@/lib/utils';
 import { usePageMeta } from '@/hooks/usePageMeta';
 
