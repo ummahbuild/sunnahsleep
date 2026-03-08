@@ -61,7 +61,7 @@ const featureSlides: FeatureSlide[] = [
       'Three Quls (Ikhlas, Falaq, Nas)',
       'Audio playback with text'
     ],
-    image: mockupQuran
+    image: demoQuran
   },
   {
     id: 'tasbih',
