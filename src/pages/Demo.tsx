@@ -114,6 +114,7 @@ const featureSlides: FeatureSlide[] = [
 ];
 
 export default function Demo() {
+  const device = getDeviceType();
   usePageMeta({
     title: 'SunnahSleep Demo: See the App in Action | Islamic Sleep Companion',
     description: 'Watch the SunnahSleep app demo. See the Sunnah checklist, Quran recitations, Tasbih counter, sleep tracker, and prayer alarms in action.',
