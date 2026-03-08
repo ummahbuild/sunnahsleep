@@ -16,9 +16,9 @@ export function StoreBadges({ device }: { device: DeviceType }) {
       {/* Badge row */}
       <div className="flex flex-wrap items-center justify-center gap-3">
         {/* APK Download */}
-        <a href={apk.url} download className="flex-shrink-0">
+        <Link to="/download" className="flex-shrink-0">
           <img src={badgeApk} alt="Download Android APK" className={BADGE_CLASS} />
-        </a>
+        </Link>
 
         {/* App Store — Coming Soon */}
         <span className="flex-shrink-0 opacity-70 cursor-not-allowed">
