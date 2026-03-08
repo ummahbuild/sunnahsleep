@@ -1,0 +1,56 @@
+# SunnahSleep — Islamic Bedtime Companion
+> Follow the Prophetic Sunnah before sleep. Free, private, offline-capable.
+
+## What is SunnahSleep?
+SunnahSleep is a free Progressive Web App (PWA) that guides Muslims through the authentic Prophetic bedtime routine taught by Prophet Muhammad ﷺ. Built by Ummah.Build. Available at https://sunnahsleep.app
+
+## Core Features
+- **Sunnah Bedtime Checklist**: 15+ items across 5 phases (Isha prayer, preparation, Quranic recitations, dhikr & duas, wake-up), all sourced from Sahih Hadith
+- **Quranic Sleep Recitations**: Audio playback of Ayat al-Kursi, last 2 verses of Al-Baqarah, Surah Al-Mulk, Three Quls (Al-Ikhlas, Al-Falaq, An-Nas) with Arabic text, transliteration, and English translation
+- **Tasbih Counter**: Digital counter for the 33-33-34 bedtime dhikr (SubhanAllah, Alhamdulillah, Allahu Akbar) — the Tasbih of Fatimah رضي الله عنها
+- **Sleep Tracker & Dream Diary**: Track sleep times, quality ratings, and categorize dreams (good/neutral/bad) with Islamic guidance
+- **Prayer Alarms**: Fajr, Tahajjud (last third of the night), and Isha alarms synced to local prayer times via geolocation
+- **Qailulah Reminder**: Midday nap reminder following the Sunnah practice
+- **Wudu Guide**: Step-by-step ablution instructions with Arabic, transliteration, and audio
+
+## Key Differentiators
+- 100% free, no account required, no ads
+- All data stored locally on device (privacy-first)
+- Works offline after initial load
+- Every practice backed by authentic Hadith references linked to Sunnah.com
+- Location-based prayer times via Al Adhan API
+
+## Content Pages
+- Homepage / Landing: https://sunnahsleep.app/
+- App Dashboard: https://sunnahsleep.app/app
+- Blog (Islamic Sleep Articles): https://sunnahsleep.app/blog
+- How the Prophet ﷺ Slept: https://sunnahsleep.app/prophetic-sleep
+- Wudu Guide: https://sunnahsleep.app/wudu
+- User Guides: https://sunnahsleep.app/guides
+- Demo: https://sunnahsleep.app/demo
+- Install (PWA): https://sunnahsleep.app/install
+
+## Blog Articles
+- The Complete Prophetic Sleep Routine: https://sunnahsleep.app/blog/prophetic-sleep-routine-complete-guide
+- Ayat al-Kursi Benefits & Bedtime Protection: https://sunnahsleep.app/blog/ayat-al-kursi-benefits-bedtime-protection
+- Tahajjud Prayer & the Last Third of Night: https://sunnahsleep.app/blog/tahajjud-prayer-last-third-night
+- Sleep Science Meets Sunnah Practices: https://sunnahsleep.app/blog/sleep-science-sunnah-practices
+- Qailulah: The Islamic Power Nap: https://sunnahsleep.app/blog/qailulah-power-nap-islam
+- Bedtime Duas for Protection During Sleep: https://sunnahsleep.app/blog/bedtime-duas-protection-sleep
+
+## Islamic Sources Referenced
+- Sahih al-Bukhari (multiple hadith on sleep, wudu, Ayat al-Kursi, Tasbih Fatimah)
+- Sahih Muslim (Tahajjud, miswak, sleeping position)
+- Sunan Abu Dawud, Sunan Ibn Majah, Sunan at-Tirmidhi
+- Quran: Surah Al-Baqarah 2:255 (Ayat al-Kursi), 2:285-286, Surah Al-Mulk 67, Al-Ikhlas 112, Al-Falaq 113, An-Nas 114, Al-Furqan 25:47
+
+## Technical Details
+- Built with: React, TypeScript, Vite, Tailwind CSS
+- PWA: Installable, offline-capable via service worker
+- API: Al Adhan API for prayer times
+- Hosting: Vercel
+- Created by: Ummah.Build (https://ummah.build)
+
+## Contact
+- Website: https://ummah.build
+- Twitter/X: @ummahbuild
