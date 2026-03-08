@@ -169,7 +169,7 @@ const Landing = () => {
       </section>
 
       {/* ═══════════════ DEVICE-AWARE INSTALL ═══════════════ */}
-      <section className="max-w-5xl mx-auto px-6 py-16 sm:py-24 text-center">
+      <section className="max-w-5xl mx-auto px-6 py-16 sm:py-24 text-center" aria-labelledby="install-heading">
         <h2 className="text-2xl sm:text-3xl font-arabic text-foreground mb-3">
           Get <span className="text-gradient-gold">SunnahSleep</span> on Your Device
         </h2>
