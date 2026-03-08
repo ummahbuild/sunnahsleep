@@ -325,6 +325,10 @@ export default function Demo() {
                       src={currentFeature.image} 
                       alt={`${currentFeature.title} screenshot`}
                       className="w-full h-auto drop-shadow-2xl"
+                      loading="lazy"
+                      width="288"
+                      height="512"
+                    />
                     />
                   </div>
                 </div>

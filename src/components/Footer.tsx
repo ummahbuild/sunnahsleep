@@ -80,7 +80,7 @@ export function Footer() {
               Ummah.Build <ExternalLink className="h-3 w-3" />
             </a>
           </div>
-        </div>
+        </nav>
 
         {/* Bottom bar */}
         <div className="border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
