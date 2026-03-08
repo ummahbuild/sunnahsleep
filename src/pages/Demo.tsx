@@ -10,12 +10,14 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
-// Import phone mockup images
-import mockupChecklist from '@/assets/mockup-checklist.png';
-import mockupTasbih from '@/assets/mockup-tasbih.png';
-import mockupQuran from '@/assets/mockup-quran.png';
-import mockupSleep from '@/assets/mockup-sleep.png';
-import mockupAlarms from '@/assets/mockup-alarms.png';
+// Import actual app screenshots
+import demoChecklist from '@/assets/demo-checklist.png';
+import demoTasbih from '@/assets/demo-tasbih.png';
+import demoQuran from '@/assets/demo-quran.png';
+import demoSleep from '@/assets/demo-sleep.png';
+import demoPrayers from '@/assets/demo-prayers.png';
+import { StoreBadges } from '@/components/landing/StoreBadges';
+import { getDeviceType } from '@/lib/deviceDetection';
 
 interface FeatureSlide {
   id: string;
