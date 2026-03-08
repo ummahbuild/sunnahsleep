@@ -39,8 +39,9 @@ All major AI crawlers explicitly allowed: GPTBot, ChatGPT-User, Claude-Web, Clau
 - **HowTo** — 8-step Prophetic sleep routine
 
 ### Blog Articles (BlogArticle.tsx)
-- **Article** — headline, description, datePublished, author, publisher, mainEntityOfPage
+- **Article** — headline, description, datePublished, author, publisher, wordCount, articleSection, inLanguage
 - **BreadcrumbList** — Home → Blog → Article
+- Social share links (Twitter, Facebook, native share API)
 
 ### Content Pages
 | Page | JSON-LD Types |
