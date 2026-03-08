@@ -58,10 +58,12 @@ export default function BlogArticlePage() {
     guidance: 'Islamic Guidance',
   };
 
-  // Get related articles
-  const relatedArticles = blogArticles
-    .filter(a => a.slug !== article.slug && a.category === article.category)
-    .slice(0, 3);
+  // Get related articles - same category first, then other categories for cross-linking
+  const sameCategoryArticles = blogArticles
+    .filter(a => a.slug !== article.slug && a.category === article.category);
+  const otherArticles = blogArticles
+    .filter(a => a.slug !== article.slug && a.category !== article.category);
+  const relatedArticles = [...sameCategoryArticles, ...otherArticles].slice(0, 4);
 
   return (
     <div className="min-h-screen bg-gradient-night islamic-pattern">
@@ -97,6 +99,11 @@ export default function BlogArticlePage() {
               <Clock className="h-4 w-4" />
               {article.readingTime} min read
             </span>
+            {article.publishedDate && (
+              <time dateTime={article.publishedDate} itemProp="datePublished">
+                {new Date(article.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </time>
+            )}
           </div>
 
           {/* Hidden SEO data */}
