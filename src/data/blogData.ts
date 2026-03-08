@@ -432,6 +432,7 @@ These scientific findings do not validate Islam—our faith stands on revelation
     category: 'sunnah',
     readingTime: 5,
     featured: false,
+    publishedDate: '2025-01-19',
     tableOfContents: [
       { id: 'what-is-qailulah', title: 'What is Qailulah?' },
       { id: 'evidence', title: 'Evidence from Hadith' },
