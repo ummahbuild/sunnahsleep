@@ -125,11 +125,14 @@ const Landing = () => {
           </div>
 
           {/* Trust badges */}
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-cream-dim">
+          <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-cream-dim mb-8">
             <span className="flex items-center gap-1"><Shield className="h-3.5 w-3.5 text-primary" /> 100% Private</span>
             <span className="flex items-center gap-1"><Wifi className="h-3.5 w-3.5 text-primary" /> Works Offline</span>
             <span className="flex items-center gap-1"><CheckCircle2 className="h-3.5 w-3.5 text-primary" /> Free Forever</span>
           </div>
+
+          {/* Store badges */}
+          <StoreBadges device={device} />
         </div>
       </section>
 

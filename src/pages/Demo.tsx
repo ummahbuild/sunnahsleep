@@ -10,12 +10,14 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
-// Import phone mockup images
-import mockupChecklist from '@/assets/mockup-checklist.png';
-import mockupTasbih from '@/assets/mockup-tasbih.png';
-import mockupQuran from '@/assets/mockup-quran.png';
-import mockupSleep from '@/assets/mockup-sleep.png';
-import mockupAlarms from '@/assets/mockup-alarms.png';
+// Import actual app screenshots
+import demoChecklist from '@/assets/demo-checklist.png';
+import demoTasbih from '@/assets/demo-tasbih.png';
+import demoQuran from '@/assets/demo-quran.png';
+import demoSleep from '@/assets/demo-sleep.png';
+import demoPrayers from '@/assets/demo-prayers.png';
+import { StoreBadges } from '@/components/landing/StoreBadges';
+import { getDeviceType } from '@/lib/deviceDetection';
 
 interface FeatureSlide {
   id: string;
@@ -43,7 +45,7 @@ const featureSlides: FeatureSlide[] = [
       'Dhikr and bedtime duas',
       'Wake up routine before Fajr'
     ],
-    image: mockupChecklist
+    image: demoChecklist
   },
   {
     id: 'recitations',
@@ -59,7 +61,7 @@ const featureSlides: FeatureSlide[] = [
       'Three Quls (Ikhlas, Falaq, Nas)',
       'Audio playback with text'
     ],
-    image: mockupQuran
+    image: demoQuran
   },
   {
     id: 'tasbih',
@@ -75,7 +77,7 @@ const featureSlides: FeatureSlide[] = [
       'Visual progress tracking',
       'Completion celebration'
     ],
-    image: mockupTasbih
+    image: demoTasbih
   },
   {
     id: 'sleep-tracker',
@@ -91,7 +93,7 @@ const featureSlides: FeatureSlide[] = [
       'Good vs bad dream guidance',
       'Weekly statistics'
     ],
-    image: mockupSleep
+    image: demoSleep
   },
   {
     id: 'alarms',
@@ -107,11 +109,12 @@ const featureSlides: FeatureSlide[] = [
       'Auto-updates with location',
       'Beautiful Adhan sounds'
     ],
-    image: mockupAlarms
+    image: demoPrayers
   }
 ];
 
 export default function Demo() {
+  const device = getDeviceType();
   usePageMeta({
     title: 'SunnahSleep Demo: See the App in Action | Islamic Sleep Companion',
     description: 'Watch the SunnahSleep app demo. See the Sunnah checklist, Quran recitations, Tasbih counter, sleep tracker, and prayer alarms in action.',
@@ -223,6 +226,9 @@ export default function Demo() {
               Copy Link
             </Button>
           </div>
+
+          {/* Store badges */}
+          <StoreBadges device={device} />
         </section>
 
         {/* Video Section */}
