@@ -640,7 +640,7 @@ Memorize these duas and make them a non-negotiable part of your nightly routine.
       { id: 'daily-practice', title: 'Making It a Daily Practice' },
       { id: 'themes', title: 'Key Themes and Reflections' },
     ],
-    content: \`
+    content: `
 ## Introduction {#introduction}
 
 Surah Al-Mulk (سورة الملك), also known as "Tabarak" or "The Sovereignty," is the 67th chapter of the Quran. It consists of 30 verses and holds a special place among the surahs recommended for nightly recitation.
@@ -721,7 +721,7 @@ Birds held in the sky, water that could disappear overnight, the faculties of he
 ---
 
 Make Surah Al-Mulk your nightly companion. In just 5 minutes, you secure an intercessor for the Day of Judgment and protection from the punishment of the grave. No investment of time offers a greater return than this.
-    \`,
+    `,
   },
   {
     slug: 'right-side-sleeping-sunnah-science',
@@ -741,7 +741,7 @@ Make Surah Al-Mulk your nightly companion. In just 5 minutes, you secure an inte
       { id: 'brain-and-breathing', title: 'Brain & Breathing Benefits' },
       { id: 'how-to-practice', title: 'How to Practice' },
     ],
-    content: \`
+    content: `
 ## The Prophetic Teaching {#prophetic-teaching}
 
 The Prophet Muhammad ﷺ gave clear, specific instructions about sleep position. Al-Bara' ibn 'Azib رضي الله عنه reported:
@@ -798,7 +798,7 @@ Food moves from the stomach into the small intestine more efficiently when lying
 
 This aligns with the Sunnah of eating lightly at night and sleeping after digestion.
 
-## Brain & Breathing Benefits {#brain-and-breathing}
+## Brain and Breathing Benefits {#brain-and-breathing}
 
 ### Glymphatic Clearance
 
@@ -843,7 +843,7 @@ The right-side position with slightly drawn knees maintains natural spinal curva
 ---
 
 The Prophet ﷺ taught a sleeping position that modern science now recognizes as optimal for heart health, digestion, brain function, and breathing. This is yet another example of prophetic wisdom that transcends time. Begin tonight by simply lying on your right side and placing your hand under your cheek.
-    \`,
+    `,
   },
   {
     slug: 'dreams-in-islam-interpretation-guide',
@@ -858,12 +858,12 @@ The Prophet ﷺ taught a sleeping position that modern science now recognizes as
     publishedDate: '2025-03-01',
     tableOfContents: [
       { id: 'three-types', title: 'The Three Types of Dreams' },
-      { id: 'good-dreams', title: 'Good Dreams (Ru\'ya)' },
+      { id: 'good-dreams', title: "Good Dreams (Ru'ya)" },
       { id: 'bad-dreams', title: 'Bad Dreams (Hulum)' },
       { id: 'etiquette', title: 'Dream Etiquette in Islam' },
       { id: 'dream-diary', title: 'Keeping an Islamic Dream Diary' },
     ],
-    content: \`
+    content: `
 ## The Three Types of Dreams {#three-types}
 
 The Prophet Muhammad ﷺ classified dreams into three distinct categories:
@@ -969,7 +969,7 @@ All dream entries in SunnahSleep are stored locally on your device. No one else 
 ---
 
 Dreams are a window into the unseen world. By understanding the three types and following the prophetic guidance for each, Muslims can navigate their dream life with wisdom and peace. Use the bedtime Sunnah routine to protect yourself from disturbing dreams and increase the likelihood of true, blessed visions from Allah.
-    \`,
+    `,
   },
   {
     slug: 'islamic-remedies-insomnia-cant-sleep',
@@ -989,7 +989,7 @@ Dreams are a window into the unseen world. By understanding the three types and 
       { id: 'sunnah-lifestyle', title: 'Sunnah Lifestyle Adjustments' },
       { id: 'when-you-wake', title: 'When You Wake Up at Night' },
     ],
-    content: \`
+    content: `
 ## The Islamic Perspective on Sleeplessness {#islamic-perspective}
 
 Islam recognizes that sleeplessness can be a test, a spiritual signal, or a result of lifestyle factors. Rather than simply prescribing medication, the prophetic approach addresses the root causes—spiritual, psychological, and physical.
@@ -1028,19 +1028,13 @@ The Prophet ﷺ would blow into his cupped hands after reciting Surah Al-Ikhlas,
 
 This practice creates a spiritual shield. If you're struggling to sleep, repeat this three times while focusing on seeking Allah's protection.
 
-### 4. The "Can't Sleep" Dua
+### 4. Dhikr for Sleeplessness
 
-The Prophet ﷺ taught a specific remedy for when sleep won't come:
-
-**"If any one of you finds it difficult to sleep, let him say: 'Subhan Allahi, wal-Hamdu lillahi, wa la ilaha illAllah, wallahu Akbar' (Glory be to Allah, praise be to Allah, there is no god but Allah, Allah is the Greatest)."**
-
-Repetitive dhikr calms the mind, replacing anxious thoughts with remembrance. Continue until you drift off.
+The Prophet ﷺ taught a specific remedy for when sleep won't come: repetitive dhikr calms the mind, replacing anxious thoughts with remembrance. Say "SubhanAllah, wal-Hamdu lillah, wa la ilaha illAllah, wallahu Akbar" and continue until you drift off.
 
 ### 5. Pray Two Rak'ahs
 
-If sleep completely escapes you, the Prophet ﷺ advised: **"When one of you gets up at night and finds difficulty in going back to sleep, let him pray."** *(Sahih Muslim)*
-
-Rather than lying in frustration, use the wakefulness as an opportunity for worship. Often, the peace that follows prayer brings natural sleep.
+If sleep completely escapes you, the Prophet ﷺ advised getting up and praying rather than lying in frustration. Often, the peace that follows prayer brings natural sleep.
 
 ## Quranic Healing for Sleep {#quranic-healing}
 
@@ -1104,7 +1098,7 @@ Perhaps your sleeplessness is not a problem to solve, but a door that Allah has 
 ---
 
 When sleep escapes you, don't reach for your phone—reach for your prayer mat. The Sunnah offers a complete toolkit for insomnia: physical remedies (wudu, sleep position), spiritual protection (Ayat al-Kursi, Three Quls), mental calm (dhikr, dua), and lifestyle wisdom (eating light, sleeping early). Start with one remedy tonight and build from there.
-    \`,
+    `,
   },
 ];
 
