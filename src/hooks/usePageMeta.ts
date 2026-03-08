@@ -12,8 +12,10 @@ export interface PageMeta {
   ogTitle?: string;
   ogDescription?: string;
   ogImage?: string;
+  ogType?: string;
   keywords?: string[];
   noIndex?: boolean;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 function setMeta(name: string, content: string, isProperty = false) {
@@ -27,6 +29,8 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content);
 }
 
+const JSON_LD_ID = 'page-jsonld';
+
 export function usePageMeta(meta: PageMeta | null) {
   useEffect(() => {
     if (!meta) return;
@@ -37,25 +41,24 @@ export function usePageMeta(meta: PageMeta | null) {
     setMeta('title', meta.title);
 
     const canonical = meta.canonical ?? `${BASE_URL}${window.location.pathname}`;
-    if (canonical !== undefined) {
-      let link = document.querySelector('link[rel="canonical"]');
-      if (!link) {
-        link = document.createElement('link');
-        link.setAttribute('rel', 'canonical');
-        document.head.appendChild(link);
-      }
-      link.setAttribute('href', canonical);
+    let link = document.querySelector('link[rel="canonical"]');
+    if (!link) {
+      link = document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      document.head.appendChild(link);
     }
+    link.setAttribute('href', canonical);
 
     const ogTitle = meta.ogTitle ?? meta.title;
     const ogDesc = meta.ogDescription ?? meta.description;
     const ogImg = meta.ogImage ?? DEFAULT_IMAGE;
+    const ogType = meta.ogType ?? 'website';
 
     setMeta('og:title', ogTitle, true);
     setMeta('og:description', ogDesc, true);
-    setMeta('og:url', meta.canonical ?? `${BASE_URL}${window.location.pathname}`, true);
+    setMeta('og:url', canonical, true);
     setMeta('og:image', ogImg, true);
-    setMeta('og:type', 'website', true);
+    setMeta('og:type', ogType, true);
 
     setMeta('twitter:title', ogTitle);
     setMeta('twitter:description', ogDesc);
@@ -67,6 +70,23 @@ export function usePageMeta(meta: PageMeta | null) {
 
     if (meta.noIndex) {
       setMeta('robots', 'noindex, nofollow');
+    } else {
+      setMeta('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+    }
+
+    // Inject page-level JSON-LD
+    // Remove previous page-level JSON-LD
+    document.querySelectorAll(`script[data-page-jsonld]`).forEach(el => el.remove());
+
+    if (meta.jsonLd) {
+      const schemas = Array.isArray(meta.jsonLd) ? meta.jsonLd : [meta.jsonLd];
+      schemas.forEach((schema, i) => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.setAttribute('data-page-jsonld', String(i));
+        script.textContent = JSON.stringify(schema);
+        document.head.appendChild(script);
+      });
     }
 
     return () => {
@@ -75,9 +95,12 @@ export function usePageMeta(meta: PageMeta | null) {
       setMeta('og:title', 'SunnahSleep - Islamic Bedtime Companion by Ummah.Build', true);
       setMeta('og:description', DEFAULT_DESC, true);
       setMeta('og:url', BASE_URL + '/', true);
+      setMeta('og:type', 'website', true);
       setMeta('twitter:title', 'SunnahSleep - Islamic Bedtime Companion by Ummah.Build');
       setMeta('twitter:description', DEFAULT_DESC);
       setMeta('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+      // Clean up page-level JSON-LD
+      document.querySelectorAll(`script[data-page-jsonld]`).forEach(el => el.remove());
     };
   }, [meta]);
 }

@@ -7,6 +7,10 @@ Allow: /
 # Sitemap
 Sitemap: https://sunnahsleep.app/sitemap.xml
 
+# AI-readable structured content
+# See https://llmstxt.org for spec
+LLMs-Txt: https://sunnahsleep.app/llms.txt
+
 # Crawl-delay for polite crawling
 Crawl-delay: 1
 
