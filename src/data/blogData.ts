@@ -1959,18 +1959,20 @@ Wudu before sleep is the gateway practice of the entire prophetic sleep routine.
   },
 ];
 
+const allArticles = () => [...blogArticles, ...extraBlogArticles, ...extraBlogArticles2];
+
 export const getBlogArticleBySlug = (slug: string): BlogArticle | undefined => {
-  return [...blogArticles, ...extraBlogArticles].find(article => article.slug === slug);
+  return allArticles().find(article => article.slug === slug);
 };
 
 export const getAllBlogArticles = (): BlogArticle[] => {
-  return [...blogArticles, ...extraBlogArticles];
+  return allArticles();
 };
 
 export const getFeaturedArticles = (): BlogArticle[] => {
-  return [...blogArticles, ...extraBlogArticles].filter(article => article.featured);
+  return allArticles().filter(article => article.featured);
 };
 
 export const getArticlesByCategory = (category: BlogArticle['category']): BlogArticle[] => {
-  return [...blogArticles, ...extraBlogArticles].filter(article => article.category === category);
+  return allArticles().filter(article => article.category === category);
 };
