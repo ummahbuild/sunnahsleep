@@ -366,6 +366,7 @@ export default function Demo() {
               </div>
             </CardContent>
           </Card>
+          </div>
 
           {/* Navigation Buttons */}
           <div className="flex justify-center gap-4 mt-6">
