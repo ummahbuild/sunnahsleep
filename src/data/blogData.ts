@@ -25,6 +25,7 @@ export const blogArticles: BlogArticle[] = [
     category: 'sunnah',
     readingTime: 8,
     featured: true,
+    publishedDate: '2025-01-15',
     tableOfContents: [
       { id: 'introduction', title: 'Introduction' },
       { id: 'preparation', title: 'Preparing for Sleep' },
