@@ -1222,7 +1222,7 @@ The Three Quls are the Prophet ﷺ's personal bedtime protection. He never skipp
       { id: 'virtues', title: 'Virtues & Rewards' },
       { id: 'daily-practice', title: 'Making It a Daily Practice' },
     ],
-    content: \`
+    content: `
 ## The Beautiful Origin {#origin-story}
 
 The story of Tasbih Fatimah begins with a daughter's request and a father's wisdom:
