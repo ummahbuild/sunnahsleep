@@ -109,7 +109,7 @@ const featureSlides: FeatureSlide[] = [
       'Auto-updates with location',
       'Beautiful Adhan sounds'
     ],
-    image: mockupAlarms
+    image: demoPrayers
   }
 ];
 
