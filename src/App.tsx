@@ -20,6 +20,7 @@ const BlogArticle = lazy(() => import("./pages/BlogArticle"));
 const Demo = lazy(() => import("./pages/Demo"));
 const Guides = lazy(() => import("./pages/Guides"));
 const PropheticSleep = lazy(() => import("./pages/PropheticSleep"));
+const Download = lazy(() => import("./pages/Download"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
