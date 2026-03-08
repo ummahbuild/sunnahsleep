@@ -27,7 +27,7 @@ export function Footer() {
         </div>
 
         {/* Footer grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <nav className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10" aria-label="Footer navigation">
           {/* App */}
           <div>
             <h4 className="text-gold text-sm font-semibold mb-3 flex items-center gap-2">
