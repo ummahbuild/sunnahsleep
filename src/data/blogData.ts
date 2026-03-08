@@ -1203,7 +1203,7 @@ The Prophet ﷺ said to Uqbah ibn Amir: **"Do you not know the verses that were 
 - Combine with Ayat al-Kursi for comprehensive nighttime protection
 
 The Three Quls are the Prophet ﷺ's personal bedtime protection. He never skipped them, even during illness. Making them part of your nightly routine connects you to a practice the Messenger of Allah ﷺ maintained his entire life.
-    \`,
+    `,
   },
   {
     slug: 'tasbih-fatimah-bedtime-dhikr',
