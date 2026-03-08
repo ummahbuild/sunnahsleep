@@ -93,7 +93,7 @@ const featureSlides: FeatureSlide[] = [
       'Good vs bad dream guidance',
       'Weekly statistics'
     ],
-    image: mockupSleep
+    image: demoSleep
   },
   {
     id: 'alarms',
