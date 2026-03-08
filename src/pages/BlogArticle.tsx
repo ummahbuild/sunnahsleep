@@ -18,7 +18,17 @@ export default function BlogArticlePage() {
     canonical,
     ogTitle: article.title,
     ogDescription: article.excerpt || article.metaDescription,
+    ogType: 'article',
     keywords: article.keywords,
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sunnahsleep.app/blog' },
+        { '@type': 'ListItem', position: 3, name: article.title, item: `${BASE_URL}/blog/${article.slug}` },
+      ],
+    },
   } : null);
 
   if (!article) {
