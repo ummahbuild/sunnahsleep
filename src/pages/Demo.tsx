@@ -312,6 +312,7 @@ export default function Demo() {
           </div>
 
           {/* Current Feature Card */}
+          <div aria-live="polite" aria-atomic="true">
           <Card className={cn(
             'overflow-hidden border-gold/20 transition-all duration-500',
             `bg-gradient-to-br ${currentFeature.color}`
