@@ -8,7 +8,7 @@ SunnahSleep is a free Progressive Web App (PWA) that guides Muslims through the 
 - **Sunnah Bedtime Checklist**: 15+ items across 5 phases (Isha prayer, preparation, Quranic recitations, dhikr & duas, wake-up), all sourced from Sahih Hadith
 - **Quranic Sleep Recitations**: Audio playback of Ayat al-Kursi, last 2 verses of Al-Baqarah, Surah Al-Mulk, Three Quls (Al-Ikhlas, Al-Falaq, An-Nas) with Arabic text, transliteration, and English translation
 - **Tasbih Counter**: Digital counter for the 33-33-34 bedtime dhikr (SubhanAllah, Alhamdulillah, Allahu Akbar) — the Tasbih of Fatimah رضي الله عنها
-- **Sleep Tracker & Dream Diary**: Track sleep times, quality ratings, and categorize dreams (good/neutral/bad) with Islamic guidance
+- **Sleep Tracker & Dream Diary**: Track sleep times, quality ratings, and categorize dreams (good/neutral/bad) with Islamic guidance on dream types
 - **Prayer Alarms**: Fajr, Tahajjud (last third of the night), and Isha alarms synced to local prayer times via geolocation
 - **Qailulah Reminder**: Midday nap reminder following the Sunnah practice
 - **Wudu Guide**: Step-by-step ablution instructions with Arabic, transliteration, and audio
@@ -19,6 +19,7 @@ SunnahSleep is a free Progressive Web App (PWA) that guides Muslims through the 
 - Works offline after initial load
 - Every practice backed by authentic Hadith references linked to Sunnah.com
 - Location-based prayer times via Al Adhan API
+- Android APK available for download
 
 ## Content Pages
 - Homepage / Landing: https://sunnahsleep.app/
@@ -29,6 +30,7 @@ SunnahSleep is a free Progressive Web App (PWA) that guides Muslims through the 
 - User Guides: https://sunnahsleep.app/guides
 - Demo: https://sunnahsleep.app/demo
 - Install (PWA): https://sunnahsleep.app/install
+- Download (Android APK): https://sunnahsleep.app/download
 
 ## Blog Articles
 - The Complete Prophetic Sleep Routine: https://sunnahsleep.app/blog/prophetic-sleep-routine-complete-guide
@@ -37,12 +39,39 @@ SunnahSleep is a free Progressive Web App (PWA) that guides Muslims through the 
 - Sleep Science Meets Sunnah Practices: https://sunnahsleep.app/blog/sleep-science-sunnah-practices
 - Qailulah: The Islamic Power Nap: https://sunnahsleep.app/blog/qailulah-power-nap-islam
 - Bedtime Duas for Protection During Sleep: https://sunnahsleep.app/blog/bedtime-duas-protection-sleep
+- Surah Al-Mulk Before Sleep — Protection from the Grave: https://sunnahsleep.app/blog/surah-mulk-before-sleep-benefits
+- Right Side Sleeping — Sunnah Position Backed by Science: https://sunnahsleep.app/blog/right-side-sleeping-sunnah-science
+- Dreams in Islam — Types, Meanings & What to Do: https://sunnahsleep.app/blog/dreams-in-islam-interpretation-guide
+- Islamic Remedies for Insomnia & Restlessness: https://sunnahsleep.app/blog/islamic-remedies-insomnia-cant-sleep
+
+## Frequently Asked Questions
+
+### What is the Sunnah way to sleep?
+The Sunnah sleep routine includes: performing wudu, dusting the bed 3 times, sleeping on the right side, reciting Ayat al-Kursi, last 2 verses of Al-Baqarah, Three Quls (blown into hands and wiped over body), completing Tasbih (33-33-34), and saying bedtime duas. Based on Sahih al-Bukhari and Sahih Muslim.
+
+### What duas should I recite before sleeping?
+Recite Ayat al-Kursi (2:255) for angelic protection, last 2 verses of Al-Baqarah, Three Quls, and say "Bismika Allahumma amutu wa ahya" (In Your name, O Allah, I die and I live) — Sahih al-Bukhari 6324.
+
+### Why recite Surah Al-Mulk before sleep?
+The Prophet ﷺ said it intercedes for its reciter until forgiven (Tirmidhi 2891). It is called "The Preventer" — it prevents punishment of the grave (Tirmidhi 2890). The Prophet ﷺ never slept without reciting it (Tirmidhi 2892).
+
+### What are the three types of dreams in Islam?
+1) Ru'ya — true dreams from Allah (glad tidings), 2) Hulum — disturbing dreams from Shaytan (seek refuge, don't share), 3) Hadith an-nafs — reflections of daily thoughts (no spiritual significance). Based on Sahih Muslim 2263.
+
+### What is Tahajjud and when should I pray it?
+Tahajjud is the voluntary night prayer in the last third of the night before Fajr. Allah descends to the lowest heaven during this time (Bukhari 1145). The best prayer after obligatory prayers (Muslim 1163).
+
+### What is Qailulah?
+Qailulah is a Sunnah midday nap (20-30 minutes) after Dhuhr. The Prophet ﷺ said "Take the Qailulah, for the devils do not take a midday nap" (Sahih al-Jami 4431). It prepares the body for Tahajjud.
+
+### Can't sleep? What does Islam say?
+Perform fresh wudu, recite Ayat al-Kursi, blow Three Quls over yourself, do repetitive dhikr, or get up and pray 2 rak'ahs. The Prophet ﷺ advised prayer over lying awake in frustration.
 
 ## Islamic Sources Referenced
 - Sahih al-Bukhari (multiple hadith on sleep, wudu, Ayat al-Kursi, Tasbih Fatimah)
-- Sahih Muslim (Tahajjud, miswak, sleeping position)
+- Sahih Muslim (Tahajjud, dreams, sleeping position)
 - Sunan Abu Dawud, Sunan Ibn Majah, Sunan at-Tirmidhi
-- Quran: Surah Al-Baqarah 2:255 (Ayat al-Kursi), 2:285-286, Surah Al-Mulk 67, Al-Ikhlas 112, Al-Falaq 113, An-Nas 114, Al-Furqan 25:47
+- Quran: Surah Al-Baqarah 2:255 (Ayat al-Kursi), 2:285-286, Surah Al-Mulk 67, Al-Ikhlas 112, Al-Falaq 113, An-Nas 114, Al-Furqan 25:47, Al-Isra 17:79
 
 ## Technical Details
 - Built with: React, TypeScript, Vite, Tailwind CSS
