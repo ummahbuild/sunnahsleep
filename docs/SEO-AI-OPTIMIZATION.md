@@ -35,12 +35,13 @@ All major AI crawlers explicitly allowed: GPTBot, ChatGPT-User, Claude-Web, Clau
 - **WebApplication** — Full feature list, creator, offers
 - **Organization** — Ummah.Build
 - **BreadcrumbList** — Home
-- **FAQPage** — 6 Sunnah sleep questions
+- **FAQPage** — 12 key questions about SunnahSleep, Sunnah sleep, pricing, offline, Three Quls, Tasbih Fatimah, sleep etiquette
 - **HowTo** — 8-step Prophetic sleep routine
 
 ### Blog Articles (BlogArticle.tsx)
-- **Article** — headline, description, datePublished, author, publisher, mainEntityOfPage
+- **Article** — headline, description, datePublished, author, publisher, wordCount, articleSection, inLanguage
 - **BreadcrumbList** — Home → Blog → Article
+- Social share links (Twitter, Facebook, native share API)
 
 ### Content Pages
 | Page | JSON-LD Types |

@@ -1,8 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Clock, BookOpen, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Clock, BookOpen, ChevronRight, Share2, Twitter, Facebook } from 'lucide-react';
 import { getBlogArticleBySlug, blogArticles, BlogArticle } from '@/data/blogData';
 import { cn } from '@/lib/utils';
-import { useEffect } from 'react';
 import { usePageMeta } from '@/hooks/usePageMeta';
 
 const BASE_URL = 'https://sunnahsleep.app';
@@ -20,15 +19,35 @@ export default function BlogArticlePage() {
     ogDescription: article.excerpt || article.metaDescription,
     ogType: 'article',
     keywords: article.keywords,
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
-        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sunnahsleep.app/blog' },
-        { '@type': 'ListItem', position: 3, name: article.title, item: `${BASE_URL}/blog/${article.slug}` },
-      ],
-    },
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: article.title,
+        description: article.metaDescription,
+        keywords: article.keywords.join(', '),
+        wordCount: article.content.split(/\s+/).length,
+        datePublished: article.publishedDate ?? '2025-01-15',
+        dateModified: article.publishedDate ?? '2025-01-15',
+        author: { '@type': 'Organization', name: 'Ummah.Build', url: 'https://ummah.build' },
+        publisher: { '@type': 'Organization', name: 'Ummah.Build', url: 'https://ummah.build', logo: { '@type': 'ImageObject', url: `${BASE_URL}/og-image.png` } },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/blog/${article.slug}` },
+        url: `${BASE_URL}/blog/${article.slug}`,
+        image: `${BASE_URL}/og-image.png`,
+        inLanguage: 'en',
+        isAccessibleForFree: true,
+        articleSection: article.category,
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: `${BASE_URL}/` },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE_URL}/blog` },
+          { '@type': 'ListItem', position: 3, name: article.title, item: `${BASE_URL}/blog/${article.slug}` },
+        ],
+      },
+    ],
   } : null);
 
   if (!article) {
@@ -58,6 +77,9 @@ export default function BlogArticlePage() {
     guidance: 'Islamic Guidance',
   };
 
+  const shareUrl = `${BASE_URL}/blog/${article.slug}`;
+  const shareText = `${article.title} — ${article.excerpt}`;
+
   // Get related articles - same category first, then other categories for cross-linking
   const sameCategoryArticles = blogArticles
     .filter(a => a.slug !== article.slug && a.category === article.category);
@@ -65,9 +87,19 @@ export default function BlogArticlePage() {
     .filter(a => a.slug !== article.slug && a.category !== article.category);
   const relatedArticles = [...sameCategoryArticles, ...otherArticles].slice(0, 4);
 
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: article.title, text: article.excerpt, url: shareUrl });
+      } catch {}
+    } else {
+      navigator.clipboard.writeText(shareUrl);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-night islamic-pattern">
-      <article className="max-w-3xl mx-auto pb-12" itemScope itemType="https://schema.org/Article">
+      <article className="max-w-3xl mx-auto pb-12">
         {/* Header */}
         <header className="px-4 sm:px-6 pt-6 pb-8">
           <Link 
@@ -86,35 +118,52 @@ export default function BlogArticlePage() {
           </div>
 
           {/* Title */}
-          <h1 
-            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4"
-            itemProp="headline"
-          >
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4">
             {article.title}
           </h1>
 
-          {/* Meta */}
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span className="flex items-center gap-1">
-              <Clock className="h-4 w-4" />
-              {article.readingTime} min read
-            </span>
-            {article.publishedDate && (
-              <time dateTime={article.publishedDate} itemProp="datePublished">
-                {new Date(article.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-              </time>
-            )}
+          {/* Meta + Share */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+              <span className="flex items-center gap-1">
+                <Clock className="h-4 w-4" />
+                {article.readingTime} min read
+              </span>
+              {article.publishedDate && (
+                <time dateTime={article.publishedDate}>
+                  {new Date(article.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </time>
+              )}
+            </div>
+            <div className="flex items-center gap-2">
+              <a
+                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg text-muted-foreground hover:text-gold hover:bg-secondary/50 transition-colors"
+                aria-label="Share on Twitter"
+              >
+                <Twitter className="h-4 w-4" />
+              </a>
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg text-muted-foreground hover:text-gold hover:bg-secondary/50 transition-colors"
+                aria-label="Share on Facebook"
+              >
+                <Facebook className="h-4 w-4" />
+              </a>
+              <button
+                onClick={handleShare}
+                className="p-2 rounded-lg text-muted-foreground hover:text-gold hover:bg-secondary/50 transition-colors"
+                aria-label="Share article"
+              >
+                <Share2 className="h-4 w-4" />
+              </button>
+            </div>
           </div>
-
-          {/* Hidden SEO data */}
-          <meta itemProp="description" content={article.metaDescription} />
-          <span itemProp="author" itemScope itemType="https://schema.org/Organization" className="hidden">
-            <meta itemProp="name" content="Ummah.Build" />
-          </span>
         </header>
-
-        {/* Article JSON-LD for AI/search engines */}
-        <ArticleSchema article={article} />
 
         {/* Table of Contents */}
         {article.tableOfContents.length > 0 && (
@@ -141,10 +190,7 @@ export default function BlogArticlePage() {
         )}
 
         {/* Content */}
-        <div 
-          className="px-4 sm:px-6 prose prose-invert prose-gold max-w-none"
-          itemProp="articleBody"
-        >
+        <div className="px-4 sm:px-6 prose prose-invert prose-gold max-w-none">
           <div 
             className="
               [&_h2]:text-xl [&_h2]:sm:text-2xl [&_h2]:font-bold [&_h2]:text-foreground [&_h2]:mt-8 [&_h2]:mb-4 [&_h2]:scroll-mt-20
@@ -159,17 +205,7 @@ export default function BlogArticlePage() {
               [&_hr]:border-border [&_hr]:my-8
             "
             dangerouslySetInnerHTML={{ 
-              __html: article.content
-                .replace(/\{#([^}]+)\}/g, 'id="$1"')
-                .replace(/\n/g, '<br />')
-                .replace(/<br \/><br \/>/g, '</p><p>')
-                .replace(/## ([^<]+)/g, '<h2>$1</h2>')
-                .replace(/### ([^<]+)/g, '<h3>$1</h3>')
-                .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-                .replace(/\*([^*]+)\*/g, '<em>$1</em>')
-                .replace(/- \*\*([^*]+)\*\*([^<]*)/g, '<li><strong>$1</strong>$2</li>')
-                .replace(/- ([^<]+)/g, '<li>$1</li>')
-                .replace(/(<li>.*<\/li>)/g, '<ul>$1</ul>')
+              __html: renderMarkdown(article.content)
             }}
           />
         </div>
@@ -178,14 +214,17 @@ export default function BlogArticlePage() {
         {relatedArticles.length > 0 && (
           <aside className="px-4 sm:px-6 mt-12">
             <h2 className="text-lg font-semibold text-foreground mb-4">Related Articles</h2>
-            <div className="space-y-3">
+            <div className="grid gap-3 sm:grid-cols-2">
               {relatedArticles.map((related) => (
                 <Link
                   key={related.slug}
                   to={`/blog/${related.slug}`}
                   className="block p-4 rounded-xl bg-secondary/30 border border-border hover:border-gold/30 transition-colors"
                 >
-                  <h3 className="font-medium text-foreground mb-1">{related.title}</h3>
+                  <span className={cn('text-[10px] font-medium px-2 py-0.5 rounded-full border', categoryColors[related.category])}>
+                    {categoryLabels[related.category]}
+                  </span>
+                  <h3 className="font-medium text-foreground mt-2 mb-1 line-clamp-2">{related.title}</h3>
                   <p className="text-sm text-cream-dim line-clamp-2">{related.excerpt}</p>
                 </Link>
               ))}
@@ -214,8 +253,8 @@ export default function BlogArticlePage() {
 
         {/* Footer */}
         <footer className="px-4 sm:px-6 mt-8 text-center">
-          <Link to="/" className="text-gold hover:underline text-sm">
-            ← Return to SunnahSleep App
+          <Link to="/blog" className="text-gold hover:underline text-sm">
+            ← Browse All Articles
           </Link>
         </footer>
       </article>
@@ -223,30 +262,36 @@ export default function BlogArticlePage() {
   );
 }
 
-function ArticleSchema({ article }: { article: BlogArticle }) {
-  const wordCount = article.content.split(/\s+/).length;
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: article.title,
-    description: article.metaDescription,
-    keywords: article.keywords.join(', '),
-    wordCount,
-    datePublished: article.publishedDate ?? '2025-01-15',
-    dateModified: article.publishedDate ?? '2025-01-15',
-    author: { '@type': 'Organization', name: 'Ummah.Build', url: 'https://ummah.build' },
-    publisher: { '@type': 'Organization', name: 'Ummah.Build', url: 'https://ummah.build', logo: { '@type': 'ImageObject', url: `${BASE_URL}/og-image.png` } },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/blog/${article.slug}` },
-    url: `${BASE_URL}/blog/${article.slug}`,
-    image: `${BASE_URL}/og-image.png`,
-    inLanguage: 'en',
-    isAccessibleForFree: true,
-    articleSection: article.category,
-  };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  );
+/** Improved markdown-to-HTML renderer */
+function renderMarkdown(content: string): string {
+  return content
+    // Headings with IDs
+    .replace(/## ([^\n{]+)\{#([^}]+)\}/g, '<h2 id="$2">$1</h2>')
+    .replace(/### ([^\n]+)/g, '<h3>$1</h3>')
+    .replace(/## ([^\n]+)/g, '<h2>$1</h2>')
+    // Bold and italic
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+    // Ordered lists
+    .replace(/^(\d+)\. (.+)$/gm, '<li>$2</li>')
+    // Unordered lists  
+    .replace(/^- (.+)$/gm, '<li>$1</li>')
+    // Wrap consecutive <li> in <ul>
+    .replace(/((?:<li>.*<\/li>\n?)+)/g, '<ul>$1</ul>')
+    // Horizontal rules
+    .replace(/^---$/gm, '<hr />')
+    // Paragraphs (double newline)
+    .replace(/\n\n/g, '</p><p>')
+    // Single newlines in paragraphs
+    .replace(/\n/g, '<br />')
+    // Wrap in paragraph
+    .replace(/^/, '<p>')
+    .replace(/$/, '</p>')
+    // Clean up empty paragraphs
+    .replace(/<p>\s*<\/p>/g, '')
+    .replace(/<p>\s*<(h[23])/g, '<$1')
+    .replace(/<\/(h[23])>\s*<\/p>/g, '</$1>')
+    .replace(/<p>\s*<ul>/g, '<ul>')
+    .replace(/<\/ul>\s*<\/p>/g, '</ul>')
+    .replace(/<p>\s*<hr \/>\s*<\/p>/g, '<hr />');
 }
