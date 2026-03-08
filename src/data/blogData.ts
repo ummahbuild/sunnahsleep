@@ -1434,6 +1434,526 @@ The Prophet ﷺ would use the miswak (tooth-stick) upon waking. *(Sahih al-Bukha
 Islamic sleep etiquette transforms every night into an act of worship and every morning into a renewal of gratitude. By following these adab, you don't just sleep better — you sleep as a Muslim, earning reward for every moment of rest.
     `,
   },
+  {
+    slug: 'dua-before-sleeping-arabic-english',
+    title: 'Dua Before Sleeping: Complete Collection with Arabic, Transliteration & Translation',
+    metaTitle: 'Dua Before Sleeping: Arabic Text, Transliteration & English | Complete List',
+    metaDescription: 'Complete collection of authentic duas before sleeping with Arabic text, transliteration, and English translation. Includes morning waking duas. All from Sahih Hadith.',
+    keywords: ['dua before sleeping', 'dua before sleep arabic', 'sleeping dua islam', 'bedtime prayer islam', 'dua for sleep', 'islamic prayer before bed', 'sleep dua arabic english'],
+    excerpt: 'Complete collection of every authentic dua the Prophet ﷺ recited before sleeping, with full Arabic text, transliteration, and English translation.',
+    category: 'sunnah',
+    readingTime: 8,
+    featured: true,
+    publishedDate: '2025-05-01',
+    tableOfContents: [
+      { id: 'main-sleeping-dua', title: 'The Main Sleeping Dua' },
+      { id: 'lying-down-dua', title: 'Dua When Lying Down' },
+      { id: 'protection-duas', title: 'Duas for Protection' },
+      { id: 'forgiveness-dua', title: 'Dua for Forgiveness Before Sleep' },
+      { id: 'waking-up-duas', title: 'Duas Upon Waking Up' },
+      { id: 'nighttime-waking', title: 'Dua When Waking at Night' },
+    ],
+    content: `
+## The Main Sleeping Dua {#main-sleeping-dua}
+
+The most essential dua before sleeping acknowledges that sleep is a minor death — the soul departs and Allah returns it upon waking.
+
+**Arabic:**
+
+بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا
+
+**Transliteration:** Bismika Allahumma amutu wa ahya
+
+**Translation:** "In Your name, O Allah, I die and I live."
+
+**Source:** Sahih al-Bukhari 6324
+
+**Why this dua matters:** Sleep is called a "minor death" in Islam. When you say this dua, you consciously surrender your soul to Allah, trusting Him to return it. The morning dua mirrors it: "All praise is to Allah Who gave us life after causing us to die."
+
+## Dua When Lying Down {#lying-down-dua}
+
+When the Prophet ﷺ lay down on his right side, he would place his right hand under his cheek and recite:
+
+**Arabic:**
+
+اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لاَ مَلْجَأَ وَلاَ مَنْجَا مِنْكَ إِلاَّ إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَنَبِيِّكَ الَّذِي أَرْسَلْتَ
+
+**Transliteration:** Allahumma aslamtu nafsi ilayk, wa wajjahtu wajhi ilayk, wa fawwadtu amri ilayk, wa alja'tu zahri ilayk, raghbatan wa rahbatan ilayk, la malja'a wa la manja minka illa ilayk, amantu bi kitabikalladhi anzalt, wa nabiyyikalladhi arsalt.
+
+**Translation:** "O Allah, I have submitted myself to You, turned my face to You, entrusted my affairs to You, and relied wholly on You, out of hope and fear of You. There is no refuge nor escape from You except to You. I believe in Your Book which You revealed and Your Prophet whom You sent."
+
+**Source:** Sahih al-Bukhari 247, 6311
+
+**The Prophet ﷺ added:** "If you die that night, you will die upon the fitrah (natural disposition). And make these the last words you speak." This means if death comes during sleep, you depart having affirmed complete faith.
+
+## Duas for Protection {#protection-duas}
+
+### Protection from Punishment
+
+**Arabic:**
+
+اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ
+
+**Transliteration:** Allahumma qini 'adhabaka yawma tab'athu 'ibadak
+
+**Translation:** "O Allah, protect me from Your punishment on the Day You resurrect Your servants."
+
+**Source:** Sunan Abu Dawud 5045
+
+The Prophet ﷺ would say this when he lay down to sleep, placing his right hand under his cheek.
+
+### Seeking Refuge in Perfect Words
+
+**Arabic:**
+
+أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ
+
+**Transliteration:** A'udhu bi kalimatillahit-tammati min sharri ma khalaq
+
+**Translation:** "I seek refuge in the perfect words of Allah from the evil of what He has created."
+
+**Source:** Sahih Muslim 2708
+
+This dua is also recommended when staying in a new place, as the Prophet ﷺ said whoever recites it will not be harmed by anything until they leave.
+
+## Dua for Forgiveness Before Sleep {#forgiveness-dua}
+
+**Arabic:**
+
+أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ
+
+**Transliteration:** Astaghfirullaha alladhi la ilaha illa Huwal-Hayyul-Qayyum, wa atubu ilayh
+
+**Translation:** "I seek the forgiveness of Allah, there is no god but He, the Ever-Living, the Sustainer, and I repent to Him."
+
+**Source:** Sunan Abu Dawud 1517, Sunan al-Tirmidhi 3577
+
+The Prophet ﷺ said whoever says this, their sins will be forgiven even if they are as much as the foam of the sea. Ending the day with istighfar (seeking forgiveness) is one of the most powerful spiritual practices.
+
+## Duas Upon Waking Up {#waking-up-duas}
+
+### The First Words Upon Waking
+
+**Arabic:**
+
+الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ
+
+**Transliteration:** Alhamdulillahilladhi ahyana ba'da ma amatana wa ilayhin-nushur
+
+**Translation:** "All praise is to Allah Who gave us life after causing us to die, and to Him is the resurrection."
+
+**Source:** Sahih al-Bukhari 6324
+
+This mirrors the sleeping dua — confirming the cycle of "death" (sleep) and "resurrection" (waking).
+
+### Dua When Waking and Seeing Light
+
+**Arabic:**
+
+الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لِي بِذِكْرِهِ
+
+**Transliteration:** Alhamdulillahilladhi 'afani fi jasadi, wa radda 'alayya ruhi, wa adhina li bi dhikrih
+
+**Translation:** "All praise is to Allah Who gave health to my body, returned my soul to me, and permitted me to remember Him."
+
+**Source:** Sunan al-Tirmidhi 3401
+
+## Dua When Waking at Night {#nighttime-waking}
+
+If you wake during the night, the Prophet ﷺ taught this comprehensive dua:
+
+**Arabic:**
+
+لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَىْءٍ قَدِيرٌ، الْحَمْدُ لِلَّهِ، وَسُبْحَانَ اللَّهِ، وَلاَ إِلَهَ إِلاَّ اللَّهُ، وَاللَّهُ أَكْبَرُ، وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ
+
+**Transliteration:** La ilaha illallahu wahdahu la sharika lah, lahul-mulku wa lahul-hamdu wa Huwa 'ala kulli shay'in qadir. Alhamdulillah, wa SubhanAllah, wa la ilaha illallah, wallahu Akbar, wa la hawla wa la quwwata illa billah.
+
+**Translation:** "There is no god but Allah, alone with no partner. His is the dominion and His is the praise, and He is able to do all things. All praise is to Allah. Glory be to Allah. There is no god but Allah. Allah is the Greatest. There is no power or strength except with Allah."
+
+**Source:** Sahih al-Bukhari 1154
+
+The Prophet ﷺ said: **"Whoever wakes at night and says this, then says 'O Allah forgive me' or makes any dua, it will be answered. If he performs wudu and prays, his prayer will be accepted."**
+
+---
+
+These duas transform your sleep into a continuous act of worship. Memorize them gradually — start with the main sleeping dua and the waking dua, then add more over time. SunnahSleep includes all of these in the bedtime checklist with audio recitation.
+    `,
+  },
+  {
+    slug: 'last-two-verses-surah-baqarah-before-sleep',
+    title: 'Last Two Verses of Surah Al-Baqarah: Why They Suffice Before Sleep',
+    metaTitle: 'Last 2 Verses of Surah Al-Baqarah Before Sleep: Benefits & Full Text',
+    metaDescription: 'Learn why reciting the last two verses of Surah Al-Baqarah (2:285-286) before sleep suffices the believer. Full Arabic text, transliteration, translation, and Hadith.',
+    keywords: ['last two verses surah baqarah', 'surah baqarah last 2 ayat', 'amana rasulu', 'quran 2 285 286', 'surah baqarah before sleep', 'last two ayat baqarah benefits'],
+    excerpt: 'The Prophet ﷺ said whoever recites the last two verses of Surah Al-Baqarah at night, they will suffice him. Full text with Arabic, transliteration, and meaning.',
+    category: 'worship',
+    readingTime: 7,
+    featured: false,
+    publishedDate: '2025-05-10',
+    tableOfContents: [
+      { id: 'hadith-evidence', title: 'What the Prophet ﷺ Said' },
+      { id: 'full-text', title: 'Full Text: Verses 285-286' },
+      { id: 'meaning-suffice', title: 'What "Suffice Him" Means' },
+      { id: 'special-status', title: 'Special Status of These Verses' },
+      { id: 'practice', title: 'How to Practice This Sunnah' },
+    ],
+    content: `
+## What the Prophet ﷺ Said {#hadith-evidence}
+
+The Prophet Muhammad ﷺ said: **"Whoever recites the last two verses of Surah Al-Baqarah at night, they will suffice him."** *(Sahih al-Bukhari 5009, Sahih Muslim 807)*
+
+This is one of the most widely reported hadith about bedtime recitation. The word used is **"kafatahu"** (كفتاه) — "they will suffice him" — a comprehensive word that scholars have extensively discussed.
+
+In another narration, the Prophet ﷺ said: **"Allah wrote a book two thousand years before He created the heavens and the earth, from which He sent down two verses with which He concluded Surah Al-Baqarah. The Shaytan will not approach a house in which they are recited for three nights."** *(Sunan al-Tirmidhi 2882)*
+
+## Full Text: Verses 285-286 {#full-text}
+
+### Verse 285
+
+**Arabic:**
+
+آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ
+
+**Transliteration:** Amanar-Rasulu bima unzila ilayhi mir-Rabbihi wal-mu'minun. Kullun amana billahi wa mala'ikatihi wa kutubihi wa rusulihi. La nufarriqu bayna ahadin mir-rusulih. Wa qalu sami'na wa ata'na, ghufranaka Rabbana wa ilaykal-masir.
+
+**Translation:** "The Messenger has believed in what was revealed to him from his Lord, and so have the believers. All of them have believed in Allah and His angels and His books and His messengers, saying, 'We make no distinction between any of His messengers.' And they say, 'We hear and we obey. Grant us Your forgiveness, our Lord, and to You is the final destination.'"
+
+### Verse 286
+
+**Arabic:**
+
+لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ
+
+**Transliteration:** La yukallifullahu nafsan illa wus'aha. Laha ma kasabat wa 'alayha maktasabat. Rabbana la tu'akhidhna in nasina aw akhta'na. Rabbana wa la tahmil 'alayna isran kama hamaltahu 'alal-ladhina min qablina. Rabbana wa la tuhammilna ma la taqata lana bih. Wa'fu 'anna, waghfir lana, warhamna. Anta Mawlana fansurna 'alal-qawmil-kafirin.
+
+**Translation:** "Allah does not burden a soul beyond that it can bear. It will have the consequence of what good it has gained, and it will bear the consequence of what evil it has earned. 'Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our Protector, so give us victory over the disbelieving people.'"
+
+## What "Suffice Him" Means {#meaning-suffice}
+
+Scholars have explained the word **"kafatahu"** (they will suffice him) in several ways:
+
+**1. Suffice him in night prayer**
+Imam an-Nawawi explained that reciting these two verses is equivalent in reward to standing the whole night in prayer. For those unable to pray Tahajjud, this is a profound mercy.
+
+**2. Suffice him against all evil**
+These verses provide comprehensive protection from harm — both physical and spiritual — throughout the night.
+
+**3. Suffice him in faith and remembrance**
+The verses contain a complete declaration of faith (iman in Allah, angels, books, messengers) and comprehensive duas (forgiveness, mercy, protection, victory).
+
+**4. Suffice him from any other recitation**
+If one can only recite a short passage before bed, these two verses alone are sufficient for complete protection and reward.
+
+The most complete understanding combines all four: these verses are a comprehensive spiritual shield, prayer substitute, and statement of faith.
+
+## Special Status of These Verses {#special-status}
+
+**Given Directly to the Prophet ﷺ**
+
+The Prophet ﷺ said: **"I was given the concluding verses of Surah Al-Baqarah from a treasure beneath the Throne. No prophet before me was given them."** *(Musnad Ahmad)*
+
+This means these verses have a unique status — they were a special gift to Prophet Muhammad ﷺ and his Ummah, not given to any previous nation.
+
+**Shaytan Flees for Three Nights**
+
+The hadith in Tirmidhi states that Shaytan will not approach a house where these verses are recited for three consecutive nights. This makes them one of the most powerful protections available.
+
+**A Comprehensive Dua**
+
+Verse 286 contains five of the most powerful supplications:
+1. "Do not blame us if we forget or err" — Allah said: "I have done so" *(Sahih Muslim 126)*
+2. "Do not lay upon us a burden" — Allah said: "I have done so"
+3. "Do not burden us beyond our ability" — Allah said: "I have done so"
+4. "Pardon us, forgive us, have mercy" — Allah said: "I have done so"
+5. "Give us victory" — Allah said: "I have done so"
+
+Every single dua in this verse was accepted by Allah. You are reciting a prayer that is already granted.
+
+## How to Practice This Sunnah {#practice}
+
+**When:** Every night before sleeping, after completing your bedtime routine.
+
+**How Long:** Both verses together take approximately 2-3 minutes to recite.
+
+**Method:**
+1. After wudu and lying on your right side
+2. Recite both verses from memory or by reading
+3. Can be combined with Ayat al-Kursi and Three Quls
+4. SunnahSleep includes audio recitation you can listen along to
+
+**If You Haven't Memorized Them:**
+- Listen to audio recitation nightly — repetition builds memorization naturally
+- Start with verse 285 (shorter), then add 286
+- Use the SunnahSleep Quran player with Arabic text and transliteration
+- Even listening counts as recitation of Quran
+
+**Recommended Order for Bedtime Recitation:**
+1. Ayat al-Kursi (2:255)
+2. Last two verses of Al-Baqarah (2:285-286)
+3. Three Quls (Surah 112, 113, 114)
+
+---
+
+Two verses. Two minutes. Complete sufficiency from the Lord of the Worlds. The Prophet ﷺ received these as a treasure from beneath Allah's Throne — a gift to this Ummah that no previous nation was given. Make them your nightly companion.
+    `,
+  },
+  {
+    slug: 'how-to-wake-up-for-fajr-tips',
+    title: 'How to Wake Up for Fajr: 12 Proven Tips from Sunnah & Science',
+    metaTitle: 'How to Wake Up for Fajr Prayer: 12 Tips That Actually Work | SunnahSleep',
+    metaDescription: 'Struggling to wake up for Fajr? 12 practical tips combining Sunnah practices and sleep science to help you pray Fajr consistently. Includes alarm strategies and bedtime habits.',
+    keywords: ['how to wake up for fajr', 'fajr prayer tips', 'waking up for fajr', 'fajr alarm', 'missing fajr', 'pray fajr on time', 'fajr wake up strategy'],
+    excerpt: 'Struggling to wake up for Fajr? These 12 tips combine prophetic wisdom and modern sleep science to help you pray Fajr consistently.',
+    category: 'guidance',
+    readingTime: 9,
+    featured: true,
+    publishedDate: '2025-05-20',
+    tableOfContents: [
+      { id: 'why-fajr-matters', title: 'Why Fajr Matters So Much' },
+      { id: 'sunnah-tips', title: 'Tips from the Sunnah' },
+      { id: 'science-tips', title: 'Tips from Sleep Science' },
+      { id: 'alarm-strategy', title: 'The Perfect Alarm Strategy' },
+      { id: 'consistency', title: 'Building Consistency' },
+    ],
+    content: `
+## Why Fajr Matters So Much {#why-fajr-matters}
+
+Fajr is not just another prayer — it is the dividing line between the committed believer and the hypocrite.
+
+The Prophet ﷺ said: **"The most difficult prayers for the hypocrites are Isha and Fajr. If they knew what reward they contain, they would come to them even if they had to crawl."** *(Sahih al-Bukhari 657, Sahih Muslim 651)*
+
+He ﷺ also said: **"Whoever prays the dawn prayer (Fajr) is under the protection of Allah."** *(Sahih Muslim 657)*
+
+And: **"Whoever prays Fajr in congregation, it is as if he has prayed the entire night."** *(Sahih Muslim 656)*
+
+Missing Fajr is not a minor issue. The Prophet ﷺ described that Shaytan ties three knots on the back of your head when you sleep, saying at each knot: "You still have a long night, so sleep." Each action — waking, making wudu, and praying — unties one knot, and you rise energetic and in good spirits. *(Sahih al-Bukhari 1142)*
+
+## Tips from the Sunnah {#sunnah-tips}
+
+### 1. Sleep Early After Isha
+
+**"The Prophet ﷺ used to dislike sleeping before Isha and talking after it."** *(Sahih al-Bukhari 568)*
+
+This is the single most impactful change you can make. The later you stay up, the harder Fajr becomes. The prophetic schedule was: pray Isha, complete bedtime adhkar, sleep. No scrolling, no entertainment, no "just one more episode."
+
+### 2. Perform Wudu Before Bed
+
+**"When you go to your bed, perform ablution like that for the prayer."** *(Sahih al-Bukhari 247)*
+
+Sleeping in a state of purity makes it easier for the soul to be awakened for worship.
+
+### 3. Make Sincere Intention (Niyyah)
+
+Before sleeping, genuinely intend to wake for Fajr. The Prophet ﷺ said: **"Whoever goes to bed intending to wake and pray at night, but sleep overcomes him until morning, what he intended will be recorded for him."** *(Sunan an-Nasa'i)*
+
+Your intention is already an act of worship. But don't stop at intention — take practical steps.
+
+### 4. Recite Bedtime Adhkar
+
+The complete bedtime routine (Ayat al-Kursi, Three Quls, last verses of Al-Baqarah, Tasbih) helps the believer sleep with protection and wake with blessing. Those who skip the adhkar often report restless, heavy sleep.
+
+### 5. Take a Qailulah (Afternoon Nap)
+
+**"Take the Qailulah, for the devils do not take a midday nap."** *(Sahih al-Jami 4431)*
+
+A 20-30 minute nap after Dhuhr reduces the total night sleep you need, making early rising easier.
+
+### 6. Ask Allah Directly
+
+Make dua specifically for help waking for Fajr. Ask before sleeping: "O Allah, help me wake for Fajr and do not let Shaytan keep me from Your worship." The one who sincerely asks Allah for help will find it.
+
+## Tips from Sleep Science {#science-tips}
+
+### 7. Fix Your Sleep Schedule
+
+Your body has a circadian clock. If you go to bed and wake at the same time every day (including weekends), your body will naturally start waking before your alarm within 1-2 weeks. Consistency is more important than any alarm.
+
+### 8. Get Sunlight Exposure After Fajr
+
+Exposure to morning sunlight within 30 minutes of waking resets your circadian clock. Walk outside after Fajr prayer, even for 5 minutes. This signals your brain to feel sleepy earlier at night — creating a virtuous cycle.
+
+### 9. Avoid Screens 1 Hour Before Bed
+
+Blue light from phones, tablets, and screens suppresses melatonin — the hormone that makes you sleepy. Stop screen use after Isha. Replace it with Quran recitation, dhikr, or reading.
+
+### 10. Keep Your Room Cool and Dark
+
+Optimal sleep temperature is 65-68°F (18-20°C). Darkness triggers melatonin. Use blackout curtains if needed, but ensure you can let light in for waking.
+
+## The Perfect Alarm Strategy {#alarm-strategy}
+
+### 11. Use Multiple Graduated Alarms
+
+Don't rely on a single alarm. Set:
+- **First alarm:** 30 minutes before Fajr adhan (gentle tone)
+- **Second alarm:** At Fajr adhan time (Fajr adhan sound)
+- **Third alarm:** 10 minutes after adhan (loud, placed across the room)
+
+SunnahSleep calculates Fajr time for your location and lets you set "30 minutes before Fajr" alarms automatically.
+
+**Place your phone across the room.** If you can turn off your alarm without getting out of bed, you will. Physical movement is the key to breaking the sleep inertia.
+
+### 12. The 5-Second Rule
+
+When the alarm goes off, count 5-4-3-2-1 and physically move. Don't negotiate with yourself. Don't check what time it is. Don't say "5 more minutes." The moment of decision is in those first 5 seconds. Move your body — sit up, put feet on the floor, stand.
+
+Then immediately say: **"Alhamdulillahilladhi ahyana ba'da ma amatana wa ilayhin-nushur"** — the waking dua. Now you've untied the first knot.
+
+## Building Consistency {#consistency}
+
+**Start With 3 Days**
+
+Don't aim for "every day forever." Commit to 3 consecutive days. Then extend to 7. Then 14. Habits build through small wins.
+
+**Find an Accountability Partner**
+
+The Prophet ﷺ said: **"A man will follow the way of his close friend, so let one of you look at whom he befriends."** *(Sunan Abu Dawud 4833)*
+
+Find a friend or family member who will check on you. Call each other after Fajr. Make it a shared commitment.
+
+**Track Your Streak**
+
+SunnahSleep tracks your Fajr adherence. Seeing a streak of consecutive Fajr prayers creates motivation to maintain it. Missing one day breaks the streak — and that psychological nudge is powerful.
+
+**Don't Beat Yourself Up**
+
+If you miss Fajr, make it up immediately when you wake. The Prophet ﷺ said: **"Whoever forgets a prayer or sleeps through it, its expiation is to pray it when he remembers."** *(Sahih al-Bukhari 597)*
+
+Then renew your intention and try again tonight.
+
+---
+
+Fajr is the most rewarding daily habit a Muslim can build. It sets the tone for the entire day. The Prophet ﷺ gave us the spiritual tools (adhkar, wudu, intention), and modern science confirms the practical steps (consistent schedule, morning light, avoiding screens). Combine both, be patient with yourself, and ask Allah for help. He does not burden a soul beyond what it can bear.
+    `,
+  },
+  {
+    slug: 'wudu-before-sleeping-benefits-guide',
+    title: 'Wudu Before Sleeping: Complete Guide to Benefits & How-To',
+    metaTitle: 'Wudu Before Sleeping: Benefits, How-To & Hadith Guide | Islamic Sleep',
+    metaDescription: 'Learn why the Prophet ﷺ commanded wudu before sleeping. Complete guide to benefits (spiritual & scientific), step-by-step instructions, and authentic Hadith references.',
+    keywords: ['wudu before sleeping', 'wudu before bed', 'ablution before sleep', 'wudu benefits sleep', 'islamic hygiene sleep', 'wudu hadith sleep'],
+    excerpt: 'The Prophet ﷺ said: "When you go to your bed, perform ablution like that for the prayer." Learn the spiritual and scientific benefits of wudu before sleeping.',
+    category: 'health',
+    readingTime: 6,
+    featured: false,
+    publishedDate: '2025-06-01',
+    tableOfContents: [
+      { id: 'prophetic-command', title: 'The Prophetic Command' },
+      { id: 'spiritual-benefits', title: 'Spiritual Benefits' },
+      { id: 'scientific-benefits', title: 'Scientific Benefits' },
+      { id: 'how-to', title: 'How to Perform Wudu' },
+      { id: 'common-questions', title: 'Common Questions' },
+    ],
+    content: `
+## The Prophetic Command {#prophetic-command}
+
+The Prophet ﷺ gave a clear instruction about wudu before sleeping:
+
+**"When you go to your bed, perform ablution like that for the prayer, then lie on your right side."** *(Sahih al-Bukhari 247, Sahih Muslim 2710)*
+
+This command establishes wudu as the **first step** in the prophetic sleep routine — before lying down, before recitations, before everything else. The phrasing "like that for the prayer" means a full, proper wudu — not a partial wash.
+
+In another narration, the Prophet ﷺ told Al-Bara' ibn 'Azib رضي الله عنه: **"When you go to your bed, perform wudu as you would for prayer, then lie on your right side and say [the bedtime dua]. If you die that night, you will die upon the fitrah."** *(Sahih al-Bukhari 6311)*
+
+The connection between wudu, sleeping on the right side, and dying upon natural disposition (fitrah) shows that bedtime wudu is not just hygiene — it is spiritual preparation for the soul's journey during sleep.
+
+## Spiritual Benefits {#spiritual-benefits}
+
+### Angels Stay With You
+
+The Prophet ﷺ said: **"Whoever retires to bed in a state of purity, an angel stays with him in his bed. Every time he turns over, the angel says: 'O Allah, forgive Your slave, for he retired to bed in a state of purity.'"** *(Sahih Ibn Hibban)*
+
+This means that throughout the night, while you sleep, an angel is making dua for your forgiveness. Every toss, every turn becomes a reason for angelic supplication.
+
+### Soul Ascends to Allah
+
+During sleep, the soul leaves the body. The Prophet ﷺ wanted Muslims to be in a state of purity when this happens. If a soul is taken during sleep (death), the person who performed wudu departs in a state of worship.
+
+### Protection from Shaytan
+
+Wudu combined with the bedtime adhkar creates a comprehensive barrier against Shaytan's influence during the night. The purity of the body complements the purity achieved through Quran and dhikr.
+
+### Complete the Day as a Worshipper
+
+By performing wudu before bed, you bookend your day with ritual purity — wudu for Fajr at the beginning, wudu for sleep at the end. Your entire day exists within a framework of worship.
+
+## Scientific Benefits {#scientific-benefits}
+
+### Temperature Regulation
+
+Washing hands, face, and feet with cool water before bed helps lower your core body temperature. Sleep scientists recommend a cool body temperature for optimal sleep onset. Wudu achieves this naturally.
+
+### Improved Sleep Onset
+
+The washing ritual serves as a pre-sleep transition. Research shows that a consistent "wind-down routine" signals the brain that sleep is approaching, reducing the time it takes to fall asleep. Wudu is a perfect ritual cue.
+
+### Hygiene and Skin Health
+
+Washing the face removes bacteria, oil, and pollutants that accumulate during the day. This prevents skin irritation that can cause nighttime itching and disrupted sleep. Clean hands prevent transferring germs to pillows and sheets.
+
+### Nasal Hygiene
+
+The Sunnah of sniffing water into the nose and blowing it out (istinshaq and istinthar) during wudu clears nasal passages. This reduces nighttime congestion and snoring, leading to better breathing during sleep.
+
+### Relaxation Response
+
+The repetitive, meditative nature of wudu activates the parasympathetic nervous system (the "rest and digest" system). Heart rate slows, breathing deepens, and muscle tension decreases — the ideal state for falling asleep.
+
+## How to Perform Wudu {#how-to}
+
+The Prophet ﷺ said to perform wudu "like that for the prayer," so the full wudu steps apply:
+
+**1. Intention (Niyyah)** — Intend in your heart to perform wudu for sleep
+
+**2. Say Bismillah** — "In the name of Allah"
+
+**3. Wash hands 3 times** — Including between the fingers
+
+**4. Rinse mouth 3 times** — Swish water thoroughly (also cleans teeth — brushing is equivalent to the Sunnah of miswak)
+
+**5. Clean nose 3 times** — Sniff water in and blow out
+
+**6. Wash face 3 times** — From hairline to chin, ear to ear
+
+**7. Wash arms to elbows 3 times** — Right arm first, then left
+
+**8. Wipe head once** — From front to back and back to front
+
+**9. Wipe ears once** — Index finger inside, thumb behind
+
+**10. Wash feet to ankles 3 times** — Right foot first, then left, including between toes
+
+**After Wudu Dua:** "Ashhadu an la ilaha illallah wahdahu la sharika lah, wa ashhadu anna Muhammadan 'abduhu wa rasuluh."
+
+For a detailed visual guide, visit the SunnahSleep Wudu Guide at sunnahsleep.app/wudu
+
+## Common Questions {#common-questions}
+
+### Do I need wudu if I already have it?
+
+If you still have wudu from Isha prayer, it is sufficient. However, some scholars recommend renewing wudu specifically for sleep as an additional act of worship.
+
+### What if I lose wudu during the night?
+
+The initial wudu is what matters. If you get up during the night and lose wudu, you don't need to redo it to go back to sleep (though it is recommended if you wish to pray).
+
+### Can I do tayammum (dry ablution) instead?
+
+If water is unavailable or you have a medical condition, tayammum is acceptable as a substitute.
+
+### What if I'm too tired?
+
+Even a quick, basic wudu is better than no wudu. The Prophet ﷺ commanded it alongside sleep — he understood human tiredness. The act takes under 2 minutes. If you can scroll your phone, you can do wudu.
+
+### Does a shower count?
+
+A shower covers all the areas wudu covers (and more), so it fulfills the physical requirements. However, make the intention for wudu and include the specific steps (mouth rinse, nose cleaning) for the full spiritual benefit.
+
+---
+
+Wudu before sleep is the gateway practice of the entire prophetic sleep routine. It purifies the body, calms the mind, and prepares the soul. An angel makes dua for your forgiveness all night. The scientific benefits align perfectly with what sleep researchers recommend. Two minutes for a night of angelic supplication — there is no better investment of time.
+    `,
+  },
 ];
 
 export const getBlogArticleBySlug = (slug: string): BlogArticle | undefined => {
