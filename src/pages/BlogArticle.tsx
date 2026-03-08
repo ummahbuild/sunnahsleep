@@ -80,10 +80,10 @@ export default function BlogArticlePage() {
   const shareUrl = `${BASE_URL}/blog/${article.slug}`;
   const shareText = `${article.title} — ${article.excerpt}`;
 
-  // Get related articles - same category first, then other categories for cross-linking
-  const sameCategoryArticles = blogArticles
+  const allArticles = getAllBlogArticles();
+  const sameCategoryArticles = allArticles
     .filter(a => a.slug !== article.slug && a.category === article.category);
-  const otherArticles = blogArticles
+  const otherArticles = allArticles
     .filter(a => a.slug !== article.slug && a.category !== article.category);
   const relatedArticles = [...sameCategoryArticles, ...otherArticles].slice(0, 4);
 
