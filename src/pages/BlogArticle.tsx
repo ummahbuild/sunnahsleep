@@ -262,9 +262,39 @@ export default function BlogArticlePage() {
   );
 }
 
+/** Internal cross-links for SEO link equity */
+const INTERNAL_LINKS: [RegExp, string][] = [
+  [/\bAyat al-Kursi\b/gi, '<a href="/blog/ayat-al-kursi-before-sleep-benefits">Ayat al-Kursi</a>'],
+  [/\bTahajjud\b/gi, '<a href="/blog/how-to-wake-up-for-tahajjud">Tahajjud</a>'],
+  [/\bThree Quls\b/gi, '<a href="/blog/three-quls-before-sleep-protection">Three Quls</a>'],
+  [/\bTasbih Fatimah\b/gi, '<a href="/blog/tasbih-fatimah-before-sleep">Tasbih Fatimah</a>'],
+  [/\bQailulah\b/gi, '<a href="/blog/qailulah-islamic-power-nap">Qailulah</a>'],
+  [/\bSurah Al-Mulk\b/gi, '<a href="/blog/surah-mulk-before-sleep-benefits">Surah Al-Mulk</a>'],
+  [/\bSurah Tabarak\b/gi, '<a href="/blog/surah-mulk-before-sleep-benefits">Surah Tabarak</a>'],
+  [/\bwudu before (bed|sleep|sleeping)\b/gi, '<a href="/blog/wudu-before-sleeping-benefits">wudu before $1</a>'],
+  [/\bFajr prayer\b/gi, '<a href="/blog/waking-up-for-fajr-tips">Fajr prayer</a>'],
+  [/\bSunnah sleep routine\b/gi, '<a href="/blog/prophetic-sleep-routine-complete-guide">Sunnah sleep routine</a>'],
+];
+
+function addInternalLinks(html: string): string {
+  let result = html;
+  for (const [pattern, replacement] of INTERNAL_LINKS) {
+    // Only replace first occurrence of each term to avoid over-linking
+    result = result.replace(pattern, (match) => {
+      // Don't link if already inside an <a> tag
+      const before = result.substring(0, result.indexOf(match));
+      const lastOpenA = before.lastIndexOf('<a ');
+      const lastCloseA = before.lastIndexOf('</a>');
+      if (lastOpenA > lastCloseA) return match; // inside a link already
+      return match.replace(pattern, replacement);
+    });
+  }
+  return result;
+}
+
 /** Improved markdown-to-HTML renderer */
 function renderMarkdown(content: string): string {
-  return content
+  const html = content
     // Headings with IDs
     .replace(/## ([^\n{]+)\{#([^}]+)\}/g, '<h2 id="$2">$1</h2>')
     .replace(/### ([^\n]+)/g, '<h3>$1</h3>')
@@ -294,4 +324,6 @@ function renderMarkdown(content: string): string {
     .replace(/<p>\s*<ul>/g, '<ul>')
     .replace(/<\/ul>\s*<\/p>/g, '</ul>')
     .replace(/<p>\s*<hr \/>\s*<\/p>/g, '<hr />');
+  
+  return addInternalLinks(html);
 }
