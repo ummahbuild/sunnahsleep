@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Clock, BookOpen, Moon, Heart, Sparkles, ChevronRight, Filter } from 'lucide-react';
 import { getAllBlogArticles, getFeaturedArticles, getArticlesByCategory, BlogArticle } from '@/data/blogData';
@@ -42,12 +42,22 @@ export default function Blog() {
   });
 
   const [activeCategory, setActiveCategory] = useState<BlogArticle['category'] | 'all'>('all');
+  const [page, setPage] = useState(1);
+  const ARTICLES_PER_PAGE = 20;
 
   const featuredArticles = getFeaturedArticles();
   const allArticles = getAllBlogArticles();
-  const filteredArticles = activeCategory === 'all'
+  const filteredArticles = useMemo(() => activeCategory === 'all'
     ? allArticles.filter(a => !a.featured)
-    : allArticles.filter(a => !a.featured && a.category === activeCategory);
+    : allArticles.filter(a => !a.featured && a.category === activeCategory), [allArticles, activeCategory]);
+
+  const totalPages = Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE);
+  const paginatedArticles = filteredArticles.slice((page - 1) * ARTICLES_PER_PAGE, page * ARTICLES_PER_PAGE);
+
+  const handleCategoryChange = (key: BlogArticle['category'] | 'all') => {
+    setActiveCategory(key);
+    setPage(1);
+  };
 
   const categories: { key: BlogArticle['category'] | 'all'; label: string }[] = [
     { key: 'all', label: 'All' },
@@ -164,7 +174,7 @@ export default function Blog() {
                 key={cat.key}
                 role="tab"
                 aria-selected={activeCategory === cat.key}
-                onClick={() => setActiveCategory(cat.key)}
+                onClick={() => handleCategoryChange(cat.key)}
                 className={cn(
                   'px-3 py-1.5 rounded-full text-xs font-medium border whitespace-nowrap transition-colors',
                   activeCategory === cat.key
@@ -177,10 +187,10 @@ export default function Blog() {
             ))}
           </div>
           <div className="space-y-3">
-            {filteredArticles.length === 0 && (
+            {paginatedArticles.length === 0 && (
               <p className="text-sm text-muted-foreground py-8 text-center">No articles in this category yet.</p>
             )}
-            {filteredArticles.map((article) => (
+            {paginatedArticles.map((article) => (
               <Link
                 key={article.slug}
                 to={`/blog/${article.slug}`}
@@ -218,6 +228,29 @@ export default function Blog() {
               </Link>
             ))}
           </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-2 mt-6">
+              <button
+                onClick={() => setPage(p => Math.max(1, p - 1))}
+                disabled={page === 1}
+                className="px-3 py-1.5 rounded-lg text-sm border border-border text-cream-dim hover:text-gold hover:border-gold/30 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              >
+                Previous
+              </button>
+              <span className="text-sm text-muted-foreground px-2">
+                {page} / {totalPages}
+              </span>
+              <button
+                onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+                disabled={page === totalPages}
+                className="px-3 py-1.5 rounded-lg text-sm border border-border text-cream-dim hover:text-gold hover:border-gold/30 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              >
+                Next
+              </button>
+            </div>
+          )}
         </section>
 
         {/* SEO Footer Text */}
