@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { ArrowLeft, Clock, BookOpen, ChevronRight, Share2, Twitter, Facebook } from 'lucide-react';
 import { getBlogArticleBySlug, getAllBlogArticles, BlogArticle } from '@/data/blogData';
 import { cn } from '@/lib/utils';
@@ -6,9 +7,24 @@ import { usePageMeta } from '@/hooks/usePageMeta';
 
 const BASE_URL = 'https://sunnahsleep.app';
 
+function useReadingProgress() {
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    const updateProgress = () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(docHeight > 0 ? Math.min((scrollTop / docHeight) * 100, 100) : 0);
+    };
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    return () => window.removeEventListener('scroll', updateProgress);
+  }, []);
+  return progress;
+}
+
 export default function BlogArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const article = slug ? getBlogArticleBySlug(slug) : undefined;
+  const readingProgress = useReadingProgress();
 
   const canonical = article ? `${BASE_URL}/blog/${article.slug}` : undefined;
   usePageMeta(article ? {
@@ -99,6 +115,13 @@ export default function BlogArticlePage() {
 
   return (
     <div className="min-h-screen bg-gradient-night islamic-pattern">
+      {/* Reading Progress Bar */}
+      <div className="fixed top-0 left-0 right-0 z-50 h-1 bg-secondary/30">
+        <div
+          className="h-full bg-gold transition-[width] duration-150 ease-out"
+          style={{ width: `${readingProgress}%` }}
+        />
+      </div>
       <article className="max-w-3xl mx-auto pb-12">
         {/* Header */}
         <header className="px-4 sm:px-6 pt-6 pb-8">
