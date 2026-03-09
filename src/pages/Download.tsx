@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useMemo, useState, useCallback } from 'react';
 import {
   Moon, Download, Shield, Wifi, ArrowLeft, CheckCircle2, ChevronDown,
-  BookOpen, Clock, Lock, Bell, Share2, Smartphone, Monitor, Apple,
+  BookOpen, Clock, Lock, Bell, Share2, Smartphone,
   ExternalLink, Star,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';

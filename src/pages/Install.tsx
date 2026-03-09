@@ -10,47 +10,60 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-const FAQ_SCHEMA = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Is my data private?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes. SunnahSleep stores everything locally on your device—checklist, sleep log, alarms, diary. We don\'t collect, track, or transmit any personal data. No account means no profile, no server, no cloud.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Does it work offline?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes. Once installed, the checklist, recitations, Tasbih, sleep tracker, and Quran audio work offline. Prayer times need an initial connection to fetch for your location, then they\'re cached.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Will alarms work when the app is closed?',
-      acceptedAnswer: { '@type': 'Answer', text: 'In a PWA, alarms work best when the app is open or recently used. We recommend keeping the app open before sleep or using a backup alarm for critical wake times like Fajr.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do I need to create an account?',
-      acceptedAnswer: { '@type': 'Answer', text: 'No. Open the app, set your location (or let us detect it), and start using it. All your progress is stored on your device.' },
-    },
-  ],
-};
-
 export default function Install() {
   usePageMeta({
-    title: 'Install SunnahSleep - Add to Home Screen | Islamic Sleep App',
-    description: 'Install SunnahSleep PWA on iPhone, Android, or desktop. Add to home screen for quick access to the Prophetic bedtime routine. Works offline.',
+    title: 'Install SunnahSleep — Add to Home Screen | Free Islamic Sleep App',
+    description: 'Install SunnahSleep PWA on iPhone, Android, or desktop. Add to home screen for quick access to the Prophetic bedtime routine with Quran, Tasbih & Fajr alarms. Works offline, 100% private.',
     canonical: 'https://sunnahsleep.app/install',
-    keywords: ['install SunnahSleep', 'add to home screen', 'PWA Islamic app', 'SunnahSleep app'],
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
-        { '@type': 'ListItem', position: 2, name: 'Install', item: 'https://sunnahsleep.app/install' },
-      ],
-    },
+    keywords: ['install SunnahSleep', 'add to home screen', 'PWA Islamic app', 'SunnahSleep app', 'install Islamic sleep app', 'SunnahSleep iPhone', 'SunnahSleep Android'],
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'SunnahSleep', item: 'https://sunnahsleep.app/' },
+          { '@type': 'ListItem', position: 2, name: 'Install', item: 'https://sunnahsleep.app/install' },
+        ],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Is my data private?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Yes. SunnahSleep stores everything locally on your device—checklist, sleep log, alarms, diary. We don\'t collect, track, or transmit any personal data.' },
+          },
+          {
+            '@type': 'Question',
+            name: 'Does it work offline?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Yes. Once installed, the checklist, recitations, Tasbih, sleep tracker, and Quran audio work offline. Prayer times need an initial connection then they\'re cached.' },
+          },
+          {
+            '@type': 'Question',
+            name: 'Will alarms work when the app is closed?',
+            acceptedAnswer: { '@type': 'Answer', text: 'In a PWA, alarms work best when the app is open or recently used. We recommend keeping the app open before sleep or using a backup alarm for Fajr.' },
+          },
+          {
+            '@type': 'Question',
+            name: 'Do I need to create an account?',
+            acceptedAnswer: { '@type': 'Answer', text: 'No. Open the app, set your location, and start using it. All progress is stored on your device.' },
+          },
+        ],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: 'How to Install SunnahSleep as a PWA',
+        description: 'Step-by-step guide to install SunnahSleep on your device as a Progressive Web App.',
+        totalTime: 'PT1M',
+        step: [
+          { '@type': 'HowToStep', position: 1, name: 'Open in browser', text: 'Open sunnahsleep.app in Safari (iOS), Chrome (Android), or Chrome/Edge (desktop).' },
+          { '@type': 'HowToStep', position: 2, name: 'Find install option', text: 'Tap Share (iOS), Menu (Android), or look for the install icon in the address bar (desktop).' },
+          { '@type': 'HowToStep', position: 3, name: 'Add to Home Screen', text: 'Tap "Add to Home Screen" or "Install" to add SunnahSleep to your device.' },
+        ],
+      },
+    ],
   });
 
   const [platform, setPlatform] = useState<'ios' | 'android' | 'desktop'>('desktop');
@@ -198,8 +211,7 @@ export default function Install() {
 
   return (
     <div className="min-h-screen bg-gradient-night islamic-pattern">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
-      <article className="max-w-lg mx-auto px-6 py-8" itemScope itemType="https://schema.org/WebPage">
+      <article className="max-w-lg mx-auto px-6 py-8">
         <Link to="/">
           <Button variant="ghost" className="mb-6 text-gold hover:text-gold/80">
             <ArrowLeft className="h-4 w-4 mr-2" />
