@@ -1,10 +1,25 @@
 import { useParams, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { ArrowLeft, Clock, BookOpen, ChevronRight, Share2, Twitter, Facebook } from 'lucide-react';
 import { getBlogArticleBySlug, getAllBlogArticles, BlogArticle } from '@/data/blogData';
 import { cn } from '@/lib/utils';
 import { usePageMeta } from '@/hooks/usePageMeta';
 
 const BASE_URL = 'https://sunnahsleep.app';
+
+function useReadingProgress() {
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    const updateProgress = () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(docHeight > 0 ? Math.min((scrollTop / docHeight) * 100, 100) : 0);
+    };
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    return () => window.removeEventListener('scroll', updateProgress);
+  }, []);
+  return progress;
+}
 
 export default function BlogArticlePage() {
   const { slug } = useParams<{ slug: string }>();
