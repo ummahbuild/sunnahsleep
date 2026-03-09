@@ -1156,7 +1156,7 @@ Remember: nightmares are simply Shaytan's attempts to disturb you. When you foll
     `,
   },
   {
-    slug: 'elderly-sleep-sunnah-tips',
+    slug: 'elderly-muslim-sleep-guide',
     title: 'Sleep Tips for Elderly Muslims: Sunnah Practices for Aging Well',
     metaTitle: 'Elderly Muslim Sleep Tips: Sunnah Practices for Better Rest | SunnahSleep',
     metaDescription: 'Elderly Muslims can improve sleep quality with adapted Sunnah practices. Learn how to maintain your bedtime routine with age-related sleep changes.',
