@@ -297,6 +297,10 @@ const INTERNAL_LINKS: [RegExp, string][] = [
   [/\bwudu before (bed|sleep|sleeping)\b/gi, '<a href="/blog/wudu-before-sleeping-benefits">wudu before $1</a>'],
   [/\bFajr prayer\b/gi, '<a href="/blog/waking-up-for-fajr-tips">Fajr prayer</a>'],
   [/\bSunnah sleep routine\b/gi, '<a href="/blog/prophetic-sleep-routine-complete-guide">Sunnah sleep routine</a>'],
+  [/\bsleep paralysis\b/gi, '<a href="/blog/sleep-paralysis-islam">sleep paralysis</a>'],
+  [/\bsleep deprivation\b/gi, '<a href="/blog/sleep-deprivation-effects-islamic-view">sleep deprivation</a>'],
+  [/\bRamadan\b/gi, '<a href="/blog/sleep-and-fasting-ramadan">Ramadan</a>'],
+  [/\bscreen time\b/gi, '<a href="/blog/sleep-and-screen-time-islamic-perspective">screen time</a>'],
 ];
 
 function addInternalLinks(html: string): string {
