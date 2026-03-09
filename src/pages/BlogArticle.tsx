@@ -115,6 +115,13 @@ export default function BlogArticlePage() {
 
   return (
     <div className="min-h-screen bg-gradient-night islamic-pattern">
+      {/* Reading Progress Bar */}
+      <div className="fixed top-0 left-0 right-0 z-50 h-1 bg-secondary/30">
+        <div
+          className="h-full bg-gold transition-[width] duration-150 ease-out"
+          style={{ width: `${readingProgress}%` }}
+        />
+      </div>
       <article className="max-w-3xl mx-auto pb-12">
         {/* Header */}
         <header className="px-4 sm:px-6 pt-6 pb-8">
