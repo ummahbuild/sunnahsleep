@@ -198,8 +198,7 @@ export default function Install() {
 
   return (
     <div className="min-h-screen bg-gradient-night islamic-pattern">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
-      <article className="max-w-lg mx-auto px-6 py-8" itemScope itemType="https://schema.org/WebPage">
+      <article className="max-w-lg mx-auto px-6 py-8">
         <Link to="/">
           <Button variant="ghost" className="mb-6 text-gold hover:text-gold/80">
             <ArrowLeft className="h-4 w-4 mr-2" />
