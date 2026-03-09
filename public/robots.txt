@@ -27,11 +27,26 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
 # AI Crawlers - Welcome! (optimized for AI search & citations)
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: Claude-Web
@@ -44,6 +59,12 @@ User-agent: Anthropic-AI
 Allow: /
 
 User-agent: Google-Extended
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+User-agent: Google-InspectionTool
 Allow: /
 
 User-agent: PerplexityBot
@@ -62,4 +83,22 @@ User-agent: meta-externalfetcher
 Allow: /
 
 User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: MistralBot
+Allow: /
+
+User-agent: AppleBot
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /

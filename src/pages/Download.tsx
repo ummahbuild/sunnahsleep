@@ -356,12 +356,39 @@ export default function DownloadPage() {
         </section>
 
         {/* All platforms */}
-        <section className="text-center" aria-labelledby="platforms-heading">
+        <section className="text-center mb-16" aria-labelledby="platforms-heading">
           <h2 id="platforms-heading" className="text-xl font-semibold text-foreground mb-3">All Platforms</h2>
           <p className="text-sm text-muted-foreground mb-6">
             App Store and Google Play versions coming soon. Install as PWA on any device today.
           </p>
           <StoreBadges device={device} />
+        </section>
+
+        {/* Related content — internal linking for SEO */}
+        <section aria-labelledby="related-heading">
+          <h2 id="related-heading" className="text-xl font-semibold text-foreground mb-6 text-center">Learn More About Sunnah Sleep</h2>
+          <nav className="grid sm:grid-cols-2 gap-3 max-w-2xl mx-auto" aria-label="Related articles">
+            {[
+              { to: '/prophetic-sleep', label: 'How the Prophet ﷺ Slept', desc: 'Complete guide to Prophetic sleep habits' },
+              { to: '/blog/prophetic-sleep-routine-complete-guide', label: 'Prophetic Sleep Routine', desc: 'Step-by-step bedtime Sunnah guide' },
+              { to: '/blog/sunnah-sleep-app-complete-guide', label: 'SunnahSleep App Guide', desc: 'How to use every feature' },
+              { to: '/wudu', label: 'Wudu Before Sleep', desc: 'Step-by-step ablution guide' },
+              { to: '/blog/ayat-al-kursi-benefits-bedtime-protection', label: 'Ayat al-Kursi at Bedtime', desc: 'Benefits & angelic protection' },
+              { to: '/blog/tasbih-fatimah-bedtime-dhikr', label: 'Tasbih Fatimah Guide', desc: '33-33-34 bedtime dhikr explained' },
+            ].map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="flex items-start gap-3 p-3 rounded-lg border border-border/30 hover:border-primary/40 hover:bg-card/40 transition-colors group"
+              >
+                <ExternalLink className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                <div>
+                  <p className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">{link.label}</p>
+                  <p className="text-xs text-muted-foreground">{link.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </nav>
         </section>
       </main>
 
