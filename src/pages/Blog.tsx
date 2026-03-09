@@ -187,10 +187,10 @@ export default function Blog() {
             ))}
           </div>
           <div className="space-y-3">
-            {filteredArticles.length === 0 && (
+            {paginatedArticles.length === 0 && (
               <p className="text-sm text-muted-foreground py-8 text-center">No articles in this category yet.</p>
             )}
-            {filteredArticles.map((article) => (
+            {paginatedArticles.map((article) => (
               <Link
                 key={article.slug}
                 to={`/blog/${article.slug}`}
@@ -228,6 +228,29 @@ export default function Blog() {
               </Link>
             ))}
           </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-2 mt-6">
+              <button
+                onClick={() => setPage(p => Math.max(1, p - 1))}
+                disabled={page === 1}
+                className="px-3 py-1.5 rounded-lg text-sm border border-border text-cream-dim hover:text-gold hover:border-gold/30 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              >
+                Previous
+              </button>
+              <span className="text-sm text-muted-foreground px-2">
+                {page} / {totalPages}
+              </span>
+              <button
+                onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+                disabled={page === totalPages}
+                className="px-3 py-1.5 rounded-lg text-sm border border-border text-cream-dim hover:text-gold hover:border-gold/30 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              >
+                Next
+              </button>
+            </div>
+          )}
         </section>
 
         {/* SEO Footer Text */}
