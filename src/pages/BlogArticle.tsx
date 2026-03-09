@@ -24,6 +24,7 @@ function useReadingProgress() {
 export default function BlogArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const article = slug ? getBlogArticleBySlug(slug) : undefined;
+  const readingProgress = useReadingProgress();
 
   const canonical = article ? `${BASE_URL}/blog/${article.slug}` : undefined;
   usePageMeta(article ? {
