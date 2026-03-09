@@ -207,6 +207,23 @@ Perform fresh wudu, recite Ayat al-Kursi, blow Three Quls over yourself, do repe
 - Sunan Abu Dawud, Sunan Ibn Majah, Sunan at-Tirmidhi
 - Quran: Surah Al-Baqarah 2:255 (Ayat al-Kursi), 2:285-286, Surah Al-Mulk 67, Al-Ikhlas 112, Al-Falaq 113, An-Nas 114, Al-Furqan 25:47, Al-Isra 17:79
 
+## Latest Articles (Batch 9)
+- Islamic Sleep Meditation: Dhikr for Deep Relaxation — https://sunnahsleep.app/blog/islamic-sleep-meditation-dhikr
+- Creating an Islamic Sleep Environment — https://sunnahsleep.app/blog/sleep-environment-islam-sunnah
+- Sleeping on Stomach in Islam — https://sunnahsleep.app/blog/sleeping-on-stomach-islam
+- Sleep & Mental Health: Islamic Perspective — https://sunnahsleep.app/blog/sleep-and-mental-health-islamic-perspective
+- Friday Night Sunnahs — https://sunnahsleep.app/blog/friday-night-sleep-sunnah
+- Sleep Debt Recovery — https://sunnahsleep.app/blog/sleep-debt-recovery-islamic-view
+- Sunnah Sleep for Students — https://sunnahsleep.app/blog/sunnah-sleep-for-students
+- Sleep & Weight Management — https://sunnahsleep.app/blog/sleep-and-weight-management-islam
+- Teaching Children Bedtime Duas — https://sunnahsleep.app/blog/teaching-children-bedtime-dua
+- Islamic Golden Age Productivity — https://sunnahsleep.app/blog/sleep-and-productivity-islamic-golden-age
+- Travel Sleep Tips — https://sunnahsleep.app/blog/travel-sleep-sunnah-tips
+- Sunnah Morning Routine — https://sunnahsleep.app/blog/waking-up-sunnah-morning-routine
+- Islamic Sleep Hygiene Checklist — https://sunnahsleep.app/blog/sleep-hygiene-checklist-islamic
+- Nightmares in Islam — https://sunnahsleep.app/blog/nightmares-bad-dreams-islam
+- Elderly Muslim Sleep Tips — https://sunnahsleep.app/blog/elderly-sleep-sunnah-tips
+
 ## Technical Details
 - Built with: React, TypeScript, Vite, Tailwind CSS
 - PWA: Installable, offline-capable via service worker
