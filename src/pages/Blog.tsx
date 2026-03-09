@@ -174,7 +174,7 @@ export default function Blog() {
                 key={cat.key}
                 role="tab"
                 aria-selected={activeCategory === cat.key}
-                onClick={() => setActiveCategory(cat.key)}
+                onClick={() => handleCategoryChange(cat.key)}
                 className={cn(
                   'px-3 py-1.5 rounded-full text-xs font-medium border whitespace-nowrap transition-colors',
                   activeCategory === cat.key
