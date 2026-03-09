@@ -273,7 +273,7 @@ function SleepTrackerPreview() {
           <span className="text-[9px] text-muted-foreground">avg sleep</span>
         </div>
         <div className="text-center">
-          <CheckCircle2 className="h-3 w-3 text-green-400 mx-auto mb-0.5" />
+          <CheckCircle2 className="h-3 w-3 text-accent mx-auto mb-0.5" />
           <span className="text-xs font-bold text-foreground block">6/7</span>
           <span className="text-[9px] text-muted-foreground">Fajr made</span>
         </div>
