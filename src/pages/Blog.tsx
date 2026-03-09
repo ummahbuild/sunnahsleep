@@ -42,12 +42,22 @@ export default function Blog() {
   });
 
   const [activeCategory, setActiveCategory] = useState<BlogArticle['category'] | 'all'>('all');
+  const [page, setPage] = useState(1);
+  const ARTICLES_PER_PAGE = 20;
 
   const featuredArticles = getFeaturedArticles();
   const allArticles = getAllBlogArticles();
-  const filteredArticles = activeCategory === 'all'
+  const filteredArticles = useMemo(() => activeCategory === 'all'
     ? allArticles.filter(a => !a.featured)
-    : allArticles.filter(a => !a.featured && a.category === activeCategory);
+    : allArticles.filter(a => !a.featured && a.category === activeCategory), [allArticles, activeCategory]);
+
+  const totalPages = Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE);
+  const paginatedArticles = filteredArticles.slice((page - 1) * ARTICLES_PER_PAGE, page * ARTICLES_PER_PAGE);
+
+  const handleCategoryChange = (key: BlogArticle['category'] | 'all') => {
+    setActiveCategory(key);
+    setPage(1);
+  };
 
   const categories: { key: BlogArticle['category'] | 'all'; label: string }[] = [
     { key: 'all', label: 'All' },
