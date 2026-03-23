@@ -21,21 +21,15 @@ export function StoreBadges({ device }: { device: DeviceType }) {
         </Link>
 
         {/* App Store */}
-        {appStore.available ? (
-          <a
-            href={appStore.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0"
-            aria-label="Download on the App Store"
-          >
-            <img src={badgeAppStore} alt="Download on the App Store" className={BADGE_CLASS} loading="lazy" width="168" height="56" />
-          </a>
-        ) : (
-          <span className="flex-shrink-0 opacity-70 cursor-not-allowed" aria-label="Coming soon to App Store">
-            <img src={badgeAppStore} alt="Coming soon to App Store" className={BADGE_CLASS} loading="lazy" width="168" height="56" />
-          </span>
-        )}
+        <a
+          href={appStore.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-shrink-0"
+          aria-label="Download on the App Store"
+        >
+          <img src={badgeAppStore} alt="Download on the App Store" className={BADGE_CLASS} loading="lazy" width="168" height="56" />
+        </a>
 
         {/* Play Store — Coming Soon */}
         <span className="flex-shrink-0 opacity-70 cursor-not-allowed" aria-label="Coming soon to Google Play">
