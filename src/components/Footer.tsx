@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Moon, Droplets, Download, ExternalLink, BookOpen, FileText, Shield, Scale } from 'lucide-react';
+import { Moon, BookOpen, Package } from 'lucide-react';
 import { APP_STORE_LINKS } from '@/lib/deviceDetection';
 import badgeAppStore from '@/assets/badge-appstore.png';
 
@@ -56,33 +56,80 @@ export function Footer() {
                 </li>
               )}
               <li><Link to="/app" className="text-cream-dim hover:text-gold transition-colors">Dashboard</Link></li>
-              <li><Link to="/install" className="text-cream-dim hover:text-gold transition-colors flex items-center gap-1"><Download className="h-3 w-3" />Install</Link></li>
+              <li><Link to="/install" className="text-cream-dim hover:text-gold transition-colors">Install</Link></li>
               <li><Link to="/demo" className="text-cream-dim hover:text-gold transition-colors">Demo</Link></li>
               <li><Link to="/guides" className="text-cream-dim hover:text-gold transition-colors">Guides</Link></li>
             </ul>
           </div>
 
-          {/* Learn */}
+          {/* Resources */}
           <div>
             <h4 className="text-gold text-sm font-semibold mb-3 flex items-center gap-2">
-              <BookOpen className="h-4 w-4" /> Learn
+              <BookOpen className="h-4 w-4" /> Resources
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/wudu" className="text-cream-dim hover:text-gold transition-colors flex items-center gap-1"><Droplets className="h-3 w-3" />Wudu Guide</Link></li>
+              <li><Link to="/wudu" className="text-cream-dim hover:text-gold transition-colors">Wudu Guide</Link></li>
               <li><Link to="/prophetic-sleep" className="text-cream-dim hover:text-gold transition-colors">Prophetic Sleep</Link></li>
               <li><Link to="/blog" className="text-cream-dim hover:text-gold transition-colors">Blog</Link></li>
+              <li>
+                <a
+                  href="https://github.com/codingshot/sunnahsleep"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cream-dim hover:text-gold transition-colors"
+                >
+                  GitHub
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Products */}
           <div>
             <h4 className="text-gold text-sm font-semibold mb-3 flex items-center gap-2">
-              <Scale className="h-4 w-4" /> Legal
+              <Package className="h-4 w-4" /> Products
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/privacy" className="text-cream-dim hover:text-gold transition-colors flex items-center gap-1"><Shield className="h-3 w-3" />Privacy</Link></li>
-              <li><Link to="/terms" className="text-cream-dim hover:text-gold transition-colors flex items-center gap-1"><FileText className="h-3 w-3" />Terms</Link></li>
-              <li><Link to="/legal" className="text-cream-dim hover:text-gold transition-colors">Legal</Link></li>
+              <li>
+                <a
+                  href="https://praysap.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cream-dim hover:text-gold transition-colors"
+                >
+                  PRAYSAP.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://habibichilll.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cream-dim hover:text-gold transition-colors"
+                >
+                  HabibiChill <span className="text-muted-foreground">(HabibiChilll.com)</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://tryramadan.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cream-dim hover:text-gold transition-colors"
+                >
+                  TryRamadan <span className="text-muted-foreground">(TryRamadan.app)</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://mosquesteps.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cream-dim hover:text-gold transition-colors"
+                >
+                  MosqueSteps <span className="text-muted-foreground">(MosqueSteps.com)</span>
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -96,38 +143,53 @@ export function Footer() {
               href="https://ummah.build"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gold text-sm hover:underline inline-flex items-center gap-1"
+              className="text-gold text-sm hover:underline"
             >
-              Ummah.Build <ExternalLink className="h-3 w-3" />
-            </a>
-            <a
-              href="https://praysap.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold text-sm hover:underline inline-flex items-center gap-1 mt-2"
-            >
-              PRAYSAP.com <ExternalLink className="h-3 w-3" />
-            </a>
-            <a
-              href="https://github.com/codingshot/sunnahsleep"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold text-sm hover:underline inline-flex items-center gap-1 mt-2"
-            >
-              GitHub Code <ExternalLink className="h-3 w-3" />
+              Ummah.Build
             </a>
           </div>
         </nav>
 
         {/* Bottom bar */}
-        <div className="border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <Moon className="h-5 w-5 text-gold" />
-            <span className="font-arabic text-gold text-lg">SunnahSleep</span>
+        <div className="border-t border-border pt-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-center md:text-left">
+            <div className="flex items-center gap-2 justify-center md:justify-start">
+              <Moon className="h-5 w-5 text-gold" />
+              <span className="font-arabic text-gold text-lg">SunnahSleep</span>
+            </div>
+            <nav
+              className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm"
+              aria-label="Legal"
+            >
+              <Link to="/privacy" className="text-cream-dim hover:text-gold transition-colors">
+                Privacy
+              </Link>
+              <span className="text-muted-foreground/50 select-none" aria-hidden>
+                ·
+              </span>
+              <Link to="/terms" className="text-cream-dim hover:text-gold transition-colors">
+                Terms
+              </Link>
+              <span className="text-muted-foreground/50 select-none" aria-hidden>
+                ·
+              </span>
+              <Link to="/legal" className="text-cream-dim hover:text-gold transition-colors">
+                Legal
+              </Link>
+            </nav>
+            <p className="text-muted-foreground text-xs order-3 md:text-right md:justify-self-end">
+              © {new Date().getFullYear()}{' '}
+              <a
+                href="https://ummah.build"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-gold transition-colors underline-offset-2 hover:underline"
+              >
+                Ummah.Build
+              </a>
+              {' '}· Made with ❤️ for the Ummah
+            </p>
           </div>
-          <p className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} Ummah.Build · Made with ❤️ for the Ummah
-          </p>
         </div>
       </div>
     </footer>

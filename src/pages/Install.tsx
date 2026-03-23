@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { usePageMeta } from '@/hooks/usePageMeta';
-import { ArrowLeft, Download, Smartphone, Share, Plus, MoreVertical, Check, Moon, Shield, WifiOff, Bell, HelpCircle } from 'lucide-react';
+import { APP_STORE_LINKS } from '@/lib/deviceDetection';
+import badgeAppStore from '@/assets/badge-appstore.png';
+import { ArrowLeft, Download, Share, Plus, MoreVertical, Check, Moon, Shield, WifiOff, Bell, HelpCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
@@ -12,10 +14,10 @@ import {
 
 export default function Install() {
   usePageMeta({
-    title: 'Install SunnahSleep — Add to Home Screen | Free Islamic Sleep App',
-    description: 'Install SunnahSleep PWA on iPhone, Android, or desktop. Add to home screen for quick access to the Prophetic bedtime routine with Quran, Tasbih & Fajr alarms. Works offline, 100% private.',
+    title: 'Install SunnahSleep — App Store, PWA & Home Screen | Free Islamic Sleep App',
+    description: 'Download SunnahSleep on the App Store for iPhone & iPad, or install the PWA on Android and desktop. Prophetic bedtime routine with Quran, Tasbih & Fajr alarms. Works offline, 100% private.',
     canonical: 'https://sunnahsleep.app/install',
-    keywords: ['install SunnahSleep', 'add to home screen', 'PWA Islamic app', 'SunnahSleep app', 'install Islamic sleep app', 'SunnahSleep iPhone', 'SunnahSleep Android'],
+    keywords: ['install SunnahSleep', 'SunnahSleep App Store', 'add to home screen', 'PWA Islamic app', 'SunnahSleep app', 'install Islamic sleep app', 'SunnahSleep iPhone', 'SunnahSleep Android'],
     jsonLd: [
       {
         '@context': 'https://schema.org',
@@ -54,13 +56,14 @@ export default function Install() {
       {
         '@context': 'https://schema.org',
         '@type': 'HowTo',
-        name: 'How to Install SunnahSleep as a PWA',
-        description: 'Step-by-step guide to install SunnahSleep on your device as a Progressive Web App.',
-        totalTime: 'PT1M',
+        name: 'How to Install SunnahSleep',
+        description: 'Download from the App Store on iPhone & iPad, or install the web app as a PWA from Safari, Chrome, or desktop.',
+        totalTime: 'PT2M',
         step: [
-          { '@type': 'HowToStep', position: 1, name: 'Open in browser', text: 'Open sunnahsleep.app in Safari (iOS), Chrome (Android), or Chrome/Edge (desktop).' },
-          { '@type': 'HowToStep', position: 2, name: 'Find install option', text: 'Tap Share (iOS), Menu (Android), or look for the install icon in the address bar (desktop).' },
-          { '@type': 'HowToStep', position: 3, name: 'Add to Home Screen', text: 'Tap "Add to Home Screen" or "Install" to add SunnahSleep to your device.' },
+          { '@type': 'HowToStep', position: 1, name: 'Choose how to install', text: 'On iPhone or iPad, download SunnahSleep from the App Store, or add the web app from Safari. On Android or desktop, install the PWA from Chrome or Edge.' },
+          { '@type': 'HowToStep', position: 2, name: 'Open in browser (PWA)', text: 'For the web app, open sunnahsleep.app in Safari (iOS), Chrome (Android), or Chrome/Edge (desktop).' },
+          { '@type': 'HowToStep', position: 3, name: 'Find install option', text: 'Tap Share (iOS), Menu (Android), or look for the install icon in the address bar (desktop).' },
+          { '@type': 'HowToStep', position: 4, name: 'Add to Home Screen', text: 'Tap "Add to Home Screen" or "Install" to add SunnahSleep to your device.' },
         ],
       },
     ],
@@ -88,15 +91,48 @@ export default function Install() {
 
   const IOSInstructions = () => (
     <section className="space-y-6" aria-labelledby="install-ios-heading">
-      <h2 id="install-ios-heading" className="text-lg font-semibold text-foreground sr-only">Install on iPhone or iPad</h2>
+      <h2 id="install-ios-heading" className="text-lg font-semibold text-foreground">
+        iPhone & iPad
+      </h2>
+
+      {APP_STORE_LINKS.appStore.available && (
+        <div className="p-4 rounded-xl bg-secondary/30 border border-border">
+          <h3 className="text-lg font-semibold text-foreground mb-2">Option 1: App Store (recommended)</h3>
+          <p className="text-sm text-cream-dim mb-4">
+            Download the native SunnahSleep app from the App Store for the smoothest experience — full-screen bedtime flow, reliable notifications, and offline Quran audio.
+          </p>
+          <a
+            href={APP_STORE_LINKS.appStore.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block ring-1 ring-border/40 hover:ring-gold/40 transition-[box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
+            aria-label="Download on the App Store"
+          >
+            <img
+              src={badgeAppStore}
+              alt="Download on the App Store"
+              className="h-12 sm:h-14 w-auto hover:opacity-90 transition-opacity"
+              width={168}
+              height={56}
+              loading="eager"
+            />
+          </a>
+        </div>
+      )}
+
       <div className="p-4 rounded-xl bg-secondary/30 border border-border">
-        <h3 className="text-lg font-semibold text-foreground mb-4">Install on iPhone / iPad (Safari)</h3>
+        <h3 className="text-lg font-semibold text-foreground mb-2">
+          {APP_STORE_LINKS.appStore.available ? 'Option 2: Add the web app (Safari)' : 'Install from Safari (PWA)'}
+        </h3>
+        <p className="text-sm text-cream-dim mb-4">
+          You can also add SunnahSleep to your home screen from Safari — it works like an app and stays private on your device.
+        </p>
         <ol className="space-y-4" role="list">
           <li className="flex items-start gap-3">
             <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold">1</div>
             <div>
-              <p className="text-foreground font-medium">Open this page in Safari</p>
-              <p className="text-sm text-cream-dim">iOS requires Safari for "Add to Home Screen." Copy the URL and paste in Safari, or share this page to Safari.</p>
+              <p className="text-foreground font-medium">Open sunnahsleep.app in Safari</p>
+              <p className="text-sm text-cream-dim">iOS only supports &quot;Add to Home Screen&quot; from Safari. Copy the URL into Safari if you opened this page elsewhere.</p>
             </div>
           </li>
           <li className="flex items-start gap-3">
@@ -109,15 +145,15 @@ export default function Install() {
           <li className="flex items-start gap-3">
             <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold">3</div>
             <div>
-              <p className="text-foreground font-medium">Scroll and tap "Add to Home Screen"</p>
-              <p className="text-sm text-cream-dim">Find the option with the <Plus className="inline h-4 w-4" /> icon in the share menu.</p>
+              <p className="text-foreground font-medium">Scroll and tap &quot;Add to Home Screen&quot;</p>
+              <p className="text-sm text-cream-dim">Find the option with the <Plus className="inline h-4 w-4" /> icon in the share sheet.</p>
             </div>
           </li>
           <li className="flex items-start gap-3">
             <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold">4</div>
             <div>
-              <p className="text-foreground font-medium">Tap "Add"</p>
-              <p className="text-sm text-cream-dim">SunnahSleep will appear on your home screen. Open it like any app.</p>
+              <p className="text-foreground font-medium">Tap &quot;Add&quot;</p>
+              <p className="text-sm text-cream-dim">SunnahSleep appears on your home screen — open it like any app.</p>
             </div>
           </li>
         </ol>
@@ -125,7 +161,7 @@ export default function Install() {
 
       <div className="p-4 rounded-xl bg-gold/10 border border-gold/30">
         <p className="text-sm text-cream-dim">
-          <strong className="text-gold">Note:</strong> You must use Safari on iOS. Chrome and other browsers do not support "Add to Home Screen" for PWAs on iPhone.
+          <strong className="text-gold">Note:</strong> The web app must be added from Safari. Chrome and other browsers on iPhone do not support &quot;Add to Home Screen&quot; for PWAs.
         </p>
       </div>
     </section>
@@ -181,6 +217,20 @@ export default function Install() {
       <h2 id="install-desktop-heading" className="text-lg font-semibold text-foreground sr-only">Install on Desktop</h2>
       <div className="p-4 rounded-xl bg-secondary/30 border border-border">
         <h3 className="text-lg font-semibold text-foreground mb-4">Install on Desktop</h3>
+        {APP_STORE_LINKS.appStore.available && (
+          <p className="text-sm text-cream-dim mb-4">
+            Using an iPhone or iPad?{' '}
+            <a
+              href={APP_STORE_LINKS.appStore.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:underline"
+            >
+              Download SunnahSleep from the App Store
+            </a>
+            {' '}for the native experience — or use the steps below to install the web app on this computer.
+          </p>
+        )}
         <p className="text-sm text-cream-dim mb-4">Chrome, Edge, and other Chromium-based browsers support installing PWAs. Safari on macOS has limited PWA support.</p>
         <ol className="space-y-4" role="list">
           <li className="flex items-start gap-3">
@@ -225,9 +275,26 @@ export default function Install() {
           </div>
           <div>
             <h1 className="text-2xl font-semibold text-foreground">Install SunnahSleep</h1>
-            <p className="text-sm text-cream-dim">Add to your home screen</p>
+            <p className="text-sm text-cream-dim">
+              {APP_STORE_LINKS.appStore.available
+                ? 'App Store for iPhone & iPad, or add the web app to your home screen'
+                : 'Add to your home screen'}
+            </p>
           </div>
         </div>
+
+        {APP_STORE_LINKS.appStore.available && !isStandalone && (
+          <p className="text-center text-sm mb-6">
+            <a
+              href={APP_STORE_LINKS.appStore.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:underline font-medium"
+            >
+              Get SunnahSleep on the App Store →
+            </a>
+          </p>
+        )}
 
         {isStandalone ? (
           <div className="p-6 rounded-2xl bg-gold/10 border border-gold/30 text-center">
