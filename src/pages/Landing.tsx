@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Moon, Shield, Wifi, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { Moon, Shield, Wifi, ExternalLink, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Footer } from '@/components/Footer';
-import { getDeviceType } from '@/lib/deviceDetection';
+import { APP_STORE_LINKS, getDeviceType } from '@/lib/deviceDetection';
 import { usePageMeta } from '@/hooks/usePageMeta';
 import { StoreBadges } from '@/components/landing/StoreBadges';
 import { ReferenceCarousel } from '@/components/landing/ReferenceCarousel';
@@ -117,11 +117,11 @@ const Landing = () => {
                 <Moon className="h-5 w-5" /> Start Your Routine
               </Button>
             </Link>
-            <Link to="/demo">
+            <a href={APP_STORE_LINKS.appStore.url} target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-primary/30 text-primary hover:bg-primary/10 gap-2 text-base">
-                Watch Demo <ChevronRight className="h-4 w-4" />
+                Download App <ExternalLink className="h-4 w-4" />
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Trust badges */}
@@ -174,7 +174,7 @@ const Landing = () => {
           Get <span className="text-gradient-gold">SunnahSleep</span> on Your Device
         </h2>
         <p className="text-cream-dim max-w-lg mx-auto mb-8 text-sm">
-          Download the Android APK now. Get SunnahSleep on the App Store for iPhone. Google Play coming soon.
+          Get SunnahSleep on the App Store for iPhone. Download the Android APK. Google Play coming soon.
         </p>
         <StoreBadges device={device} />
       </section>

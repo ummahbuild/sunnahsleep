@@ -36,22 +36,18 @@ export function Footer() {
               <Moon className="h-4 w-4" /> App
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/app" className="text-cream-dim hover:text-gold transition-colors">Dashboard</Link></li>
-              <li><Link to="/install" className="text-cream-dim hover:text-gold transition-colors flex items-center gap-1"><Download className="h-3 w-3" />Install</Link></li>
-              <li><Link to="/demo" className="text-cream-dim hover:text-gold transition-colors">Demo</Link></li>
-              <li><Link to="/guides" className="text-cream-dim hover:text-gold transition-colors">Guides</Link></li>
               {APP_STORE_LINKS.appStore.available && (
                 <li>
                   <a
                     href={APP_STORE_LINKS.appStore.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block rounded-lg ring-1 ring-border/40 hover:ring-gold/40 transition-[box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
+                    className="inline-block ring-1 ring-border/40 hover:ring-gold/40 transition-[box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
                   >
                     <img
                       src={badgeAppStore}
                       alt="Download on the App Store"
-                      className="h-10 w-auto rounded-lg"
+                      className="h-10 w-auto"
                       width={120}
                       height={40}
                       loading="lazy"
@@ -59,6 +55,10 @@ export function Footer() {
                   </a>
                 </li>
               )}
+              <li><Link to="/app" className="text-cream-dim hover:text-gold transition-colors">Dashboard</Link></li>
+              <li><Link to="/install" className="text-cream-dim hover:text-gold transition-colors flex items-center gap-1"><Download className="h-3 w-3" />Install</Link></li>
+              <li><Link to="/demo" className="text-cream-dim hover:text-gold transition-colors">Demo</Link></li>
+              <li><Link to="/guides" className="text-cream-dim hover:text-gold transition-colors">Guides</Link></li>
             </ul>
           </div>
 
@@ -99,6 +99,22 @@ export function Footer() {
               className="text-gold text-sm hover:underline inline-flex items-center gap-1"
             >
               Ummah.Build <ExternalLink className="h-3 w-3" />
+            </a>
+            <a
+              href="https://praysap.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold text-sm hover:underline inline-flex items-center gap-1 mt-2"
+            >
+              PRAYSAP.com <ExternalLink className="h-3 w-3" />
+            </a>
+            <a
+              href="https://github.com/codingshot/sunnahsleep"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold text-sm hover:underline inline-flex items-center gap-1 mt-2"
+            >
+              GitHub Code <ExternalLink className="h-3 w-3" />
             </a>
           </div>
         </nav>

@@ -7,9 +7,10 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { usePageMeta } from '@/hooks/usePageMeta';
-import { getDeviceType } from '@/lib/deviceDetection';
+import { getDeviceType, APP_STORE_LINKS } from '@/lib/deviceDetection';
 import { StoreBadges } from '@/components/landing/StoreBadges';
 import { Footer } from '@/components/Footer';
+import badgeAppStore from '@/assets/badge-appstore.png';
 
 const APK_URL = '/app/sunnah-sleep.apk';
 const APK_SIZE = '~15 MB';
@@ -258,38 +259,58 @@ export default function DownloadPage() {
             {isAndroid
               ? 'Get the native Android app. Follow the Prophetic ﷺ sleep routine with better background alarms and offline support.'
               : isIOS
-                ? 'Add SunnahSleep to your home screen from Safari. It works offline like a native app — no App Store needed.'
-                : 'Install SunnahSleep as a Progressive Web App or download the Android APK. Works on every platform, free forever.'
+                ? 'Download SunnahSleep from the App Store, or add the web app to your home screen from Safari — works offline either way.'
+                : 'Get the iPhone app on the App Store, install as a Progressive Web App, or download the Android APK. Free on every platform.'
             }
           </p>
 
-          {/* Primary CTA */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            {(isAndroid || device === 'desktop') && (
-              <a href={APK_URL} download="sunnah-sleep.apk" className="inline-block" onClick={handleDownload}>
-                <Button
-                  size="lg"
-                  className={`gap-2 text-base px-10 glow-gold transition-all ${
-                    dlState === 'done'
-                      ? 'bg-green-600 hover:bg-green-700 text-white'
-                      : 'bg-primary text-primary-foreground hover:bg-primary/90'
-                  }`}
-                  disabled={dlState === 'downloading'}
-                >
-                  {dlState === 'done' ? <CheckCircle2 className="h-5 w-5" /> : <Download className="h-5 w-5" />}
-                  {dlButtonLabel}
-                </Button>
+          {/* Primary CTA — App Store first, then APK (Android/desktop), then PWA where relevant */}
+          <div className="flex flex-col items-center justify-center gap-4">
+            {APP_STORE_LINKS.appStore.available && (
+              <a
+                href={APP_STORE_LINKS.appStore.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-shrink-0 ring-1 ring-border/40 hover:ring-primary/40 transition-[box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                aria-label="Download on the App Store"
+              >
+                <img
+                  src={badgeAppStore}
+                  alt="Download on the App Store"
+                  className="h-14 sm:h-16 w-auto"
+                  width={200}
+                  height={64}
+                  loading="eager"
+                />
               </a>
             )}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              {(isAndroid || device === 'desktop') && (
+                <a href={APK_URL} download="sunnah-sleep.apk" className="inline-block" onClick={handleDownload}>
+                  <Button
+                    size="lg"
+                    className={`gap-2 text-base px-10 glow-gold transition-all ${
+                      dlState === 'done'
+                        ? 'bg-green-600 hover:bg-green-700 text-white'
+                        : 'bg-primary text-primary-foreground hover:bg-primary/90'
+                    }`}
+                    disabled={dlState === 'downloading'}
+                  >
+                    {dlState === 'done' ? <CheckCircle2 className="h-5 w-5" /> : <Download className="h-5 w-5" />}
+                    {dlButtonLabel}
+                  </Button>
+                </a>
+              )}
 
-            {!isAndroid && (
-              <Link to="/install">
-                <Button size="lg" variant={isAndroid ? 'outline' : 'default'} className="gap-2 text-base px-10">
-                  <Smartphone className="h-5 w-5" />
-                  Install as PWA
-                </Button>
-              </Link>
-            )}
+              {!isAndroid && (
+                <Link to="/install">
+                  <Button size="lg" variant={isAndroid ? 'outline' : 'default'} className="gap-2 text-base px-10">
+                    <Smartphone className="h-5 w-5" />
+                    Install as PWA
+                  </Button>
+                </Link>
+              )}
+            </div>
           </div>
 
           <p className="text-xs text-muted-foreground mt-3">

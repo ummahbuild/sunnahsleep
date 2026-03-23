@@ -1,13 +1,20 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { usePageMeta } from "@/hooks/usePageMeta";
-import { Moon, ArrowLeft, BookOpen, Home, Download } from "lucide-react";
+import { Moon, ArrowLeft, BookOpen, Home, Download, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { APP_STORE_LINKS } from "@/lib/deviceDetection";
 
-const SUGGESTIONS = [
+const SUGGESTIONS: (
+  | { to: string; label: string; desc: string; icon: typeof Home }
+  | { href: string; label: string; desc: string; icon: typeof Smartphone; external: true }
+)[] = [
   { to: "/", label: "Home", desc: "Back to the landing page", icon: Home },
   { to: "/app", label: "Open App", desc: "Start your bedtime routine", icon: Moon },
-  { to: "/download", label: "Download", desc: "Get the Android APK", icon: Download },
+  ...(APP_STORE_LINKS.appStore.available
+    ? [{ href: APP_STORE_LINKS.appStore.url, label: "App Store", desc: "iPhone & iPad app", icon: Smartphone, external: true as const }]
+    : []),
+  { to: "/download", label: "Download", desc: "Android APK & more", icon: Download },
   { to: "/blog", label: "Blog", desc: "Islamic sleep articles", icon: BookOpen },
 ];
 
@@ -41,17 +48,31 @@ const NotFound = () => {
 
         {/* Suggestions */}
         <nav className="grid grid-cols-2 gap-3 mb-8" aria-label="Suggested pages">
-          {SUGGESTIONS.map((s) => (
-            <Link
-              key={s.to}
-              to={s.to}
-              className="flex flex-col items-center gap-1.5 p-4 rounded-xl border border-border/30 hover:border-primary/40 hover:bg-card/40 transition-colors group"
-            >
-              <s.icon className="h-5 w-5 text-primary" />
-              <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">{s.label}</span>
-              <span className="text-xs text-muted-foreground">{s.desc}</span>
-            </Link>
-          ))}
+          {SUGGESTIONS.map((s) =>
+            "external" in s && s.external ? (
+              <a
+                key={s.href}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-1.5 p-4 rounded-xl border border-border/30 hover:border-primary/40 hover:bg-card/40 transition-colors group"
+              >
+                <s.icon className="h-5 w-5 text-primary" />
+                <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">{s.label}</span>
+                <span className="text-xs text-muted-foreground">{s.desc}</span>
+              </a>
+            ) : (
+              <Link
+                key={s.to}
+                to={s.to}
+                className="flex flex-col items-center gap-1.5 p-4 rounded-xl border border-border/30 hover:border-primary/40 hover:bg-card/40 transition-colors group"
+              >
+                <s.icon className="h-5 w-5 text-primary" />
+                <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">{s.label}</span>
+                <span className="text-xs text-muted-foreground">{s.desc}</span>
+              </Link>
+            )
+          )}
         </nav>
 
         <Link to="/">
