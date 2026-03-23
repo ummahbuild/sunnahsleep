@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ArrowLeft, Clock, BookOpen, ChevronRight, Share2, Twitter, Facebook } from 'lucide-react';
 import { getBlogArticleBySlug, getAllBlogArticles, BlogArticle } from '@/data/blogData';
@@ -23,7 +23,8 @@ function useReadingProgress() {
 
 export default function BlogArticlePage() {
   const { slug } = useParams<{ slug: string }>();
-  const article = slug ? getBlogArticleBySlug(slug) : undefined;
+  const rawSlug = slug ? decodeURIComponent(slug) : undefined;
+  const article = rawSlug ? getBlogArticleBySlug(rawSlug) : undefined;
   const readingProgress = useReadingProgress();
 
   const canonical = article ? `${BASE_URL}/blog/${article.slug}` : undefined;
@@ -77,6 +78,10 @@ export default function BlogArticlePage() {
         </div>
       </div>
     );
+  }
+
+  if (rawSlug !== article.slug) {
+    return <Navigate to={`/blog/${article.slug}`} replace />;
   }
 
   const categoryColors: Record<BlogArticle['category'], string> = {

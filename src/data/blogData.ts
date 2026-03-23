@@ -1968,8 +1968,20 @@ Wudu before sleep is the gateway practice of the entire prophetic sleep routine.
 
 const allArticles = () => [...blogArticles, ...extraBlogArticles, ...extraBlogArticles2, ...extraBlogArticles3, ...extraBlogArticles4, ...extraBlogArticles5, ...extraBlogArticles6, ...extraBlogArticles7, ...extraBlogArticles8, ...extraBlogArticles9];
 
+/** Old URLs / inline links that pointed at non-canonical slugs */
+const LEGACY_BLOG_SLUG_ALIASES: Record<string, string> = {
+  'ayat-al-kursi-before-sleep-benefits': 'ayat-al-kursi-benefits-bedtime-protection',
+  'tasbih-fatimah-before-sleep': 'tasbih-fatimah-bedtime-dhikr',
+  'qailulah-islamic-power-nap': 'qailulah-power-nap-islam',
+  'wudu-before-sleeping-benefits': 'wudu-before-sleeping-benefits-guide',
+};
+
+export const resolveCanonicalBlogSlug = (slug: string): string =>
+  LEGACY_BLOG_SLUG_ALIASES[slug] ?? slug;
+
 export const getBlogArticleBySlug = (slug: string): BlogArticle | undefined => {
-  return allArticles().find(article => article.slug === slug);
+  const canonical = resolveCanonicalBlogSlug(slug);
+  return allArticles().find(article => article.slug === canonical);
 };
 
 export const getAllBlogArticles = (): BlogArticle[] => {
