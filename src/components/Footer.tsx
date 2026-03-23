@@ -107,7 +107,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-cream-dim hover:text-gold transition-colors"
                 >
-                  HabibiChill <span className="text-muted-foreground">(HabibiChilll.com)</span>
+                  HabibiChill
                 </a>
               </li>
               <li>
@@ -117,7 +117,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-cream-dim hover:text-gold transition-colors"
                 >
-                  TryRamadan <span className="text-muted-foreground">(TryRamadan.app)</span>
+                  TryRamadan
                 </a>
               </li>
               <li>
@@ -127,7 +127,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-cream-dim hover:text-gold transition-colors"
                 >
-                  MosqueSteps <span className="text-muted-foreground">(MosqueSteps.com)</span>
+                  MosqueSteps
                 </a>
               </li>
             </ul>
