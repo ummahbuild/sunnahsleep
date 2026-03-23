@@ -359,7 +359,7 @@ export default function DownloadPage() {
         <section className="text-center mb-16" aria-labelledby="platforms-heading">
           <h2 id="platforms-heading" className="text-xl font-semibold text-foreground mb-3">All Platforms</h2>
           <p className="text-sm text-muted-foreground mb-6">
-            App Store and Google Play versions coming soon. Install as PWA on any device today.
+            Available on the App Store. Google Play coming soon. Install as PWA on any device today.
           </p>
           <StoreBadges device={device} />
         </section>
