@@ -73,7 +73,7 @@ export function Footer() {
               <li><Link to="/blog" className="text-cream-dim hover:text-gold transition-colors">Blog</Link></li>
               <li>
                 <a
-                  href="https://github.com/codingshot/sunnahsleep"
+                  href="https://github.com/ummahbuild/sunnahsleep"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cream-dim hover:text-gold transition-colors"
