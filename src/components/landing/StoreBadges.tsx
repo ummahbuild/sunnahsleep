@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { APP_STORE_LINKS, type DeviceType } from '@/lib/deviceDetection';
 import badgeAppStore from '@/assets/badge-appstore.png';
 import badgeApk from '@/assets/badge-apk-download.png';
-import badgePlayStore from '@/assets/badge-playstore-soon.png';
+import badgePlayStore from '@/assets/badge-playstore.png';
 
 const BADGE_CLASS = 'h-12 sm:h-14 hover:opacity-90 transition-opacity';
 

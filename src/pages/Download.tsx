@@ -11,7 +11,7 @@ import { getDeviceType, APP_STORE_LINKS } from '@/lib/deviceDetection';
 import { StoreBadges } from '@/components/landing/StoreBadges';
 import { Footer } from '@/components/Footer';
 import badgeAppStore from '@/assets/badge-appstore.png';
-import badgePlayStore from '@/assets/badge-playstore-soon.png';
+import badgePlayStore from '@/assets/badge-playstore.png';
 
 const APK_URL = '/app/sunnah-sleep.apk';
 const APK_SIZE = '~15 MB';

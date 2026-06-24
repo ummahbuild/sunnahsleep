@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Moon, BookOpen, Package } from 'lucide-react';
 import { APP_STORE_LINKS } from '@/lib/deviceDetection';
 import badgeAppStore from '@/assets/badge-appstore.png';
-import badgePlayStore from '@/assets/badge-playstore-soon.png';
+import badgePlayStore from '@/assets/badge-playstore.png';
 
 export function Footer() {
   return (
