@@ -174,7 +174,7 @@ const Landing = () => {
           Get <span className="text-gradient-gold">SunnahSleep</span> on Your Device
         </h2>
         <p className="text-cream-dim max-w-lg mx-auto mb-8 text-sm">
-          Get SunnahSleep on the App Store for iPhone. Download the Android APK. Google Play coming soon.
+          Get SunnahSleep on the App Store for iPhone and Google Play for Android. APK download also available.
         </p>
         <StoreBadges device={device} />
       </section>

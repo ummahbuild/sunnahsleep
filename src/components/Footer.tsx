@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Moon, BookOpen, Package } from 'lucide-react';
 import { APP_STORE_LINKS } from '@/lib/deviceDetection';
 import badgeAppStore from '@/assets/badge-appstore.png';
+import badgePlayStore from '@/assets/badge-playstore-soon.png';
 
 export function Footer() {
   return (
@@ -36,23 +37,44 @@ export function Footer() {
               <Moon className="h-4 w-4" /> App
             </h4>
             <ul className="space-y-2 text-sm">
-              {APP_STORE_LINKS.appStore.available && (
+              {(APP_STORE_LINKS.appStore.available || APP_STORE_LINKS.playStore.available) && (
                 <li>
-                  <a
-                    href={APP_STORE_LINKS.appStore.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block ring-1 ring-border/40 hover:ring-gold/40 transition-[box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
-                  >
-                    <img
-                      src={badgeAppStore}
-                      alt="Download on the App Store"
-                      className="h-10 w-auto"
-                      width={120}
-                      height={40}
-                      loading="lazy"
-                    />
-                  </a>
+                  <div className="flex flex-wrap items-center gap-2">
+                    {APP_STORE_LINKS.appStore.available && (
+                      <a
+                        href={APP_STORE_LINKS.appStore.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block ring-1 ring-border/40 hover:ring-gold/40 transition-[box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
+                      >
+                        <img
+                          src={badgeAppStore}
+                          alt="Download on the App Store"
+                          className="h-10 w-auto"
+                          width={120}
+                          height={40}
+                          loading="lazy"
+                        />
+                      </a>
+                    )}
+                    {APP_STORE_LINKS.playStore.available && (
+                      <a
+                        href={APP_STORE_LINKS.playStore.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block ring-1 ring-border/40 hover:ring-gold/40 transition-[box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
+                      >
+                        <img
+                          src={badgePlayStore}
+                          alt="Get it on Google Play"
+                          className="h-10 w-auto"
+                          width={120}
+                          height={40}
+                          loading="lazy"
+                        />
+                      </a>
+                    )}
+                  </div>
                 </li>
               )}
               <li><Link to="/app" className="text-cream-dim hover:text-gold transition-colors">Dashboard</Link></li>

@@ -23,5 +23,8 @@ export const APP_STORE_LINKS: AppStoreLinks = {
     url: 'https://apps.apple.com/app/sunnahsleep/id6760520344',
     available: true,
   },
-  playStore: { url: '#', available: false },
+  playStore: {
+    url: 'https://play.google.com/store/apps/details?id=app.sunnahslee',
+    available: true,
+  },
 };

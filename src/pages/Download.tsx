@@ -11,6 +11,7 @@ import { getDeviceType, APP_STORE_LINKS } from '@/lib/deviceDetection';
 import { StoreBadges } from '@/components/landing/StoreBadges';
 import { Footer } from '@/components/Footer';
 import badgeAppStore from '@/assets/badge-appstore.png';
+import badgePlayStore from '@/assets/badge-playstore-soon.png';
 
 const APK_URL = '/app/sunnah-sleep.apk';
 const APK_SIZE = '~15 MB';
@@ -46,7 +47,7 @@ const FAQS = [
   },
   {
     q: 'Is the APK safe to install?',
-    a: 'Yes. The APK is built directly from our open codebase. It\'s not on Play Store yet because we\'re a small team focused on quality. You can verify the app by checking the package name and publisher.',
+    a: 'Yes. The APK is built directly from our open codebase. For most users we recommend Google Play — the APK is an alternative if you prefer a direct install. You can verify the app by checking the package name and publisher.',
   },
   {
     q: 'What\'s the difference between the APK and PWA?',
@@ -257,33 +258,53 @@ export default function DownloadPage() {
 
           <p className="text-muted-foreground max-w-xl mx-auto mb-8 text-base sm:text-lg">
             {isAndroid
-              ? 'Get the native Android app. Follow the Prophetic ﷺ sleep routine with better background alarms and offline support.'
+              ? 'Get SunnahSleep on Google Play for the best Android experience, or download the APK directly. Follow the Prophetic ﷺ sleep routine with better background alarms and offline support.'
               : isIOS
                 ? 'Download SunnahSleep from the App Store, or add the web app to your home screen from Safari — works offline either way.'
-                : 'Get the iPhone app on the App Store, install as a Progressive Web App, or download the Android APK. Free on every platform.'
+                : 'Get the iPhone app on the App Store, Android app on Google Play, install as a PWA, or download the APK. Free on every platform.'
             }
           </p>
 
-          {/* Primary CTA — App Store first, then APK (Android/desktop), then PWA where relevant */}
+          {/* Primary CTA — App Store & Google Play, then APK (Android/desktop), then PWA where relevant */}
           <div className="flex flex-col items-center justify-center gap-4">
-            {APP_STORE_LINKS.appStore.available && (
-              <a
-                href={APP_STORE_LINKS.appStore.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-shrink-0 ring-1 ring-border/40 hover:ring-primary/40 transition-[box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
-                aria-label="Download on the App Store"
-              >
-                <img
-                  src={badgeAppStore}
-                  alt="Download on the App Store"
-                  className="h-14 sm:h-16 w-auto"
-                  width={200}
-                  height={64}
-                  loading="eager"
-                />
-              </a>
-            )}
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              {APP_STORE_LINKS.appStore.available && (
+                <a
+                  href={APP_STORE_LINKS.appStore.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-shrink-0 ring-1 ring-border/40 hover:ring-primary/40 transition-[box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                  aria-label="Download on the App Store"
+                >
+                  <img
+                    src={badgeAppStore}
+                    alt="Download on the App Store"
+                    className="h-14 sm:h-16 w-auto"
+                    width={200}
+                    height={64}
+                    loading="eager"
+                  />
+                </a>
+              )}
+              {APP_STORE_LINKS.playStore.available && (
+                <a
+                  href={APP_STORE_LINKS.playStore.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-shrink-0 ring-1 ring-border/40 hover:ring-primary/40 transition-[box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                  aria-label="Get it on Google Play"
+                >
+                  <img
+                    src={badgePlayStore}
+                    alt="Get it on Google Play"
+                    className="h-14 sm:h-16 w-auto"
+                    width={200}
+                    height={64}
+                    loading="eager"
+                  />
+                </a>
+              )}
+            </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               {(isAndroid || device === 'desktop') && (
                 <a href={APK_URL} download="sunnah-sleep.apk" className="inline-block" onClick={handleDownload}>
@@ -380,7 +401,7 @@ export default function DownloadPage() {
         <section className="text-center mb-16" aria-labelledby="platforms-heading">
           <h2 id="platforms-heading" className="text-xl font-semibold text-foreground mb-3">All Platforms</h2>
           <p className="text-sm text-muted-foreground mb-6">
-            Available on the App Store. Google Play coming soon. Install as PWA on any device today.
+            Available on the App Store and Google Play. Install as PWA on any device today.
           </p>
           <StoreBadges device={device} />
         </section>
