@@ -38,6 +38,7 @@ export default defineConfig(({ mode }) => ({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
+        globIgnores: ["**/banners/**"],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/cdn\.islamic\.network\/.*/i,

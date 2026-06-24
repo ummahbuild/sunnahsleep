@@ -112,46 +112,11 @@ export function Footer() {
               <Package className="h-4 w-4" /> Products
             </h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  href="https://praysap.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cream-dim hover:text-gold transition-colors"
-                >
-                  PRAYSAP.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://habibichilll.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cream-dim hover:text-gold transition-colors"
-                >
-                  HabibiChill
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://tryramadan.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cream-dim hover:text-gold transition-colors"
-                >
-                  TryRamadan
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://mosquesteps.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cream-dim hover:text-gold transition-colors"
-                >
-                  MosqueSteps
-                </a>
-              </li>
+              <li><Link to="/products" className="text-cream-dim hover:text-gold transition-colors">All products</Link></li>
+              <li><Link to="/product/praysap" className="text-cream-dim hover:text-gold transition-colors">PRAYSAP</Link></li>
+              <li><Link to="/product/habibichill" className="text-cream-dim hover:text-gold transition-colors">HabibiChill</Link></li>
+              <li><Link to="/product/tryramadan" className="text-cream-dim hover:text-gold transition-colors">TryRamadan</Link></li>
+              <li><Link to="/product/mosquesteps" className="text-cream-dim hover:text-gold transition-colors">MosqueSteps</Link></li>
             </ul>
           </div>
 

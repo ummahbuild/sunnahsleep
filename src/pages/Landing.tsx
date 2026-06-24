@@ -7,6 +7,7 @@ import { APP_STORE_LINKS, getDeviceType } from '@/lib/deviceDetection';
 import { usePageMeta } from '@/hooks/usePageMeta';
 import { StoreBadges } from '@/components/landing/StoreBadges';
 import { ReferenceCarousel } from '@/components/landing/ReferenceCarousel';
+import { ProductsCarousel } from '@/components/landing/ProductsCarousel';
 import { FeatureSteps } from '@/components/landing/FeatureSteps';
 
 /* ─── Stats ─── */
@@ -151,6 +152,9 @@ const Landing = () => {
 
       {/* ═══════════════ FEATURE STEPS ═══════════════ */}
       <FeatureSteps />
+
+      {/* ═══════════════ UMMAH.BUILD PRODUCTS ═══════════════ */}
+      <ProductsCarousel />
 
       {/* ═══════════════ QURAN & HADITH CAROUSEL ═══════════════ */}
       <section className="bg-[hsl(var(--midnight-light))] border-y border-border py-16 sm:py-24" aria-labelledby="references-heading">

@@ -21,6 +21,8 @@ const Demo = lazy(() => import("./pages/Demo"));
 const Guides = lazy(() => import("./pages/Guides"));
 const PropheticSleep = lazy(() => import("./pages/PropheticSleep"));
 const Download = lazy(() => import("./pages/Download"));
+const Products = lazy(() => import("./pages/Products"));
+const ProductDetail = lazy(() => import("./pages/ProductDetail"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -52,6 +54,8 @@ const App = () => (
             <Route path="/guides" element={<Guides />} />
             <Route path="/prophetic-sleep" element={<PropheticSleep />} />
             <Route path="/download" element={<Download />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/product/:slug" element={<ProductDetail />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
