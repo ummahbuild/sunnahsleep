@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Moon, BookOpen, Package } from 'lucide-react';
+import { Moon, BookOpen, Package, Github, Linkedin, Twitter, Youtube } from 'lucide-react';
 import { APP_STORE_LINKS } from '@/lib/deviceDetection';
 import badgeAppStore from '@/assets/badge-appstore.png';
 import badgePlayStore from '@/assets/badge-playstore.png';
@@ -164,18 +164,77 @@ export function Footer() {
                 Legal
               </Link>
             </nav>
-            <p className="text-muted-foreground text-xs order-3 md:text-right md:justify-self-end">
-              © {new Date().getFullYear()}{' '}
-              <a
-                href="https://ummah.build"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-gold transition-colors underline-offset-2 hover:underline"
-              >
-                Ummah.Build
-              </a>
-              {' '}· Made with ❤️ for the Ummah
-            </p>
+            <div className="text-muted-foreground text-xs order-3 md:text-right md:justify-self-end">
+              <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-2 gap-y-2">
+                <span>
+                  © {new Date().getFullYear()}{' '}
+                  <a
+                    href="https://ummah.build"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-gold transition-colors underline-offset-2 hover:underline"
+                  >
+                    Ummah.Build
+                  </a>
+                  {' '}· Made with ❤️ for the Ummah
+                </span>
+                <span className="hidden md:inline text-muted-foreground/50 select-none" aria-hidden>
+                  ·
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <a
+                    href="https://x.com/ummahbuild"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="ummah.build on X"
+                    title="ummah.build on X"
+                    className="text-muted-foreground hover:text-gold transition-colors"
+                  >
+                    <Twitter className="h-4 w-4" />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@ummah_build"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="ummah.build on YouTube"
+                    title="ummah.build on YouTube"
+                    className="text-muted-foreground hover:text-gold transition-colors"
+                  >
+                    <Youtube className="h-4 w-4" />
+                  </a>
+                  <a
+                    href="https://github.com/ummahbuild"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="ummah.build on GitHub"
+                    title="ummah.build on GitHub"
+                    className="text-muted-foreground hover:text-gold transition-colors"
+                  >
+                    <Github className="h-4 w-4" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/ummah-build/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="ummah.build on LinkedIn"
+                    title="ummah.build on LinkedIn"
+                    className="text-muted-foreground hover:text-gold transition-colors"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/showcase/sunnahsleep/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="SunnahSleep on LinkedIn"
+                    title="SunnahSleep on LinkedIn"
+                    className="text-muted-foreground hover:text-gold transition-colors"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                  </a>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
