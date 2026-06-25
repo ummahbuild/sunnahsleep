@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft, Package } from 'lucide-react';
+import { Package } from 'lucide-react';
+import { BackLink } from '@/components/BackLink';
 import { Footer } from '@/components/Footer';
 import { ProductCard } from '@/components/products/ProductCard';
 import { usePageMeta } from '@/hooks/usePageMeta';
@@ -68,13 +68,7 @@ export default function Products() {
   return (
     <div className="min-h-screen bg-gradient-night islamic-pattern">
       <div className="max-w-6xl mx-auto px-6 py-10 pb-4">
-        <Link
-          to="/"
-          className="inline-flex items-center gap-2 text-gold hover:text-gold/80 transition-colors mb-8 text-sm"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Home
-        </Link>
+        <BackLink fallbackTo="/" label="Back to Home" className="mb-8" />
 
         <header className="mb-10 max-w-3xl">
           <div className="flex items-center gap-3 mb-4">

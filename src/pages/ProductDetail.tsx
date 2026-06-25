@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { BackLink } from '@/components/BackLink';
 import { Footer } from '@/components/Footer';
 import { ProductCard } from '@/components/products/ProductCard';
 import { cn } from '@/lib/utils';
@@ -79,9 +80,7 @@ export default function ProductDetail() {
       <div className="min-h-screen bg-gradient-night flex items-center justify-center px-6">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4">Product Not Found</h1>
-          <Link to="/products" className="text-gold hover:underline">
-            ← Back to Products
-          </Link>
+          <BackLink fallbackTo="/products" label="Back to Products" />
         </div>
       </div>
     );
@@ -89,8 +88,13 @@ export default function ProductDetail() {
 
   if (!product) {
     return (
-      <div className="min-h-screen bg-gradient-night flex items-center justify-center">
-        <div className="w-6 h-6 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
+      <div className="min-h-screen bg-gradient-night islamic-pattern">
+        <div className="max-w-4xl mx-auto px-6 py-10">
+          <BackLink fallbackTo="/products" label="Back" className="mb-8" />
+          <div className="flex items-center justify-center py-24">
+            <div className="w-6 h-6 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
+          </div>
+        </div>
       </div>
     );
   }
@@ -99,10 +103,7 @@ export default function ProductDetail() {
     <div className="min-h-screen bg-gradient-night islamic-pattern">
       <article className="max-w-4xl mx-auto px-6 py-10 pb-4">
         <nav className="mb-8 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-          <Link to="/products" className="inline-flex items-center gap-2 text-gold hover:text-gold/80">
-            <ArrowLeft className="h-4 w-4" />
-            All products
-          </Link>
+          <BackLink fallbackTo="/products" label="Back" />
         </nav>
 
         {isValidProductLink(product.bannerUrl) && (
@@ -228,5 +229,3 @@ export default function ProductDetail() {
     </div>
   );
 }
-
-import { cn } from '@/lib/utils';
