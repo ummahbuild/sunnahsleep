@@ -6,8 +6,14 @@ on:
   pull_request:
     branches: [main, develop]
 
+# Cancel superseded PR checks; keep every non-PR invocation independent.
+concurrency:
+  group: ci.yml-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   lint:
+    timeout-minutes: 60
     name: Lint
     runs-on: ubuntu-latest
     steps:
@@ -26,6 +32,7 @@ jobs:
         run: npm run lint
 
   test:
+    timeout-minutes: 60
     name: Test
     runs-on: ubuntu-latest
     steps:
