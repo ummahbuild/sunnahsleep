@@ -1,6 +1,17 @@
 {
   "rewrites": [
-    { "source": "/.well-known/llms.txt", "destination": "/llms.txt" },
-    { "source": "/(.*)", "destination": "/" }
-  ]
+    {
+      "source": "/.well-known/llms.txt",
+      "destination": "/llms.txt"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "internal-sunnahsleep-download-feedback-nov27": false
+    }
+  }
 }

@@ -128,12 +128,6 @@ export default function DownloadPage() {
   const isAndroid = device === 'android';
   const isIOS = device === 'ios';
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [dlState, setDlState] = useState<'idle' | 'downloading' | 'done'>('idle');
-
-  const handleDownload = useCallback(() => {
-    setDlState('downloading');
-    setTimeout(() => setDlState('done'), 3000);
-  }, []);
 
   const handleShare = useCallback(async () => {
     if (navigator.share) {
@@ -217,8 +211,6 @@ export default function DownloadPage() {
       },
     ],
   });
-
-  const dlButtonLabel = dlState === 'downloading' ? 'Downloading…' : dlState === 'done' ? 'Download Complete ✓' : `Download APK (${APK_SIZE})`;
 
   return (
     <div className="min-h-screen bg-gradient-night flex flex-col">
@@ -307,29 +299,26 @@ export default function DownloadPage() {
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               {(isAndroid || device === 'desktop') && (
-                <a href={APK_URL} download="sunnah-sleep.apk" className="inline-block" onClick={handleDownload}>
-                  <Button
-                    size="lg"
-                    className={`gap-2 text-base px-10 glow-gold transition-all ${
-                      dlState === 'done'
-                        ? 'bg-green-600 hover:bg-green-700 text-white'
-                        : 'bg-primary text-primary-foreground hover:bg-primary/90'
-                    }`}
-                    disabled={dlState === 'downloading'}
-                  >
-                    {dlState === 'done' ? <CheckCircle2 className="h-5 w-5" /> : <Download className="h-5 w-5" />}
-                    {dlButtonLabel}
+                <div className="text-center">
+                  <Button asChild size="lg" className="gap-2 text-base px-10 glow-gold">
+                    <a href={APK_URL} download="sunnah-sleep.apk" aria-describedby="apk-download-help">
+                      <Download className="h-5 w-5" aria-hidden="true" />
+                      Download APK ({APK_SIZE})
+                    </a>
                   </Button>
-                </a>
+                  <p id="apk-download-help" className="mt-2 text-xs text-muted-foreground">
+                    Check your browser&apos;s downloads for progress.
+                  </p>
+                </div>
               )}
 
               {!isAndroid && (
-                <Link to="/install">
-                  <Button size="lg" variant={isAndroid ? 'outline' : 'default'} className="gap-2 text-base px-10">
-                    <Smartphone className="h-5 w-5" />
+                <Button asChild size="lg" className="gap-2 text-base px-10">
+                  <Link to="/install">
+                    <Smartphone className="h-5 w-5" aria-hidden="true" />
                     Install as PWA
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               )}
             </div>
           </div>
@@ -438,3 +427,4 @@ export default function DownloadPage() {
     </div>
   );
 }
+
